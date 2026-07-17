@@ -1,0 +1,39 @@
+name: Atualiza editais
+
+on:
+  schedule:
+    # 10:00 UTC = 07:00 em Brasília
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+
+      - run: npm run scrape
+
+      - name: Commita se houver mudanças
+        run: |
+          if git diff --quiet data/editais.json; then
+            echo "Sem mudanças nos editais."
+          else
+            git config user.name "Pedro Coelho"
+            git config user.email "coelho@discente.ufg.br"
+            git add data/editais.json
+            git commit -m "chore: atualiza editais ($(date -u +%Y-%m-%d))"
+            git push
+          fi

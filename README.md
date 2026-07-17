@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Radar de Editais
 
-## Getting Started
+Dashboard minimalista que agrega **editais de fomento à pesquisa e inovação** brasileiros — FINEP, CNPq, FAPEG e CAPES — em um lugar só, rotulados por área (saúde, agro, tecnologia...) e com **destaque para IA**. Atualizado automaticamente todo dia.
 
-First, run the development server:
+A ideia nasceu de uma observação em sala na UFG: professores anotam **no quadro, à mão**, os editais com prazo próximo. Este projeto substitui o quadro por um robô.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Screenshot do dashboard](docs/screenshot.png)
+
+## Como funciona
+
+```
+GitHub Actions (cron diário às 07h de Brasília)
+  └─ npm run scrape
+       ├─ scraper/fontes/finep.ts   → API JSON pública da FINEP
+       ├─ scraper/fontes/cnpq.ts    → página de chamadas abertas (gov.br)
+       ├─ scraper/fontes/fapeg.ts   → tabela de inscrições abertas (goias.gov.br)
+       ├─ scraper/fontes/capes.ts   → página de editais e resultados (gov.br)
+       ├─ scraper/classificador.ts  → rótulos por área + flag IA (palavras-chave)
+       └─ data/editais.json         → commitado no repo se mudou
+  └─ push → Vercel redeploya o site estático
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sem banco de dados, sem servidor, custo zero. Se uma fonte falhar (site fora do ar, layout mudou), os dados da última coleta boa daquela fonte são preservados e o rodapé do site avisa — uma fonte quebrada nunca apaga dados.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Rodar localmente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run scrape   # coleta os editais e grava data/editais.json
+npm run dev      # abre o dashboard em http://localhost:3000
+npm test         # testes dos parsers (offline, contra fixtures reais)
+```
 
-## Learn More
+## Deploy (uma vez)
 
-To learn more about Next.js, take a look at the following resources:
+1. Importe este repositório na [Vercel](https://vercel.com/new) (framework: Next.js, sem configuração extra).
+2. Pronto — cada push do GitHub Actions redeploya o site com os dados novos.
+3. O workflow `Atualiza editais` também pode ser disparado à mão na aba **Actions** do GitHub.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Adicionar uma fonte nova
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Crie `scraper/fontes/minhafonte.ts` exportando `coletar(): Promise<Edital[]>` — separe o `parse` (função pura sobre o HTML/JSON) do fetch, como nas fontes existentes.
+2. Salve uma resposta real em `tests/fixtures/` e escreva testes do parse em `tests/fontes.test.ts`.
+3. Adicione a fonte em `FONTES` (`scraper/schema.ts`) e no mapa `COLETORES` (`scraper/index.ts`), e o nome de exibição em `componentes/Dashboard.tsx`.
 
-## Deploy on Vercel
+## Ajustar as áreas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O dicionário de palavras-chave fica em `scraper/classificador.ts` (`AREAS` e `TERMOS_IA`). Termos são normalizados (minúsculos, sem acento) e `*` no fim casa variações da palavra (`farmac*` pega farmácia, fármaco, farmacêutica). Os rótulos exibidos ficam em `ROTULOS`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Aviso
+
+Os dados são coletados automaticamente dos portais oficiais e podem conter erros ou atrasos. **Sempre confira o edital original** antes de submeter uma proposta.
