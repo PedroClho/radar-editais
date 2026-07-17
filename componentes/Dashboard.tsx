@@ -187,6 +187,8 @@ export default function Dashboard({ dados }: { dados: Dados }) {
     new Date(dados.atualizadoEm).getTime(),
   )
   useEffect(() => {
+    // Troca deliberada pós-hidratação: só no cliente existe o "agora" real.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setAgoraMs(Date.now())
   }, [])
 
