@@ -1,25 +1,27 @@
 {
-  "atualizadoEm": "2026-07-17T20:51:32.691Z",
+  "atualizadoEm": "2026-07-17T20:59:38.018Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 36,
-      "atualizadoEm": "2026-07-17T20:51:32.691Z"
+      "atualizadoEm": "2026-07-17T20:59:38.018Z"
     },
     "cnpq": {
-      "ok": true,
+      "ok": false,
       "quantidade": 10,
-      "atualizadoEm": "2026-07-17T20:51:32.691Z"
+      "atualizadoEm": "2026-07-17T20:51:32.691Z",
+      "erro": "fetch failed"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-07-17T20:51:32.691Z"
+      "atualizadoEm": "2026-07-17T20:59:38.018Z"
     },
     "capes": {
-      "ok": true,
+      "ok": false,
       "quantidade": 2,
-      "atualizadoEm": "2026-07-17T20:51:32.691Z"
+      "atualizadoEm": "2026-07-17T20:51:32.691Z",
+      "erro": "fetch failed"
     }
   },
   "editais": [
@@ -50,7 +52,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "cnpq-5640d32c2a8a",
@@ -163,7 +165,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "cnpq-1941baf2f023",
@@ -192,7 +194,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-91cd26e24a0f",
@@ -207,7 +209,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-076a0a2b7bd2",
@@ -222,7 +224,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-781ea30e0ea0",
@@ -239,7 +241,7 @@
         "industria"
       ],
       "ia": true,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-cb3b12ecf5b2",
@@ -255,7 +257,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-0523bacf004a",
@@ -269,7 +271,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "fapeg-a420f0b8d5ff",
@@ -282,7 +284,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.819Z"
+      "coletadoEm": "2026-07-17T20:59:39.321Z"
     },
     {
       "id": "finep-5fbe351df296",
@@ -295,7 +297,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "fapeg-38735584a263",
@@ -308,7 +310,7 @@
         "agro"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.819Z"
+      "coletadoEm": "2026-07-17T20:59:39.321Z"
     },
     {
       "id": "fapeg-452f0d931597",
@@ -322,7 +324,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.819Z"
+      "coletadoEm": "2026-07-17T20:59:39.321Z"
     },
     {
       "id": "fapeg-3fcbdd1c8c26",
@@ -335,7 +337,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.819Z"
+      "coletadoEm": "2026-07-17T20:59:39.321Z"
     },
     {
       "id": "fapeg-5c04f8be716f",
@@ -348,7 +350,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.819Z"
+      "coletadoEm": "2026-07-17T20:59:39.321Z"
     },
     {
       "id": "capes-7730401430fb",
@@ -386,7 +388,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-5230abd39834",
@@ -401,7 +403,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-e0fd071f36b5",
@@ -416,7 +418,7 @@
         "energia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-b227359ba025",
@@ -434,7 +436,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "capes-95f58df736ce",
@@ -459,7 +461,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-ae4accdfa8fe",
@@ -474,7 +476,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-154cf446df84",
@@ -489,7 +491,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-f69c8a797050",
@@ -507,7 +509,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-993d4cf93d47",
@@ -521,7 +523,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-75ed62c47d24",
@@ -537,7 +539,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-d335bb6a30db",
@@ -553,7 +555,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-1def5f22d0e1",
@@ -569,7 +571,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-38771efab004",
@@ -584,7 +586,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-b932d0832085",
@@ -598,7 +600,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-a40b55d03e6c",
@@ -614,7 +616,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-371cdb70cc9c",
@@ -631,7 +633,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-2f437fa6bca1",
@@ -645,7 +647,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-a18fd8509c9e",
@@ -659,7 +661,7 @@
         "tecnologia"
       ],
       "ia": true,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-232da74fdc31",
@@ -674,7 +676,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-4eab10c8f9bd",
@@ -692,7 +694,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-316822cfc69e",
@@ -711,7 +713,7 @@
         "sustentabilidade"
       ],
       "ia": true,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-127d235d1a16",
@@ -724,7 +726,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-a46a444bde24",
@@ -739,7 +741,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-eaaefa1a1e42",
@@ -754,7 +756,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-00bf884ffa05",
@@ -768,7 +770,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-05071b49290c",
@@ -783,7 +785,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     },
     {
       "id": "finep-0f97679cb0ad",
@@ -798,7 +800,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-17T20:51:32.850Z"
+      "coletadoEm": "2026-07-17T20:59:38.492Z"
     }
   ]
 }
