@@ -37,7 +37,7 @@ export function parseCapes(html: string, agora: string): Edital[] {
 
 export async function coletarCapes(): Promise<Edital[]> {
   const html = await buscarTexto(URL_CAPES, {
-    validar: (corpo) => corpo.includes('Editais e Resultados'),
+    validar: (corpo) => corpo.includes('/centrais-de-conteudo/editais/'),
   })
   const editais = parseCapes(html, new Date().toISOString())
   if (editais.length === 0) {
