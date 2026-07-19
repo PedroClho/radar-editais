@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-07-18T11:01:06.455Z",
+  "atualizadoEm": "2026-07-19T11:07:55.881Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 36,
-      "atualizadoEm": "2026-07-18T11:01:06.455Z"
+      "atualizadoEm": "2026-07-19T11:07:55.881Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 10,
-      "atualizadoEm": "2026-07-18T11:01:06.455Z"
+      "atualizadoEm": "2026-07-19T11:07:55.881Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-07-18T11:01:06.455Z"
+      "atualizadoEm": "2026-07-19T11:07:55.881Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-07-18T11:01:06.455Z"
+      "atualizadoEm": "2026-07-19T11:07:55.881Z"
     }
   },
   "editais": [
@@ -35,7 +35,7 @@
         "saude"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "finep-b875688be325",
@@ -50,7 +50,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "cnpq-5640d32c2a8a",
@@ -64,7 +64,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "cnpq-0eb1dab4d822",
@@ -78,7 +78,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "cnpq-6b44988a279b",
@@ -92,7 +92,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "cnpq-0c1b111983ee",
@@ -106,7 +106,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "cnpq-5f3c1cf05710",
@@ -120,7 +120,7 @@
         "saude"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "cnpq-e4a02ba01854",
@@ -134,7 +134,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "cnpq-b3efe61487ad",
@@ -148,7 +148,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "finep-94631949e705",
@@ -163,7 +163,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "cnpq-1941baf2f023",
@@ -177,7 +177,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "finep-8228704a6fea",
@@ -192,7 +192,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-91cd26e24a0f",
@@ -207,7 +207,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-076a0a2b7bd2",
@@ -222,7 +222,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-781ea30e0ea0",
@@ -239,7 +239,7 @@
         "industria"
       ],
       "ia": true,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-cb3b12ecf5b2",
@@ -255,7 +255,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-0523bacf004a",
@@ -269,7 +269,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "fapeg-a420f0b8d5ff",
@@ -282,7 +282,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:08.360Z"
+      "coletadoEm": "2026-07-19T11:07:57.240Z"
     },
     {
       "id": "finep-5fbe351df296",
@@ -295,7 +295,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "fapeg-38735584a263",
@@ -308,7 +308,7 @@
         "agro"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:08.360Z"
+      "coletadoEm": "2026-07-19T11:07:57.240Z"
     },
     {
       "id": "fapeg-452f0d931597",
@@ -322,7 +322,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:08.360Z"
+      "coletadoEm": "2026-07-19T11:07:57.240Z"
     },
     {
       "id": "fapeg-3fcbdd1c8c26",
@@ -335,7 +335,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:08.360Z"
+      "coletadoEm": "2026-07-19T11:07:57.240Z"
     },
     {
       "id": "fapeg-5c04f8be716f",
@@ -348,7 +348,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:08.360Z"
+      "coletadoEm": "2026-07-19T11:07:57.240Z"
     },
     {
       "id": "capes-7730401430fb",
@@ -360,7 +360,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:08.124Z"
+      "coletadoEm": "2026-07-19T11:07:57.377Z"
     },
     {
       "id": "cnpq-453d3c7f1ca1",
@@ -372,7 +372,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.800Z"
+      "coletadoEm": "2026-07-19T11:07:56.979Z"
     },
     {
       "id": "finep-a1fdd8f3d57d",
@@ -386,7 +386,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-5230abd39834",
@@ -401,7 +401,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-e0fd071f36b5",
@@ -416,7 +416,7 @@
         "energia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-b227359ba025",
@@ -434,7 +434,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "capes-95f58df736ce",
@@ -446,7 +446,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:08.124Z"
+      "coletadoEm": "2026-07-19T11:07:57.377Z"
     },
     {
       "id": "finep-438282e38da9",
@@ -459,7 +459,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-ae4accdfa8fe",
@@ -474,7 +474,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-154cf446df84",
@@ -489,7 +489,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-f69c8a797050",
@@ -507,7 +507,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-993d4cf93d47",
@@ -521,7 +521,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-75ed62c47d24",
@@ -537,7 +537,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-d335bb6a30db",
@@ -553,7 +553,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-1def5f22d0e1",
@@ -569,7 +569,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-38771efab004",
@@ -584,7 +584,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-b932d0832085",
@@ -598,7 +598,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-a40b55d03e6c",
@@ -614,7 +614,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-371cdb70cc9c",
@@ -631,7 +631,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-2f437fa6bca1",
@@ -645,7 +645,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-a18fd8509c9e",
@@ -659,7 +659,7 @@
         "tecnologia"
       ],
       "ia": true,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-232da74fdc31",
@@ -674,7 +674,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-4eab10c8f9bd",
@@ -692,7 +692,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-316822cfc69e",
@@ -711,7 +711,7 @@
         "sustentabilidade"
       ],
       "ia": true,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-127d235d1a16",
@@ -724,7 +724,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-a46a444bde24",
@@ -739,7 +739,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-eaaefa1a1e42",
@@ -754,7 +754,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-00bf884ffa05",
@@ -768,7 +768,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-05071b49290c",
@@ -783,7 +783,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     },
     {
       "id": "finep-0f97679cb0ad",
@@ -798,7 +798,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-18T11:01:07.169Z"
+      "coletadoEm": "2026-07-19T11:07:56.508Z"
     }
   ]
 }
