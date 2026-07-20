@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-/* Paleta: neutros disciplinados + um único acento, o amarelo-ipê do cerrado,
-   reservado para a urgência (prazos que se aproximam). */
 :root {
   --bg: #fbfbfa;
   --surface: #ffffff;
@@ -10,7 +8,7 @@
   --line: #e4e5e1;
   --accent: #a86f00;
   --accent-forte: #7d5300;
-  --accent-suave: #f6edd8;
+  --critico: #9a3412;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +20,7 @@
     --line: #2a2d33;
     --accent: #f0b429;
     --accent-forte: #f8ce6b;
-    --accent-suave: #292112;
+    --critico: #f98a6a;
   }
 }
 
@@ -35,9 +33,12 @@ body {
   color: var(--ink);
 }
 
-/* Números e datas: mono tabular, a "régua" do dashboard. */
-.dados {
-  font-family: var(--font-plex-mono), ui-monospace, monospace;
+.serif {
+  font-family: var(--font-newsreader), Georgia, serif;
+}
+
+/* Alinha os dígitos entre linhas sem precisar de fonte monoespaçada. */
+.numeros {
   font-variant-numeric: tabular-nums;
 }
 

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Archivo, IBM_Plex_Mono } from 'next/font/google'
+import { Archivo, Newsreader } from 'next/font/google'
 import './globals.css'
 
 const archivo = Archivo({
@@ -7,10 +7,12 @@ const archivo = Archivo({
   variable: '--font-archivo',
 })
 
-const plexMono = IBM_Plex_Mono({
+// Serifada nos títulos: edital é documento, e a voz editorial é o oposto
+// do sans genérico que todo dashboard gerado por IA usa.
+const newsreader = Newsreader({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-plex-mono',
+  style: ['normal', 'italic'],
+  variable: '--font-newsreader',
 })
 
 export const metadata: Metadata = {
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${archivo.variable} ${plexMono.variable} antialiased`}
+      className={`${archivo.variable} ${newsreader.variable} antialiased`}
     >
       <body>{children}</body>
     </html>
