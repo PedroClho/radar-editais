@@ -45,6 +45,29 @@ describe('limparTitulo', () => {
     expect(limparTitulo(outro)).toEqual({ titulo: outro })
   })
 
+  // Achados ao rodar os 53 editais reais pelas funções: o grupo do órgão
+  // capturava a palavra errada quando o título não nomeia órgão nenhum.
+  test('não inventa órgão quando o título não tem um', () => {
+    const r = limparTitulo(
+      'Chamada Pública nº 11/2026 — Legado Verdes do Cerrado - 2ª Edição',
+    )
+    expect(r.titulo).toBe('Legado Verdes do Cerrado - 2ª Edição')
+    expect(r.referencia).toBe('nº 11/2026')
+  })
+
+  test('descarta palavra comum capturada no lugar do órgão', () => {
+    const r = limparTitulo(
+      'Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026',
+    )
+    expect(r.referencia).toBe('nº 12/2026')
+  })
+
+  test('mantém o órgão quando ele é de fato uma sigla', () => {
+    expect(
+      limparTitulo('Chamada CNPq/MCTI nº 25/2026 - Endometriose').referencia,
+    ).toBe('CNPq/MCTI nº 25/2026')
+  })
+
   test('não corta quando sobraria um título vazio', () => {
     const so = 'Chamada CNPq nº 06/2026 - '
     expect(limparTitulo(so).titulo).toBe(so)
@@ -76,6 +99,32 @@ describe('normalizarCaixa', () => {
     expect(normalizarCaixa('DESAFIO TECNOLÓGICO ELETROLISADOR NACIONAL')).toBe(
       'Desafio Tecnológico Eletrolisador Nacional',
     )
+  })
+
+  // Achados ao rodar os 53 editais reais: siglas fora de composto com barra
+  // viravam "Mcti", "Erc-confap".
+  test('preserva sigla de agência solta no meio do texto gritado', () => {
+    expect(normalizarCaixa('MANUTENÇÃO UNIDADES DE PESQUISA MCTI')).toBe(
+      'Manutenção Unidades de Pesquisa MCTI',
+    )
+  })
+
+  test('preserva sigla dentro de composto com hífen', () => {
+    expect(normalizarCaixa('EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026')).toBe(
+      'Edital Complementar à Chamada ERC-CONFAP 2026',
+    )
+  })
+
+  test('em composto com hífen, só a parte que é sigla resiste', () => {
+    expect(normalizarCaixa('COOPERAÇÃO ICT-EMPRESA NACIONAL')).toBe(
+      'Cooperação ICT-Empresa Nacional',
+    )
+  })
+
+  test('não estraga símbolo de moeda no modo frase', () => {
+    expect(
+      normalizarCaixa('FATURAMENTO ANUAL ATÉ R$ 16 MILHÕES DE REAIS', 'frase'),
+    ).toBe('Faturamento anual até R$ 16 milhões de reais')
   })
 })
 

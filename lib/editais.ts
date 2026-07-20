@@ -1,10 +1,17 @@
 import { normalizar } from '../scraper/classificador'
 import type { Edital, Fonte } from '../scraper/schema'
 
-// Prefixo burocrático das chamadas: "Chamada [Pública] <órgão> nº 12/2026 - ".
-// O assunto real vem depois do hífen; o número vira linha secundária.
+// Prefixo burocrático das chamadas: "Chamada [Pública] [<órgão>] nº 12/2026 - ".
+// O assunto real vem depois do hífen; o número vira linha secundária. O órgão
+// é opcional: "Chamada Pública nº 11/2026 — X" não nomeia órgão nenhum, e
+// deixar o grupo obrigatório fazia o regex capturar "Pública" no lugar dele.
 const RE_CHAMADA =
-  /^chamada\s+(?:p[úu]blica\s+)?(\S+?)\s+n[ºo°]\s*(\d{1,3}\/\d{4})\s*[-–—]\s*(.+)$/i
+  /^chamada\s+(?:p[úu]blica\s+)?(?:(\S+)\s+)?n[ºo°]\s*(\d{1,3}\/\d{4})\s*[-–—]\s*(.+)$/i
+
+// Código de órgão tem ao menos duas maiúsculas seguidas ("CNPq", "MCTI",
+// "CNPq/Decit-SCTIE-MS"). Serve para descartar palavras comuns que caem no
+// grupo por acidente ("Complementar").
+const RE_ORGAO = /\p{Lu}{2}/u
 
 export function limparTitulo(titulo: string): {
   titulo: string
@@ -16,16 +23,46 @@ export function limparTitulo(titulo: string): {
   const assunto = resto.trim()
   // Sem assunto sobrando, cortar só destruiria informação.
   if (!assunto) return { titulo }
-  return { titulo: assunto, referencia: `${orgao} nº ${numero}` }
+  const prefixo = orgao && RE_ORGAO.test(orgao) ? `${orgao} ` : ''
+  return { titulo: assunto, referencia: `${prefixo}nº ${numero}` }
 }
 
-// Siglas que sobrevivem à normalização mesmo tendo mais de 5 letras.
+// Siglas de agência/programa que precisam sobreviver à normalização mesmo
+// soltas no meio de um título gritado. Lista curada a partir dos tokens
+// todo-maiúsculos que de fato aparecem no dataset — em texto 100% maiúsculo
+// não existe heurística que separe "MCTI" de "CARTA" sem conhecer o domínio.
+// Nomes de programa pronunciáveis (TECNOVA, PROINFRA) ficam de FORA de
+// propósito: "Programa Tecnova" lê melhor que "Programa TECNOVA".
 const SIGLAS = new Set([
   'MMULHERES',
   'EMBRAPII',
   'SEBRAE',
   'FAPESP',
   'FAPEMIG',
+  'MCTI',
+  'FINEP',
+  'CNPq',
+  'CAPES',
+  'FAPEG',
+  'FNDCT',
+  'CDTI',
+  'BNDES',
+  'BNDESPAR',
+  'MRE',
+  'MinC',
+  'SUS',
+  'ERC',
+  'CONFAP',
+  'FIP',
+  'PDI',
+  'ICT',
+  'ICTs',
+  'PIBPG',
+  'SCTIE',
+  'DECIT',
+  'BRICS',
+  'UFG',
+  'IA',
 ])
 
 const ATONAS = new Set([
@@ -34,15 +71,15 @@ const ATONAS = new Set([
   'um', 'uma', 'que', 'the',
 ])
 
-function ehSigla(token: string, partOfSlash: boolean): boolean {
+function ehSigla(token: string, dentroDeComposto: boolean): boolean {
   const limpo = token.replace(/[^\p{L}]/gu, '')
   if (!limpo) return true // pontuação/números passam intactos
   if (SIGLAS.has(limpo)) return true
-  // Fora de um composto tipo "MCTI/FINEP", uma palavra maiúscula curta é só
-  // uma palavra comum no meio do texto gritado (ex.: "CARTA", "DE") — em
-  // texto todo em caixa alta, "já está maiúscula" não distingue sigla de
-  // palavra comum. Dentro do composto, o padrão é o de código de órgão.
-  if (!partOfSlash) return false
+  // Fora de um composto tipo "MCTI/FINEP" ou "PEC-PG", uma palavra maiúscula
+  // curta é só uma palavra comum no meio do texto gritado (ex.: "CARTA",
+  // "DE") — em texto todo em caixa alta, "já está maiúscula" não distingue
+  // sigla de palavra comum. Dentro do composto, o padrão é código de órgão.
+  if (!dentroDeComposto) return false
   return limpo === limpo.toUpperCase() && limpo.length <= 5
 }
 
@@ -67,17 +104,20 @@ export function normalizarCaixa(
   return palavras
     .map((token) => {
       if (/^\s+$/.test(token)) return token
-      // "MCTI/FINEP" precisa ser resolvido pedaço a pedaço.
-      const partOfSlash = token.includes('/')
-      const partes = token.split('/').map((parte) => {
-        if (/\d/.test(parte)) return parte
-        if (ehSigla(parte, partOfSlash)) return parte
+      // "MCTI/FINEP" e "ERC-CONFAP" precisam ser resolvidos pedaço a pedaço,
+      // preservando o separador original.
+      const dentroDeComposto = /[/-]/.test(token)
+      const partes = token.split(/([/-])/).map((parte) => {
+        if (parte === '/' || parte === '-') return parte
+        // Dígitos e símbolos ("2026/2027", "R$") passam intactos.
+        if (/[\d$&%]/.test(parte)) return parte
+        if (ehSigla(parte, dentroDeComposto)) return parte
         const minuscula = parte.toLowerCase()
         if (modo === 'frase') return minuscula
         if (primeiraFeita && ATONAS.has(minuscula)) return minuscula
         return capitalizar(parte)
       })
-      const resultado = partes.join('/')
+      const resultado = partes.join('')
       if (/\p{L}/u.test(token)) primeiraFeita = true
       return resultado
     })
