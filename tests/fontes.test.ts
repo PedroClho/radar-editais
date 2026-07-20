@@ -44,14 +44,40 @@ describe('parseFinep', () => {
     for (const e of editais) EditalSchema.parse(e)
   })
 
-  test('monta URL de detalhe verificada e prazo do vigenciaFim', () => {
+  test('monta URL de detalhe verificada e prazo do prazoProposto', () => {
     const brics = editais.find((e) => e.titulo.includes('BRICs'))
     expect(brics).toBeDefined()
     expect(brics!.url).toMatch(
       /^https:\/\/www\.finep\.gov\.br\/e\/chamada-publica\/222684\/\d+$/,
     )
-    expect(brics!.inscricaoFim).toBe('2026-11-19T23:59:59.000Z')
+    expect(brics!.inscricaoFim).toBe('2026-08-14T23:59:59.000Z')
     expect(brics!.situacao).toBe('aberto')
+  })
+
+  test('usa prazoProposto em vez de vigenciaFim quando os dois divergem', () => {
+    // id 991625 — "BRICs - CHAMADA PÚBLICA Cooperação Multilateral"
+    // prazoProposto 2026-08-14, vigenciaFim 2026-11-19
+    const brics = editais.find((e) => e.url.endsWith('/991625'))
+    expect(brics).toBeDefined()
+    expect(brics!.inscricaoFim).toBe('2026-08-14T23:59:59.000Z')
+  })
+
+  test('aproveita prazoProposto quando não há vigenciaFim', () => {
+    // id 968467 — "DESAFIO TECNOLÓGICO ELETROLISADOR NACIONAL"
+    const desafio = editais.find((e) => e.url.endsWith('/968467'))
+    expect(desafio).toBeDefined()
+    expect(desafio!.inscricaoFim).toBe('2026-09-21T23:59:59.000Z')
+  })
+
+  test('fica sem prazo quando a origem não tem nenhuma das duas datas', () => {
+    // id 719676 — "Chamada Pública Bilateral Finep-CDTI"
+    const bilateral = editais.find((e) => e.url.endsWith('/719676'))
+    expect(bilateral).toBeDefined()
+    expect(bilateral!.inscricaoFim).toBeUndefined()
+  })
+
+  test('a cobertura de prazo sobe de 6 para 22 editais', () => {
+    expect(editais.filter((e) => e.inscricaoFim).length).toBe(22)
   })
 })
 

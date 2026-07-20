@@ -17,6 +17,10 @@ const ItemFinep = z.object({
   status: z.object({ label: z.string() }).nullish(),
   vigenciaInicio: z.string().nullish(),
   vigenciaFim: z.string().nullish(),
+  // Prazo real de envio de propostas — é o que a página do edital exibe.
+  // `vigenciaFim` é a vigência do instrumento e chega a ser 3 meses mais
+  // tarde; usar ela fazia o site anunciar folga que não existe.
+  prazoProposto: z.string().nullish(),
   // às vezes vem só {"key": ""}, sem name
   temaPrincipal: z.object({ name: z.string().optional() }).nullish(),
   tema: z.string().nullish(),
@@ -55,7 +59,10 @@ export function parseFinep(resposta: unknown, agora: string): Edital[] {
       url,
       descricao: descricao?.slice(0, 400),
       inscricaoInicio: dado.vigenciaInicio ?? undefined,
-      inscricaoFim: dado.vigenciaFim ? fimDoDiaIso(dado.vigenciaFim) : undefined,
+      inscricaoFim: (() => {
+        const prazo = dado.prazoProposto ?? dado.vigenciaFim
+        return prazo ? fimDoDiaIso(prazo) : undefined
+      })(),
       situacao: 'aberto',
       areas,
       ia,
