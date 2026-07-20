@@ -81,6 +81,11 @@ Cada fonte roda isolada em try/catch. Se uma fonte falhar (site fora, layout mud
 
 ## Frontend (minimalista, PT-BR, mobile-first)
 
+> **Superado em 20/07/2026.** Esta seção descreve o primeiro dashboard, que foi
+> substituído por uma agenda de prazos. O desenho vigente está em
+> `docs/superpowers/specs/2026-07-20-redesign-front-design.md`. O texto abaixo
+> fica como registro histórico do MVP.
+
 - `app/page.tsx` (server) importa o JSON; `componentes/Dashboard.tsx` (client) faz filtro/busca em memória.
 - **Agrupamento por urgência**: "Encerram em breve" (≤14 dias), "Abertos", "Sem prazo definido"; encerrados ficam fora do MVP.
 - Cada edital: título (link externo), badge da fonte, chips de área, **badge IA em destaque**, prazo com contagem ("encerra em 12 dias").

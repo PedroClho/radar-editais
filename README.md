@@ -41,7 +41,7 @@ npm test         # testes dos parsers (offline, contra fixtures reais)
 
 1. Crie `scraper/fontes/minhafonte.ts` exportando `coletar(): Promise<Edital[]>` — separe o `parse` (função pura sobre o HTML/JSON) do fetch, como nas fontes existentes.
 2. Salve uma resposta real em `tests/fixtures/` e escreva testes do parse em `tests/fontes.test.ts`.
-3. Adicione a fonte em `FONTES` (`scraper/schema.ts`) e no mapa `COLETORES` (`scraper/index.ts`), e o nome de exibição em `componentes/Dashboard.tsx`.
+3. Adicione a fonte em `FONTES` (`scraper/schema.ts`) e no mapa `COLETORES` (`scraper/index.ts`), e o nome de exibição em `NOMES_FONTES` (`lib/editais.ts`).
 
 ## Ajustar as áreas
 

@@ -2,19 +2,13 @@ import {
   diasAte,
   limparTitulo,
   nivelUrgencia,
+  NOMES_FONTES,
   normalizarCaixa,
   resumir,
   separarOrigem,
 } from '@/lib/editais'
 import { ROTULOS } from '@/scraper/classificador'
-import type { Edital, Fonte } from '@/scraper/schema'
-
-const NOMES_FONTES: Record<Fonte, string> = {
-  finep: 'FINEP',
-  cnpq: 'CNPq',
-  fapeg: 'FAPEG',
-  capes: 'CAPES',
-}
+import type { Edital } from '@/scraper/schema'
 
 const FUSO = 'America/Sao_Paulo'
 
@@ -66,8 +60,6 @@ export default function LinhaEdital({
   const urgencia = nivelUrgencia(dias)
   const { titulo, referencia } = limparTitulo(edital.titulo)
   const areas = edital.areas.filter((a) => a !== 'geral')
-  // A referência costuma repetir o nome da fonte ("CNPq/MinC nº 17/2026"), que
-  // já aparece ao lado. Tira só o prefixo redundante e preserva o co-financiador.
   // Referência e origem costumam começar repetindo o nome da fonte, que já
   // aparece ao lado ("CNPq/MinC nº 17/2026", "Origem: Fapeg/Confap/ERC").
   // Tira só o prefixo redundante e preserva os co-financiadores.

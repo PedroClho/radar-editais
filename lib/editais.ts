@@ -233,3 +233,15 @@ export function filtrar(
         normalizar(`${e.titulo} ${e.descricao ?? ''}`).includes(termo)),
   )
 }
+
+// Nome de exibição de cada fonte. Fica aqui, e não nos componentes, porque
+// os três (linha, controles e rodapé) precisam do mesmo mapa — e quem
+// adiciona uma fonte nova deve ter um só lugar para mexer.
+export const FONTES_UI: Fonte[] = ['finep', 'cnpq', 'fapeg', 'capes']
+
+export const NOMES_FONTES: Record<Fonte, string> = {
+  finep: 'FINEP',
+  cnpq: 'CNPq',
+  fapeg: 'FAPEG',
+  capes: 'CAPES',
+}

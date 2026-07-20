@@ -1,12 +1,5 @@
-import type { Dados, Fonte } from '@/scraper/schema'
-
-const FONTES: Fonte[] = ['finep', 'cnpq', 'fapeg', 'capes']
-const NOMES_FONTES: Record<Fonte, string> = {
-  finep: 'FINEP',
-  cnpq: 'CNPq',
-  fapeg: 'FAPEG',
-  capes: 'CAPES',
-}
+import { FONTES_UI, NOMES_FONTES } from '@/lib/editais'
+import type { Dados } from '@/scraper/schema'
 
 const FMT = new Intl.DateTimeFormat('pt-BR', {
   timeZone: 'America/Sao_Paulo',
@@ -18,7 +11,7 @@ export default function StatusFontes({ dados }: { dados: Dados }) {
   return (
     <footer className="mt-20 border-t border-[var(--line)] pt-6 pb-16 text-xs text-[var(--muted)]">
       <ul className="flex flex-wrap gap-x-6 gap-y-2">
-        {FONTES.map((f) => {
+        {FONTES_UI.map((f) => {
           const s = dados.fontes[f]
           if (!s) return null
           return (

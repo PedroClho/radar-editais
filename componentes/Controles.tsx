@@ -1,15 +1,8 @@
 'use client'
 
+import { FONTES_UI, NOMES_FONTES } from '@/lib/editais'
 import { ROTULOS } from '@/scraper/classificador'
 import type { Fonte } from '@/scraper/schema'
-
-const FONTES: Fonte[] = ['finep', 'cnpq', 'fapeg', 'capes']
-const NOMES_FONTES: Record<Fonte, string> = {
-  finep: 'FINEP',
-  cnpq: 'CNPq',
-  fapeg: 'FAPEG',
-  capes: 'CAPES',
-}
 
 export default function Controles({
   busca,
@@ -79,7 +72,7 @@ export default function Controles({
           className="bg-transparent text-sm outline-none"
         >
           <option value="">todas</option>
-          {FONTES.map((f) => (
+          {FONTES_UI.map((f) => (
             <option key={f} value={f}>
               {NOMES_FONTES[f]}
             </option>

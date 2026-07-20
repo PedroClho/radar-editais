@@ -15,7 +15,9 @@ Dashboard minimalista que agrega editais de fomento brasileiros (FINEP, CNPq, FA
 - `scraper/fontes/*.ts` — um coletor por fonte, todos com a interface `coletar(): Promise<Edital[]>`. Parsing separado do fetch (funções `parse*` puras) para testar offline com fixtures.
 - `scraper/classificador.ts` — classificação por palavras-chave (dicionário `AREAS`) + flag `ia`. Sem LLM, por decisão de custo zero.
 - `scraper/index.ts` — merge com fallback: fonte que falha reusa os dados da execução anterior e é marcada `ok: false`; nunca apaga dados.
-- `app/` + `componentes/` — dashboard estático (SSG), filtros 100% client-side.
+- `lib/editais.ts` — funções puras do front (limpeza de título, caixa, agrupamento por prazo, urgência, filtros). Mesma disciplina do scraper: sem React, testáveis offline em `tests/editais.test.ts`.
+- `app/` + `componentes/` — agenda estática (SSG) agrupada por prazo, filtros 100% client-side. A área escolhida persiste em `localStorage` (`lib/preferencias.ts`).
+- O prazo calculado manda sobre a `situacao` da fonte: a FINEP entrega editais marcados "aberta" com prazo no passado, e eles ficam fora do radar.
 - Datas sempre em ISO no JSON; exibição em pt-BR no front.
 
 ## Git
