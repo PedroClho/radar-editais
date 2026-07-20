@@ -209,7 +209,11 @@ export function filtrar(
   return editais.filter(
     (e) =>
       (!f.fonte || e.fonte === f.fonte) &&
-      (f.areas.length === 0 || f.areas.some((a) => e.areas.includes(a))) &&
+      // "ia" é pseudo-área: o classificador guarda IA como flag booleana,
+      // porque é transversal (um edital de saúde pode ser de IA). Sem este
+      // caso especial, IA seria a única categoria impossível de filtrar.
+      (f.areas.length === 0 ||
+        f.areas.some((a) => (a === 'ia' ? e.ia : e.areas.includes(a)))) &&
       (!termo ||
         normalizar(`${e.titulo} ${e.descricao ?? ''}`).includes(termo)),
   )

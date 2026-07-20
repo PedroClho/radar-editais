@@ -44,7 +44,13 @@ export default function Radar({ dados }: { dados: Dados }) {
         if (a !== 'geral') contagem.set(a, (contagem.get(a) ?? 0) + 1)
       }
     }
-    return [...contagem.entries()].sort((a, b) => b[1] - a[1]).map(([a]) => a)
+    const ordenadas = [...contagem.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .map(([a]) => a)
+    // IA vive numa flag booleana, fora de `areas`, por ser transversal — mas
+    // é o recorte que originou o projeto. Entra como pseudo-área, primeiro na
+    // fila, para ser selecionável como qualquer outra.
+    return vigentes.some((e) => e.ia) ? ['ia', ...ordenadas] : ordenadas
   }, [vigentes])
 
   const visiveis = useMemo(

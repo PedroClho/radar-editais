@@ -17,11 +17,23 @@ const NOMES_FONTES: Record<Fonte, string> = {
 
 const FUSO = 'America/Sao_Paulo'
 
-const FMT_DIA_MES = new Intl.DateTimeFormat('pt-BR', {
+// pt-BR devolve "29 de jul." para day+month juntos, que quebra em três linhas
+// na coluna estreita do celular. Formatamos as partes em separado para chegar
+// em "29 jul".
+const FMT_DIA = new Intl.DateTimeFormat('pt-BR', {
   timeZone: FUSO,
   day: '2-digit',
+})
+
+const FMT_MES = new Intl.DateTimeFormat('pt-BR', {
+  timeZone: FUSO,
   month: 'short',
 })
+
+function diaMes(iso: string): string {
+  const d = new Date(iso)
+  return `${FMT_DIA.format(d)} ${FMT_MES.format(d).replace('.', '')}`
+}
 
 const FMT_SEMANA = new Intl.DateTimeFormat('pt-BR', {
   timeZone: FUSO,
@@ -53,6 +65,12 @@ export default function LinhaEdital({
   const urgencia = nivelUrgencia(dias)
   const { titulo, referencia } = limparTitulo(edital.titulo)
   const areas = edital.areas.filter((a) => a !== 'geral')
+  // A referência costuma repetir o nome da fonte ("CNPq/MinC nº 17/2026"), que
+  // já aparece ao lado. Tira só o prefixo redundante e preserva o co-financiador.
+  const refEnxuta = referencia?.replace(
+    new RegExp(`^${NOMES_FONTES[edital.fonte]}/?`, 'i'),
+    '',
+  )
 
   return (
     <li>
@@ -60,7 +78,7 @@ export default function LinhaEdital({
         href={edital.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="group grid grid-cols-[3.5rem_1fr] gap-x-4 border-b border-[var(--line)] py-5 sm:grid-cols-[4.5rem_1fr] sm:gap-x-6"
+        className="group grid grid-cols-[3.25rem_minmax(0,1fr)] gap-x-4 border-b border-[var(--line)] py-5 sm:grid-cols-[4.5rem_minmax(0,1fr)] sm:gap-x-6"
       >
         <div className="numeros pt-0.5 text-right">
           {edital.inscricaoFim ? (
@@ -69,9 +87,9 @@ export default function LinhaEdital({
                 {FMT_SEMANA.format(new Date(edital.inscricaoFim)).replace('.', '')}
               </span>
               <span
-                className={`block text-[15px] font-medium ${COR_URGENCIA[urgencia]}`}
+                className={`block text-[15px] font-medium whitespace-nowrap ${COR_URGENCIA[urgencia]}`}
               >
-                {FMT_DIA_MES.format(new Date(edital.inscricaoFim)).replace('.', '')}
+                {diaMes(edital.inscricaoFim)}
               </span>
             </>
           ) : (
@@ -106,10 +124,10 @@ export default function LinhaEdital({
                 <span>{ROTULOS[a] ?? a}</span>
               </span>
             ))}
-            {referencia && (
+            {refEnxuta && (
               <>
                 <span aria-hidden>·</span>
-                <span className="numeros">{referencia}</span>
+                <span className="numeros">{refEnxuta}</span>
               </>
             )}
             <span aria-hidden>·</span>

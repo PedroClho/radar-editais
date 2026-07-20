@@ -265,4 +265,26 @@ describe('filtrar', () => {
     const r = filtrar(lista, { busca: '', fonte: 'finep', areas: ['saude'] })
     expect(r).toHaveLength(0)
   })
+
+  // O classificador mantém IA como flag booleana de propósito (é transversal:
+  // um edital de saúde pode ser de IA), então "ia" nunca aparece em areas[].
+  // Sem tratamento especial aqui, IA fica impossível de filtrar na interface.
+  test('"ia" filtra pela flag, não pelo array de áreas', () => {
+    const comIA = [
+      edital({ id: 'ia-saude', areas: ['saude'], ia: true }),
+      edital({ id: 'so-saude', areas: ['saude'], ia: false }),
+    ]
+    const r = filtrar(comIA, { busca: '', fonte: null, areas: ['ia'] })
+    expect(r.map((e) => e.id)).toEqual(['ia-saude'])
+  })
+
+  test('"ia" combina com outra área como OU', () => {
+    const mix = [
+      edital({ id: 'ia-agro', areas: ['agro'], ia: true }),
+      edital({ id: 'saude', areas: ['saude'], ia: false }),
+      edital({ id: 'energia', areas: ['energia'], ia: false }),
+    ]
+    const r = filtrar(mix, { busca: '', fonte: null, areas: ['ia', 'saude'] })
+    expect(r.map((e) => e.id)).toEqual(['ia-agro', 'saude'])
+  })
 })
