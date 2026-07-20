@@ -1,3 +1,6 @@
+import { normalizar } from '../scraper/classificador'
+import type { Edital, Fonte } from '../scraper/schema'
+
 // Prefixo burocrático das chamadas: "Chamada [Pública] <órgão> nº 12/2026 - ".
 // O assunto real vem depois do hífen; o número vira linha secundária.
 const RE_CHAMADA =
@@ -88,4 +91,86 @@ export function resumir(texto: string, max = 180): string {
   const cortado = limpo.slice(0, max)
   const ultimoEspaco = cortado.lastIndexOf(' ')
   return `${(ultimoEspaco > 0 ? cortado.slice(0, ultimoEspaco) : cortado).replace(/[,.;:]$/, '')}…`
+}
+
+const FUSO = 'America/Sao_Paulo'
+const DIA_MS = 86_400_000
+
+const FMT_DIA = new Intl.DateTimeFormat('pt-BR', {
+  timeZone: FUSO,
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+})
+
+// Índice do dia de calendário em São Paulo. Passa por Intl de propósito:
+// o build roda em UTC e o navegador em BRT, e getDate() local daria
+// resultados diferentes nos dois — quebrando a hidratação.
+function diaCalendario(ms: number): number {
+  const [dia, mes, ano] = FMT_DIA.format(new Date(ms)).split('/').map(Number)
+  return Date.UTC(ano, mes - 1, dia) / DIA_MS
+}
+
+export function diasAte(fimIso: string, agoraMs: number): number {
+  return diaCalendario(new Date(fimIso).getTime()) - diaCalendario(agoraMs)
+}
+
+export type Urgencia = 'critico' | 'proximo' | 'neutro'
+
+export function nivelUrgencia(dias: number | null): Urgencia {
+  if (dias === null) return 'neutro'
+  if (dias <= 3) return 'critico'
+  if (dias <= 14) return 'proximo'
+  return 'neutro'
+}
+
+export type Grupos = {
+  estaSemana: Edital[]
+  proximasSemanas: Edital[]
+  maisAdiante: Edital[]
+  semPrazo: Edital[]
+}
+
+export function agruparPorPrazo(editais: Edital[], agoraMs: number): Grupos {
+  const g: Grupos = {
+    estaSemana: [],
+    proximasSemanas: [],
+    maisAdiante: [],
+    semPrazo: [],
+  }
+  for (const e of editais) {
+    if (e.situacao === 'encerrado') continue
+    if (!e.inscricaoFim) {
+      g.semPrazo.push(e)
+      continue
+    }
+    const dias = diasAte(e.inscricaoFim, agoraMs)
+    // A situação vinda da fonte não é confiável: a FINEP entrega editais
+    // marcados "aberta" com prazo meses no passado. O prazo manda.
+    if (dias < 0) continue
+    if (dias <= 7) g.estaSemana.push(e)
+    else if (dias <= 30) g.proximasSemanas.push(e)
+    else g.maisAdiante.push(e)
+  }
+  const porPrazo = (a: Edital, b: Edital) =>
+    (a.inscricaoFim ?? '').localeCompare(b.inscricaoFim ?? '')
+  g.estaSemana.sort(porPrazo)
+  g.proximasSemanas.sort(porPrazo)
+  g.maisAdiante.sort(porPrazo)
+  g.semPrazo.sort((a, b) => b.coletadoEm.localeCompare(a.coletadoEm))
+  return g
+}
+
+export function filtrar(
+  editais: Edital[],
+  f: { busca: string; fonte: Fonte | null; areas: string[] },
+): Edital[] {
+  const termo = normalizar(f.busca.trim())
+  return editais.filter(
+    (e) =>
+      (!f.fonte || e.fonte === f.fonte) &&
+      (f.areas.length === 0 || f.areas.some((a) => e.areas.includes(a))) &&
+      (!termo ||
+        normalizar(`${e.titulo} ${e.descricao ?? ''}`).includes(termo)),
+  )
 }

@@ -1,5 +1,14 @@
 import { describe, expect, test } from 'vitest'
-import { limparTitulo, normalizarCaixa, resumir } from '../lib/editais'
+import {
+  agruparPorPrazo,
+  diasAte,
+  filtrar,
+  limparTitulo,
+  nivelUrgencia,
+  normalizarCaixa,
+  resumir,
+} from '../lib/editais'
+import type { Edital } from '../scraper/schema'
 
 describe('limparTitulo', () => {
   test('separa o prefixo burocrático do CNPq do assunto', () => {
@@ -79,5 +88,132 @@ describe('resumir', () => {
 
   test('não mexe em texto que já cabe', () => {
     expect(resumir('Texto curto', 100)).toBe('Texto curto')
+  })
+})
+
+const AGORA = Date.parse('2026-07-20T12:00:00.000Z')
+
+function edital(over: Partial<Edital> = {}): Edital {
+  return {
+    id: 'x',
+    fonte: 'cnpq',
+    titulo: 'Título',
+    url: 'https://exemplo.br/a',
+    situacao: 'aberto',
+    areas: ['geral'],
+    ia: false,
+    coletadoEm: '2026-07-20T00:00:00.000Z',
+    ...over,
+  }
+}
+
+describe('diasAte', () => {
+  test('conta dias de calendário no fuso de São Paulo', () => {
+    expect(diasAte('2026-07-29T23:59:59.000Z', AGORA)).toBe(9)
+  })
+
+  test('o último dia é zero, não um', () => {
+    expect(diasAte('2026-07-20T23:59:59.000Z', AGORA)).toBe(0)
+  })
+
+  test('prazo vencido é negativo', () => {
+    expect(diasAte('2026-07-18T23:59:59.000Z', AGORA)).toBe(-2)
+  })
+})
+
+describe('nivelUrgencia', () => {
+  test('respeita os limites exatos das faixas', () => {
+    expect(nivelUrgencia(0)).toBe('critico')
+    expect(nivelUrgencia(3)).toBe('critico')
+    expect(nivelUrgencia(4)).toBe('proximo')
+    expect(nivelUrgencia(14)).toBe('proximo')
+    expect(nivelUrgencia(15)).toBe('neutro')
+  })
+
+  test('sem prazo é neutro', () => {
+    expect(nivelUrgencia(null)).toBe('neutro')
+  })
+})
+
+describe('agruparPorPrazo', () => {
+  test('distribui pelos quatro grupos', () => {
+    const g = agruparPorPrazo(
+      [
+        edital({ id: 'a', inscricaoFim: '2026-07-25T23:59:59.000Z' }), // 5d
+        edital({ id: 'b', inscricaoFim: '2026-08-10T23:59:59.000Z' }), // 21d
+        edital({ id: 'c', inscricaoFim: '2026-12-01T23:59:59.000Z' }), // >30d
+        edital({ id: 'd' }), // sem prazo
+      ],
+      AGORA,
+    )
+    expect(g.estaSemana.map((e) => e.id)).toEqual(['a'])
+    expect(g.proximasSemanas.map((e) => e.id)).toEqual(['b'])
+    expect(g.maisAdiante.map((e) => e.id)).toEqual(['c'])
+    expect(g.semPrazo.map((e) => e.id)).toEqual(['d'])
+  })
+
+  test('descarta prazo vencido mesmo com situação "aberto" na origem', () => {
+    // 6 editais da FINEP chegam assim: situacao aberta, prazo no passado.
+    const g = agruparPorPrazo(
+      [edital({ id: 'velho', inscricaoFim: '2026-05-28T23:59:59.000Z' })],
+      AGORA,
+    )
+    expect(g.estaSemana).toHaveLength(0)
+    expect(g.proximasSemanas).toHaveLength(0)
+    expect(g.maisAdiante).toHaveLength(0)
+    expect(g.semPrazo).toHaveLength(0)
+  })
+
+  test('descarta encerrado declarado pela fonte', () => {
+    const g = agruparPorPrazo([edital({ situacao: 'encerrado' })], AGORA)
+    expect(g.semPrazo).toHaveLength(0)
+  })
+
+  test('ordena por prazo crescente dentro do grupo', () => {
+    const g = agruparPorPrazo(
+      [
+        edital({ id: 'depois', inscricaoFim: '2026-07-26T23:59:59.000Z' }),
+        edital({ id: 'antes', inscricaoFim: '2026-07-22T23:59:59.000Z' }),
+      ],
+      AGORA,
+    )
+    expect(g.estaSemana.map((e) => e.id)).toEqual(['antes', 'depois'])
+  })
+
+  test('sem prazo vem do mais recentemente coletado para o mais antigo', () => {
+    const g = agruparPorPrazo(
+      [
+        edital({ id: 'antigo', coletadoEm: '2026-07-01T00:00:00.000Z' }),
+        edital({ id: 'novo', coletadoEm: '2026-07-19T00:00:00.000Z' }),
+      ],
+      AGORA,
+    )
+    expect(g.semPrazo.map((e) => e.id)).toEqual(['novo', 'antigo'])
+  })
+})
+
+describe('filtrar', () => {
+  const lista = [
+    edital({ id: 'saude', areas: ['saude'], titulo: 'Endometriose' }),
+    edital({ id: 'agro', areas: ['agro'], fonte: 'finep', titulo: 'Milho' }),
+  ]
+
+  test('sem filtro devolve tudo', () => {
+    expect(filtrar(lista, { busca: '', fonte: null, areas: [] })).toHaveLength(2)
+  })
+
+  test('busca ignora acento e caixa', () => {
+    const r = filtrar(lista, { busca: 'ENDOMETRIOSE', fonte: null, areas: [] })
+    expect(r.map((e) => e.id)).toEqual(['saude'])
+  })
+
+  test('áreas funcionam como OU', () => {
+    const r = filtrar(lista, { busca: '', fonte: null, areas: ['saude', 'agro'] })
+    expect(r).toHaveLength(2)
+  })
+
+  test('fonte e área se combinam como E', () => {
+    const r = filtrar(lista, { busca: '', fonte: 'finep', areas: ['saude'] })
+    expect(r).toHaveLength(0)
   })
 })
