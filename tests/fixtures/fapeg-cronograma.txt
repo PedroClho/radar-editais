@@ -1,0 +1,650 @@
+CHAMADA PÚBLICA FAPEG N° 12/2026
+EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026
+1ª Retificação
+1. DISPOSIÇÕES GERAIS
+1.1. A Fundação de Amparo à Pesquisa do Estado de Goiás - FAPEG, conforme decisão de seu Conselho
+Superior, e em conformidade com os dispositivos da Lei Federal nº 10.973/04, das Leis Estaduais n°
+16.690/09 e nº 23.664/25 e dos Decretos Estaduais nº 9.506/19 e nº 9.597/20, e da Resolução Normativa
+n° 01/23 da FAPEG torna público o lançamento da presente Chamada.
+1.2. A Chamada ERC-CONFAP 2026 está inserida no âmbito do Acordo de Implementação assinado entre
+a Comissão Europeia e o Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (CONFAP),
+sendo a Fundação de Amparo à Pesquisa do Estado de Goiás (FAPEG) signatária do Termo de Adesão à
+Chamada ERC-CONFAP 2026.
+1.3. As inscrições para esta Chamada deverão ser encaminhadas ao sítio eletrônico do CONFAP e também
+via Plataforma Sparkx-FAPEG. As propostas que não forem encaminhadas ao CONFAP e à FAPEG serão
+automaticamente desclassificadas.
+1.4. As normas apresentadas pela FAPEG nesta chamada complementar apresentam alinhamento com a
+chamada ERC-CONFAP 2026, e são partes integrantes dos critérios para elaboração de proposta,
+submissão, recebimento e execução dos projetos fomentados por esta Fundação.
+1.5. A Chamada receberá propostas em todas as áreas do conhecimento.
+1.6. Todos os proponentes devem ter cadastro na Plataforma Sparkx-FAPEG (para submissão e
+acompanhamento das análises e contratação das propostas).
+2. CRONOGRAMA1
+ATIVIDADE DATA
+Submissões na Plataforma do CONFAP Até 10/08/2026
+Publicação da Chamada Pública FAPEG N°
+12/2026
+11/06/2026
+Limite para impugnação da Chamada Pública
+FAPEG n° 12/2026
+Até 05 dias úteis após a publicação da
+Chamada Pública
+Limite para Submissão das propostas na
+Plataforma Sparkx-FAPEG
+até às 17:00 horas do dia 10/08/2026
+Publicação do Resultado Preliminar da etapa I -
+enquadramento
+A partir de outubro de 2026
+Prazo para interposição de recurso ao
+Resultado Preliminar da etapa I -
+enquadramento
+Até 5 dias úteis após publicação do
+resultado preliminar
+Publicação do Resultado Final da etapa I - A partir de outubro de 2026
+1 1ª Retificação (08/07/2026)
+
+-- 1 of 15 --
+
+enquadramento
+Publicação do Resultado Preliminar da etapa II
+- análise de mérito
+A partir de outubro de 2026
+Prazo para interposição de recurso ao
+Resultado Preliminar da etapa II - análise de
+mérito
+Até 5 dias úteis após publicação do
+resultado preliminar
+Publicação do Resultado Final da etapa II -
+análise de mérito
+A partir de outubro de 2026
+Limite para inclusão da documentação para
+contratação na Plataforma Sparkx
+Até 5 dias úteis após publicação do
+resultado final
+Prazo para conclusão dos procedimentos de
+formalização de termo de outorga pela FAPEG
+Entre 30 e 90 dias após o término do prazo
+para inclusão da documentação para
+contratação, de acordo com programação a
+ser divulgada no resultado final
+3. OBJETIVOS
+3.1. Fomentar o engajamento de pesquisadores sediados no estado de Goiás em redes de cooperação
+internacional no âmbito do Horizon Europe 2021-2027.
+3.2. Apoiar a mobilidade de pesquisadores de Instituições de Ensino Superior (IES) públicas ou privadas,
+sem fins lucrativos, ou comunitárias, ou de Instituições de Ciência e Tecnologia (ICTs) sediadas no estado
+de Goiás, para participarem de projetos de pesquisa fomentados pelo Conselho Europeu de Pesquisa
+(ERC).
+4. DIRETRIZES GERAIS
+4.1. As diretrizes gerais para elaboração e submissão de propostas da Chamada ERC-CONFAP 2026 podem
+ser consultadas no sítio eletrônico do CONFAP.
+4.2. Os interessados em participar de projetos de pesquisa financiados pelo ERC deverão manifestar
+interesse registrando-se no portal on-line https://sistema.confap.org.br/register e preenchendo as
+informações solicitadas.
+4.3. O acesso à lista do ERC não é automático e somente após análise do CONFAP será liberado para acesso
+às informações, como a descrição dos projetos financiados pelo ERC e respectivos contatos.
+4.4. Caberá ao pesquisador do estado de Goiás contatar o Pesquisador Principal (PI) do projeto financiado
+pelo ERC para verificar a possibilidade de se juntar à equipe de pesquisa, bem como definir conjuntamente
+um Plano de Trabalho e condições relacionadas.
+4.5. As propostas podem ser enviadas também em parceria com projetos financiados pelo ERC que não
+estão incluídos na lista disponibilizada no portal, desde que a proposta apresentada contenha
+informações sobre o projeto ERC.
+4.6. Os projetos financiados pelo ERC, que estão abertos a acolher pesquisadores de Goiás, cobrem uma
+vasta gama de áreas científicas e foram selecionados pela Comissão Europeia e pelo ERC, nos seguintes
+painéis de avaliação:
+A. Biologia Molecular e Estrutural e Bioquímica
+B. Genética, Genômica, Bioinformática e Biologia de Sistemas
+
+-- 2 of 15 --
+
+C. Biologia Celular e do Desenvolvimento
+D. Fisiologia, Fisiopatologia e Endocrinologia
+E. Neurociências e Distúrbios neurais
+F. Imunidade e Infecção
+G. Ferramentas Diagnósticas, Terapias e Saúde Pública
+H. Biologia Evolutiva, Populacional e Ambiental
+I. Ciências da vida aplicadas e biotecnologia não médica
+J. Matemática
+K. Constituintes Fundamentais da Matéria
+L. Física de matéria condensada
+M. Ciências Químicas, Físicas e Analíticas
+N. Química Sintética e Materiais
+O. Ciência da Computação e Informática
+P. Engenharia de Sistemas e Comunicação
+Q. Engenharia de Produtos e Processos
+R. Ciências do Universo
+S. Ciência do Sistema Terrestre
+T. Mercados, Indivíduos e Instituições
+U. Instituições, Valores, Crenças e Comportamento
+V. Meio Ambiente, Espaço e População
+W. A mente humana e sua complexidade
+X. Culturas e Produção Cultural
+Y. O estudo do passado humano
+Z. Sinergia
+5. DIRETRIZES FAPEG
+5.1. Serão aceitas, exclusivamente, propostas de Pesquisadores/Pesquisadoras com o título de doutor(a),
+que atuem em Instituições de Ensino Superior (IES) públicas ou privadas, sem fins lucrativos, ou
+comunitárias, ou em Instituições de Ciência e Tecnologia (ICTs) sediadas no estado de Goiás.
+5.2. Em nenhuma hipótese será permitida a prorrogação da execução das propostas para além dos 12
+(doze) meses estipulados por esta Chamada Pública, a contar da assinatura do Termo de Outorga (anexo
+único deste edital).
+5.3. As dúvidas sobre o fomento da FAPEG podem ser enviadas ao e-mail:
+atendimento.fapeg@goias.gov.br.
+6. RECURSOS FINANCEIROS
+6.1. O financiamento desta Chamada será realizado com recursos provenientes do Tesouro Estadual
+(Programa 1054 – Goiás do Crescimento e do Empreendedorismo; Ação 2397 – Concessão de Auxílio em
+CTI), da ordem correspondente a R$ 200.000,00 (duzentos mil reais), definidos na programação
+orçamentária e financeira da FAPEG.
+6.2. Os recursos de custeio têm como Natureza de Despesa 3.3.90.20.03 e Fonte de Recurso 15000100.
+6.3. Serão aprovadas até 4 (quatro) propostas com o limite orçamentário de R$ 50.000,00 (cinquenta mil
+reais) cada.
+
+-- 3 of 15 --
+
+6.4. Em caso de alta demanda qualificada, a FAPEG poderá, a seu critério, realizar suplementação
+orçamentária, conforme disponibilidade orçamentária e financeira.
+6.5. O prazo para liberação de recurso será de até 30 dias após a assinatura do Termo de Outorga (anexo
+único deste edital) pelo beneficiário.
+6.6. O desembolso financeiro será feito em parcela única, via cartão BB pesquisa.
+7. ITENS FINANCIÁVEIS
+7.1. São itens financiáveis no âmbito deste edital:
+a. Passagens aéreas internacionais em classe econômica;
+b. Diárias internacionais; os valores das diárias internacionais da FAPEG são baseados no CNPq e
+estão disponíveis em https://www.gov.br/cnpq/pt-br/acesso-a-informacao/bolsas-e-
+auxilios/auxilios-1/tabela- de-valores-diarias-para-auxilios
+c. Seguro viagem.
+7.2. Não são itens financiáveis:
+a. Pagamento, a qualquer título, a servidor da administração pública, ou empregado de empresa
+pública ou de sociedade de economia mista, por serviços de consultoria ou assistência técnica;
+b. Pagamento de cachê ou similares;
+c. Despesas de rotina como contas de energia, água, telefone, correio, reprografia e similares;
+d. Bens duráveis (equipamentos e materiais permanentes);
+e. Auxílio-Instalação;
+f. Pagamento de despesas com empresas de turismo, retirada de passaporte e/ou vistos.
+7.3. As propostas deverão obedecer às regulamentações previstas na Resolução Normativa nº 01/2023
+(normas para análise de prestação de contas e fiscalização e normas para aplicação de recursos e
+prestação de contas), disponíveis no endereço
+http://www.fapeg.go.gov.br/fapeg/legislacao/resolucoes/.
+8. SUBMISSÃO DA PROPOSTA
+8.1. A submissão deve ser realizada via CONFAP e via FAPEG.
+8.2. As propostas devem ser submetidas exclusivamente através da plataforma Sparkx-FAPEG.
+8.3. Os documentos da proposta deverão ser enviados em arquivo único no formato PDF (não editável) e
+deve-se respeitar, criteriosamente, a ordem elencada abaixo. A lista de documentos a serem anexados
+são:
+a. Súmula Curricular do proponente e do pesquisador anfitrião de acordo com o modelo FAPEG,
+disponível em http://www.fapeg.go.gov.br/orientacoes-para-projetos/;
+b. Plano de Trabalho, instalações e recursos que o Pesquisador Principal financiado pelo ERC e a
+Instituição Anfitriã fornecerão ao pesquisador visitante do Brasil;
+
+-- 4 of 15 --
+
+c. Carta de ciência da Universidade ou Centro de Pesquisas de origem do pesquisador do
+Brasil;
+d. Carta de aceite do Pesquisador Principal financiado pelo ERC, indicando o seu
+consentimento em integrar o Pesquisador do Brasil na sua equipe, na sua proposta e Plano de
+Trabalho;
+e. Carta de aceite da Instituição de Anfitriã na Europa, que confirmará a disponibilidade para
+receber o pesquisador do Brasil nos termos e prazos previstos no Plano de Trabalho.
+f. Demonstrativo de submissão da Proposta via CONFAP.
+8.4. Propostas encaminhadas fora do formato estipulado por este Edital serão indeferidas e excluídas do
+processo de análise e julgamento. Lista-se algumas situações em que pode ocorrer o não enquadramento
+da proposta:
+a. Submissão não realizada pelo proponente;
+b. Documentação submetida de forma incompleta;
+c. Propostas fora do formato estipulado;
+d. Submissão de documentos editáveis (formato Word, Excel etc.). Modelos em PDF editáveis
+disponibilizados para submissão devem ser salvos e encaminhados em formato não editável.
+8.5. Serão desconsideradas as propostas não concluídas, não enviadas e/ou não validadas pela Plataforma
+Sparkx-FAPEG. A FAPEG não se responsabilizará por eventuais problemas técnicos no processo de
+transmissão dos dados;
+8.6. Recomenda-se o envio das propostas com antecedência, uma vez que a FAPEG não se responsabilizará
+por propostas não submetidas em decorrência de eventuais problemas técnicos ou congestionamento do
+sistema eletrônico de submissão;
+8.7. As informações prestadas no formulário de inscrição na Plataforma Sparkx-FAPEG são de inteira
+responsabilidade do proponente, dispondo a FAPEG do direito de excluir da análise aqueles que
+preencherem os formulários com informações incompletas, incorretas ou inverídicas;
+8.8. Será aceita a submissão de uma única proposta por proponente. Caso se verifique a submissão de
+propostas idênticas por proponentes distintos, todas serão desclassificadas.
+9. ANÁLISE E JULGAMENTO
+9.1. As propostas serão analisadas por um Comitê Científico nomeado pela Presidência da FAPEG, a partir
+dos critérios apresentados a seguir:
+Critérios de Avaliação Peso Nota
+1. Análise curricular do proponente. 3 0-10
+2. Análise curricular do pesquisador anfitrião. 3 0-10
+3. Análise do Plano de Trabalho. 4 0-10
+9.2. Para fins de composição da nota o Comitê Executivo poderá utilizar até 02 (duas) casas decimais;
+9.3. A nota final da Proposta consistirá na média ponderada dos critérios de avaliação;
+9.4. A proposta que receber nota 0 (zero) em qualquer um dos critérios de avaliação será automaticamente
+
+-- 5 of 15 --
+
+desclassificada;
+9.5. Após análise e julgamento das propostas segundo os critérios de avaliação, o Comitê Executivo emite
+parecer conjunto recomendando, ou não, cada proposta para a Diretoria Científica da FAPEG. O parecer
+será registrado em ata, assim como outras informações julgadas pertinentes;
+9.6. A nota mínima para recomendação da Proposta deverá ser igual ou maior que 7,0 (sete);
+9.7. Com vistas à interiorização da atividade de pesquisa no Estado de Goiás, a FAPEG priorizará, em caso
+de empate na ordem classificatória, propostas oriundas de IES/ICTIs localizadas fora da região
+metropolitana de Goiânia.
+9.8. ETAPAS DA ANÁLISE
+9.8.1. ETAPA I – Enquadramento da Proposta: Nesta etapa as propostas submetidas serão analisadas pelo
+corpo técnico da FAPEG. Serão analisados se o(a) proponente cumpre o requisito do subitem “a” das
+diretrizes e se a documentação exigida para submissão no item 08 está completa.
+a. Esta etapa é eliminatória e todas as propostas que não atenderem aos critérios de elegibilidade
+e/ou apresentarem insuficiência de informações serão desclassificadas.
+b. Nesta etapa não será realizada a análise de mérito das propostas.
+9.8.2. ETAPA II - Análise de Mérito: Nesta fase, o Comitê Científico nomeado pela Presidência da FAPEG
+irá analisar os projetos a partir dos critérios contidos no item 09 e seus respectivos subitens. A Diretoria
+Científica e de Inovação da FAPEG avaliará a ata de julgamento do Comitê Científico e validará o resultado,
+ou solicitará complementação de informações que julgar pertinentes.
+10. DIVULGAÇÃO DOS RESULTADOS E PROTEÇÃO DOS DADOS PESSOAIS
+10.1. Os resultados preliminar e final contendo as propostas selecionadas e o cadastro de reserva deste
+edital serão divulgados no site da FAPEG, e seus extratos publicados no Diário Oficial do Estado de Goiás.
+10.2. A divulgação dos resultados não incluirá as notas individuais dos candidatos aprovados, em atenção
+à Lei Geral de Proteção de Dados - LGPD (Lei nº 13.709/2018); o(a) proponente poderá consultar suas
+notas individualmente na Plataforma Sparkx- FAPEG, cujo acesso será realizado de forma segura e restrita,
+garantindo a privacidade das informações pessoais.
+10.3. O resultado final da presente Chamada Pública tem validade de 12 meses podendo ser prorrogado
+por igual período.
+11. RECURSO CONTRA O RESULTADO PRELIMINAR
+11.1. Eventuais recursos apresentados contra os resultados preliminares das etapas I e II deverão observar
+o prazo previsto no Cronograma (item 2 deste edital) e devem ser enviados via Plataforma Sparkx-FAPEG
+(recursos enviados por outros meios que não o indicado não serão analisados).
+11.2. A Presidência da FAPEG será responsável pelo julgamento do recurso contra o enquadramento e o
+resultado preliminar da análise de mérito.
+11.3. O recebimento do recurso ocorrerá apenas sob o efeito devolutivo.
+12. CONTRATAÇÃO
+
+-- 6 of 15 --
+
+12.1. Os documentos para contratação das propostas selecionadas devem ser enviados nos períodos
+previstos no Cronograma do edital. O(A) proponente cuja proposta seja recomendada ao final das
+etapas de análise e julgamento deverão anexar os seguintes documentos na plataforma Sparkx durante
+a fase de contratação:
+a. Cópia do documento de identidade;
+b. Cópia do CPF;
+c. Cópia do comprovante de residência atualizado;
+d. Certidão Negativa de Débito junto à Receita Estadual;
+e. Certidão negativa do CADIN estadual;
+f. Certidão negativa do Cadastro Nacional de Condenações Cíveis por Ato de Improbidade
+Administrativa – CNJ;
+g. Certidão de Quitação Eleitoral da Justiça Eleitoral no caso de brasileiro nato ou naturalizado . No
+caso de estrangeiro com visto permanente ou temporário, Certidão Negativa de Alistamento
+Eleitoral;
+h. Certidão Criminal da Justiça Estadual
+i. Certidão Criminal da Justiça Federal
+j. Declaração de que não é parente, em linha reta ou colateral, por consanguinidade ou afinidade,
+até o terceiro grau, de ocupantes de cargos de direção superior da FAPEG (art. 84, IV, do Decreto
+9.506/19);
+k. Comprovante de vínculo, empregatício ou estatutário, com IES ou ICTI sediadas no estado de
+Goiás;
+l. Cadastro no Sistema SEI! Estadual (http://sei.goias.gov.br/como_se_cadastrar- externo.php).
+12.2. Propostas recomendadas que não cumpram os requisitos para contratação serão prontamente
+desclassificadas, e neste caso, serão convocadas as propostas pertencentes ao cadastro de reserva, de
+acordo com a ordem classificatória publicada pela FAPEG.
+13. IMPUGNAÇÃO DO EDITAL
+13.1. Decairão do direito de impugnar os termos desta Chamada aqueles que os tendo aceitado, sem
+objeção, venham apontar posteriormente ao julgamento, eventuais falhas ou imperfeições, hipótese em
+que tal comunicação não terá efeito de recurso;
+13.2. A impugnação deverá ser dirigida à Presidência da FAPEG através de documento encaminhado pelo
+e-mail atendimento.fapeg@goias.gov.br no prazo de até 5 (cinco) dias úteis a partir da publicação do
+Edital.
+14. DO FORO
+14.1. Fica eleito pelas partes o foro da Comarca de Goiânia, capital do Estado de Goiás, ou, caso a
+instituição interveniente seja uma das entidades elencadas no art. 109, I, da Constituição da República,
+fica eleito o foro da Justiça Federal, Seção de Goiás, para dirimir as controvérsias decorrentes do presente
+Termo.
+
+-- 7 of 15 --
+
+15. DISPOSIÇÕES FINAIS
+15.1. Eventuais dúvidas relacionadas a este Edital deverão ser enviadas à FAPEG exclusivamente através
+do e-mail atendimento.fapeg@goias.gov.br, que serão respondidas no prazo máximo de dois dias úteis.
+As dúvidas podem ser enviadas desde a publicação da Chamada até a sua contratação e prestação de
+contas final.
+15.2. As apresentações (oral ou pôster) dos trabalhos apoiados pela presente Chamada deverão citar,
+obrigatoriamente, o apoio da FAPEG.
+15.3. A qualquer tempo, a presente Chamada poderá ser alterada, revogada ou anulada, no todo ou em
+parte, seja por decisão unilateral da FAPEG, seja por motivo de interesse público ou exigência legal, sem
+que isso implique direito a indenização ou reclamação de qualquer natureza.
+15.4. A Presidência da FAPEG poderá corrigir eventuais erros formais e materiais contidos neste Edital
+através da publicação de retificações no Diário Oficial do Estado de Goiás.
+15.5. A liberação dos recursos condiciona-se à disponibilidade financeira e orçamentária da FAPEG, de
+modo que o resultado desta Chamada não gera aos selecionados direito adquirido ao recebimento dos
+valores previstos. Eventual cancelamento ou suspensão do fomento, notadamente em razão de
+necessário contingenciamento de despesas, não gera direito a qualquer tipo de indenização, podendo o
+ajuste porventura celebrado ser rescindido unilateralmente a qualquer tempo.
+15.6. Cabe à direção da FAPEG a análise e decisão sobre casos omissos e/ou questões excepcionais não
+previstas neste Edital.
+Marcos Fernando Arriel
+Presidente da FAPEG
+
+-- 8 of 15 --
+
+ESTADO DE GOIÁS
+FUNDAÇÃO DE AMPARO A PESQUISA DO ESTADO DE GOIÁS
+DIRETORIA DE PROGRAMAS E MONITORAMENTO
+ANEXO ÚNICO
+MINUTA - TERMO DE OUTORGA
+AUXÍLIO À PESQUISA
+CHAMADA PÚBLICA ou CONVÊNIO:
+PROCESSO ADMINISTRATIVO SEI! Nº:
+IDENTIFICAÇÃO DO PROJETO:
+BENEFICIÁRIO DO FOMENTO/COORDENADOR(A): Sr(a). ___; carteira de identidade
+nº___; CPF nº___; endereço:___ , vinculado à instituição____.
+INSTITUIÇÃO DE EXECUÇÃO DO PROJETO:____; endereço: ___; CNPJ nº____;
+representante legal: ____.
+A FUNDAÇÃO DE AMPARO À PESQUISA DO ESTADO DE GOIÁS – FAPEG, fundação pública integrante da
+administração indireta do Estado de Goiás, instituída pela Lei n° 23.664/2025, com sede na Rua Dona Maria
+Joana, Quadra F-14, Lote área, nº 150, Setor Sul, Goiânia – GO, CEP: 74083-140, inscrita no CNPJ sob o n.º
+08.156.102/0001-02, neste ato representada por seu Presidente, _________, concede auxílio à pesquisa ao
+(à) beneficiário(a) acima qualificado(a), nos termos da chamada pública, convênio ou outra natureza de ajuste
+concernente, com objetivos e condições estipulados no presente Termo de Outorga de Auxílio e seus anexos.
+CLÁUSULA PRIMEIRA – DO OBJETO E DA LEGISLAÇÃO APLICÁVEL
+PARÁGRAFO PRIMEIRO – Constitui objeto deste instrumento os direitos, deveres, prerrogativas e sujeições
+das partes, no que se refere à concessão do auxílio para o desenvolvimento do projeto XXXXXXXXX.
+PARÁGRAFO SEGUNDO – Aplica-se a este instrumento as seguintes disposições legais: Constituição Federal,
+artigos 25 a 30, e artigos 92 e 93 da Constituição do Estado de Goiás; Lei Federal n.º 10.973/04; Decreto
+Estadual n.º 9.506/19; Lei Complementar Federal nº 101/2000; Lei Estadual n° 23.664/2025; Lei Estadual n.
+16.690/09; Lei Estadual nº 21.615/2022; Resoluções e demais atos normativos da FAPEG, naquilo que forem
+aplicáveis, além de, subsidiariamente, o Código Civil brasileiro.
+CLÁUSULA SEGUNDA - DO VALOR DO AUXÍLIO CONCEDIDO
+O Valor do presente Termo será fixado em R$ XXX <(XXX)>, aplicado conforme disposições constantes na
+chamada pública, convênio ou outro ajuste concernente, e o plano de trabalho aprovado, partes anexas e
+integrante deste termo, por conta da por conta do Programa 1054; Ação 2397; Natureza 3.3.90.20.03; Fonte
+15000100.
+PARÁGRAFO ÚNICO: A partir da data da assinatura deste instrumento, o beneficiário passará à condição de
+GESTOR da verba pública, devendo prestar contas de sua utilização, na forma instituída pelo ordenamento.
+CLÁUSULA TERCEIRA - DA LIBERAÇÃO DOS RECURSOS
+A liberação dos recursos tratados neste instrumento iniciar-se-á após a sua assinatura e publicação de seu
+extrato no Diário Oficial do Estado de Goiás, condicionado à disponibilidade financeira da FAPEG e/ou de
+
+-- 9 of 15 --
+
+parceiro, nos casos de celebração de convênio com a Fundação, cuja utilização deve ocorrer conforme a
+proposta aprovada e seu plano de trabalho, sendo fator impeditivo à concessão e liberação do apoio
+financeiro aqui tratado a inadimplência do proponente com a FAPEG, com a Fazenda Pública do Estadual e
+Federal.
+PARÁGRAFO PRIMEIRO – Uma vez liberados, os recursos serão repassados integralmente (parcela única) após
+a assinatura do termo de outorga. Os recursos financeiros serão disponibilizados por meio de depósito
+realizado em conta bancária específica aberta pelo beneficiário em instituição bancária pública, ou em centro
+de custo, por intermédio de cartão pesquisa (Cartão BB Pesquisa), aberto pela FAPEG para este propósito, e
+cuja utilização ocorrerá exclusivamente para a movimentação dos valores aqui tratados.
+PARÁGRAFO SEGUNDO – No caso de previsão em chamada pública ou convênio sobre necessidade de
+abertura de conta específica, fica o beneficiário responsável por providenciar toda a documentação
+necessária, devendo utilizar a conta exclusivamente para recebimento e movimentação dos recursos
+financeiros objeto deste instrumento e, assumindo, caso existam, as despesas com tarifas bancárias.
+PARÁGRAFO TERCEIRO – A concessão do apoio será cancelada ou suspensa pela FAPEG, por ocorrência,
+durante sua execução, diante do descumprimento das normas relativas à prestação de contas do fomento
+recebido e da ocorrência de fatos incompatíveis com a chamada pública, cláusulas conveniais, conforme o
+caso, previsões do plano de trabalho e com o ordenamento, sem prejuízo de outras providências cabíveis,
+eximindo-se a FAPEG de qualquer responsabilidade em caso de disputa judicial decorrente da inobservância
+ao regramento.
+PARÁGRAFO QUARTO – O Beneficiário declara conhecer na íntegra as condições estipuladas pela chamada
+pública ou convênio, se for o caso, neste termo de outorga e na Resolução nº 1/2023/FAPEG, de 26 de
+dezembro de 2023, pelo que manifesta sua irrestrita concordância.
+CLÁUSULA QUARTA - DA VIGÊNCIA DESTE TERMO
+A vigência do presente termo terá início com a sua assinatura, definido o período de 12 (doze) meses, que,
+em nenhuma hipótese, ultrapassará o período de vigência de projeto, convênio ou outro instrumento
+associado ao presente auxílio, quando houver, sendo este prazo improrrogável.
+PARÁGRAFO PRIMEIRO - A FAPEG poderá extinguir a presente concessão de auxílio, a qualquer momento,
+seja por força de indisponibilidade financeira, seja por motivo de interesse público ou exigência legal. Nesses
+casos, não será devida qualquer indenização ao beneficiário.
+PARÁGRAFO SEGUNDO – A FAPEG prorrogará de ofício a vigência do instrumento antes do seu término
+quando tiver dado causa a atraso na liberação dos recursos, limitada a prorrogação ao exato período do
+atraso verificado.
+PARÁGRAFO TERCEIRO – O decurso de dias entre a assinatura do termo de outorga e a liberação de recursos
+pela FAPEG não é considerada como atraso se o repasse financeiro em questão tem sua ocorrência no mesmo
+mês em que se deu a assinatura do termo, ou no mês subsequente, em vista dos prazos necessários para o
+cumprimento dos procedimentos financeiros exigidos da FAPEG e do beneficiário para a efetivação do
+repasse.
+CLÁUSULA QUINTA - DAS OBRIGAÇÕES DAS PARTES
+I – OBRIGAÇÕES DO BENEFICIÁRIO DO AUXÍLIO
+a) realizar as atividades de pesquisa com total observância ao plano de trabalho do projeto de pesquisa
+aprovado pela FAPEG, responsabilizando-se pela sua execução direta e pela apresentação dos resultados nele
+previstos, em seminários, reuniões de trabalho e sempre que solicitado pela FAPEG devendo, ainda,
+participar de comitês de assessoramento e emitir pareceres científicos em sua área de atuação, desde que
+demandado pela FAPEG, mesmo após o período de vigência do presente termo;
+b) manter-se adimplente com a FAPEG e com a Fazenda Pública do Estado de Goiás, sob pena de
+cancelamento do fomento e manter todas as condições de qualificação, habilitação e idoneidade necessárias
+ao perfeito cumprimento do objeto do projeto, preservando atualizados seus dados cadastrais junto à FAPEG
+e aos órgãos competentes;
+c) comunicar à FAPEG, no prazo máximo de 10 (dez) dias, a ocorrência de quaisquer eventos que venham a
+
+-- 10 of 15 --
+
+prejudicar o andamento do projeto, assim como na hipótese de seu desligamento ou desvinculação da
+instituição executora do projeto;
+d) observar em sua execução financeira as normas constantes da Resolução Normativa nº 1, de 26 de
+dezembro de 2023, especialmente quanto a previsão de itens não financiáveis, a obrigatoriedade de
+promover a cotação de preços para aquisições de produtos e contratações de serviços e apresentação de
+certidão de regularidade fiscal frente ao estado do fornecedor ou prestador, além da devida apresentação
+dos documentos fiscais comprobatórios da execução de despesas com o projeto, a serem emitidos em seu
+nome e CPF, assumindo todas as obrigações legais decorrentes de tais contratações, não tendo elas qualquer
+vínculo com a FAPEG;
+e) prestar contas à FAPEG, com a apresentação de relatórios técnicos parciais e final, e relatórios de execução
+financeira parciais, quando for o caso, e final, para todos os casos, na forma, condições e prazos estipulados
+pela Resolução Normativa nº 1, de 26 de dezembro de 2023, e permitir que a FAPEG e os órgãos fiscalizadores
+do estado tenham acesso aos locais de execução do projeto, à documentação produzida e aos bens
+adquiridos para exames e vistorias;
+f) manter e conservar os bens duráveis para a pesquisa adquiridos com os recursos do auxílio à pesquisa,
+sendo os mesmos de sua responsabilidade, devendo-se observar os procedimentos obrigatórios relativos à
+destinação dos bens duráveis, previstos na Resolução nº 1/2023/FAPEG, de 26 de dezembro de 2023;
+g) adotar todas as providências que envolvam permissões e autorizações especiais de caráter ético ou legal,
+necessárias para a execução da proposta, inclusive atender e arquivar as recomendações exaradas pela
+Comissão Nacional de Ética em Pesquisa - CONEP/CNS/MS do Conselho Nacional de Saúde e pelos Comitês
+de Ética em Pesquisa – CEP;
+h) respeitar estritamente, quando utilizado, o regramento previsto para a utilização de cartão pesquisa (BB
+Pesquisa) disponibilizados pela FAPEG e pela instituição bancária, assumindo toda a responsabilidade
+relativas ao sigilo de senhas eletrônicas e à gestão dos recursos em conformidade com o regramento,
+devendo informar imediatamente ao banco eventuais ocorrências relativas à movimentação bancária em
+conta, informando conjuntamente a FAPEG e, nos casos necessários, à Polícia Civil, providenciando a
+lavratura de Boletim de Ocorrência ou Termo Circunstanciado de Ocorrência, procedendo aos devidos
+acompanhamentos relativos ao bloqueio do cartão pesquisa, até a solução da ocorrência, eximindo-se a
+FAPEG de qualquer responsabilidade por extravio, má-utilização, furto, roubo, clonagens, ausência de
+acompanhamento regular pelo beneficiário de sua movimentação financeiras e demais ocorrências
+relacionadas ao produto;
+i) restituir à FAPEG, no momento da prestação de contas final, ou em caso de cancelamento da pesquisa ou
+encerramento do projeto, o cartão magnético para que seja providenciado o seu cancelamento e inutilização;
+j) manter em arquivo exclusivo e disponível para a FAPEG, pelo prazo de 05 (cinco) anos após a aprovação
+das contas, cópias dos registros financeiros e contábeis e demonstrativos financeiros, utilizados na prestação
+de contas;
+k) fazer referência ao apoio recebido da FAPEG nos trabalhos técnicos ou científicos que resultem, total ou
+parcialmente, da concessão do auxílio aqui tratado.
+II – OBRIGAÇÕES DA INSTITUIÇÃO DE EXECUÇÃO DO PROJETO
+a) manter e conservar os bens duráveis para a pesquisa em sua posse observando os procedimentos
+estabelecidos na Resolução nº 1/2023/FAPEG, de 26 de dezembro de 2023;
+b) permitir, excepcionalmente e devidamente justificado pelo beneficiário do fomento, a emissão de notas
+fiscais utilizando seu CNPJ em casos em que a venda não possa ser realizada em nome de pessoa física, tais
+como em importação direta e produtos controlados;
+III – OBRIGAÇÕES DA FAPEG
+a) repassar ao beneficiário do fomento os recursos financeiros previstos no plano de trabalho de seu projeto,
+de acordo com a sua disponibilidade financeira e com o cronograma de desembolsos;
+b) acompanhar e avaliar o cumprimento, pelo beneficiário, dos objetivos estabelecidos neste instrumento e
+no plano de trabalho, mediante análise e avaliação dos relatórios técnicos e financeiros parciais e finais das
+prestações de contas obrigatórias, bem como, mediante visitas, inspeções e acompanhamento realizados
+
+-- 11 of 15 --
+
+diretamente pela FAPEG ou por órgãos fiscalizadores do estado de Goiás.
+CLÁUSULA SEXTA – DAS VEDAÇÕES AO BENEFICIÁRIO DO FOMENTO
+I – emitir documentos fiscais (notas fiscais e cupons fiscais) utilizando o CNPJ da FAPEG;
+II – alterar o objeto da proposta, sendo permitidas alterações em plano de trabalho desde que observada a
+forma e as condições previstas na Resolução Normativa nº 1, de 26 de dezembro de 2023;
+III – realizar despesa anterior ou posterior ao prazo de duração do projeto de pesquisa ou sem saldo
+financeiro suficiente na data de emissão do documento fiscal, bem como realizar despesas não previstas no
+plano de trabalho do projeto, sendo admissível, para os casos em que o fato gerador da despesa ocorreu
+durante a vigência do projeto, o pagamento após o fim de sua vigência, desde que previsto em plano de
+trabalho e que tenha sido feito dentro do prazo limite para a entrega de relatório de prestação de contas à
+FAPEG;
+IV – realizar despesas com itens não financiáveis previstos na Resolução nº 1, de 26 de dezembro de 2023,
+da FAPEG, salvo se expressamente admitidas em chamada pública, convênio ou instrumento específico,
+devendo promover a devida adequação de seu plano de trabalho caso haja previsão de itens vedados,
+anteriormente à sua contratação pela FAPEG ou antes do início de sua execução, podendo a FAPEG, conforme
+o caso, proceder ao repasse de recursos ao projeto em valor menor, deduzindo os itens não financiáveis
+previstos;
+V – delegar no todo ou em parte a gestão dos recursos financeiros do projeto de pesquisa;
+VI – delegar o seu uso ou solicitar serviços eventualmente oferecidos pela instituição financeira que permita
+utilização de cartão magnético em funções não previstas na modalidade contratada, quando se tratar de
+cartão BB Pesquisa;
+VII – utilizar, nas movimentações com cartão magnético, terminais eletrônicos não pertencentes à instituição
+bancária contratada, sob pena do beneficiário do fomento responsabilizar-se pessoalmente pelas despesas
+e tarifas que essas utilizações acarretarem.
+CLÁUSULA SÉTIMA – DA PROPRIEDADE, CONTROLE E DESTINAÇÃO DOS BENS DURÁVEIS PARA PESQUISA
+Os bens gerados ou adquiridos com os recursos deste Termo de Outorga serão incorporados, desde sua
+aquisição, ao patrimônio da Instituição executora à qual o coordenador ou pesquisador beneficiado estiver
+vinculado, desde que seja instituição pública ou privada sem fins lucrativos.
+PARÁGRAFO PRIMEIRO – Será de responsabilidade do beneficiário e da instituição executora a incorporação
+do bem ao patrimônio da Instituição, devendo o beneficiário anexar à sua prestação de contas a
+documentação comprobatória da incorporação do bem ao patrimônio da mencionada instituição,
+responsabilizando-se por sua guarda, registro, manutenção, e por comunicar à FAPEG quaisquer fatos que
+possam interferir em sua posse, propriedade e valor.
+PARÁGRAFO SEGUNDO – Os bens somente poderão ser utilizados nas atividades correlatas com as finalidades
+da FAPEG, relacionadas à pesquisa, ciência, tecnologia e inovação, não sendo permitida a doação, alienação
+a terceiros, sendo que para os casos de desvio ou inutilização dos bens, o beneficiário e a instituição
+executora deverão ressarcir solidariamente à FAPEG, o valor correspondente do bem, mediante prévio
+procedimento administrativo para apuração de dolo ou culpa, sendo ainda possível a reposição do bem, com
+características compatíveis, para o cumprimento de sua finalidade.
+PARÁGRAFO TERCEIRO – Quando adquiridos com a participação de fundação de apoio, a titularidade sobre
+os bens observará o disposto em contrato ou convênio entre a instituição executora e a fundação de apoio.
+CLÁUSULA OITAVA – DOS DIREITOS DE PROPRIEDADE
+No caso das atividades realizadas originarem criações intelectuais passíveis de proteção, na forma de
+inovações tecnológicas, invenções, aperfeiçoamentos e novos conhecimentos aplicáveis às atividades
+econômicas produtivas, que propiciarem incrementos de seu desempenho, aumento da produtividade dos
+fatores envolvidos ou otimização do uso de recursos e insumos, as partes obedecerão às determinações da
+Lei nº 9.279, de 14 de maio de 1996, da Lei de inovação nº 10.973, de 02 de dezembro de 2004,
+regulamentada pelo Decreto estadual 9.506/19, Lei estadual 23.664/2025, observando-se, ainda, as demais
+disposições legais vigentes e as resoluções da FAPEG.
+
+-- 12 of 15 --
+
+CLÁUSULA NONA – DAS PUBLICAÇÕES CIENTÍFICAS
+As publicações científicas e qualquer outro meio de divulgação de trabalho de pesquisa, resultantes dessa
+concessão de auxílio financeiro, deverão citar, obrigatoriamente, o apoio da FAPEG.
+PARÁGRAFO PRIMEIRO – É vedada a utilização, nos empreendimentos resultantes deste termo, de nomes,
+símbolos ou imagens que caracterizem promoção pessoal de autoridades ou servidores públicos.
+PARÁGRAFO SEGUNDO – As ações publicitárias atinentes a projetos e obras financiadas, deverão observar
+rigorosamente as disposições contidas no § 1º do artigo 37 da Constituição Federal.
+PARÁGRAFO TERCEIRO – Resultados, opiniões, conclusões ou recomendações oriundas da atividade
+desenvolvida serão de exclusiva responsabilidade dos pesquisadores envolvidos, e não representarão os
+pontos de vista da FAPEG.
+CLÁUSULA DÉCIMA – DA CONFIDENCIALIDADE
+Todos os assuntos, dados, resultados, processos, produtos e informações decorrentes das atividades
+desenvolvidas no projeto de pesquisa aqui tratado são de natureza sigilosa, comprometendo-se as partes
+signatárias a respeitar o disposto na legislação aplicável, devendo manter sigilo sobre os resultados
+alcançados, sejam parciais ou finais, até que esses tenham sido adequadamente avaliados pelos envolvidos
+e os direitos devidamente reservados.
+CLÁUSULA DÉCIMA PRIMEIRA – DA PRESTAÇÃO DE CONTAS
+O rito de prestação de contas dos recursos do fomento consiste na ação de o beneficiário apresentar à FAPEG
+os Relatórios Técnicos Parciais (RTPs) e final (RTF), os Relatórios Financeiros Parciais (RFPs), nos casos
+exigidos, e o Relatório Financeiro Final (RFF), além da apresentação dos documentos comprobatórios que os
+acompanham, na forma e nos prazos previstos na Resolução nº 1/2023/FAPEG, de 26 de dezembro de 2023,
+cumprindo-lhe ainda observar as seguintes disposições:
+I – O Relatório Técnico Parcial (RTP) deverá ser entregue assim que alcançada a metade do prazo estabelecido
+para a execução do projeto, no caso de projetos com menos de 24 meses de duração, e anualmente, para os
+projetos com vigência superior a 24 meses, sendo o Relatório Técnico Final (RTF) e o Relatório Financeiro
+Final (RFF) entregues assim que encerrada a vigência do projeto, devendo-se sempre observar o limite
+máximo de 30 dias para a entrega, em cada caso, a contar do alcance do prazo de execução/vigência definido
+supra;
+II – Relatórios Financeiros Parciais (RFP) somente serão exigidos aos beneficiários de projetos no caso
+específico previsto na Resolução nº 1/2023/FAPEG, de 26 de dezembro de 2023, ou por determinação da
+FAPEG;
+III – Os relatórios técnicos devem se fazer acompanhar de textos, artigos, documentos técnicos e os relatórios
+financeiros devem se fazer acompanhar dos documentos comprobatórios da execução financeira, observada
+a forma e demais exigências previstas pela Resolução nº 1/2023/FAPEG, de 26 de dezembro de 2023, de
+modo a comprovar a correta execução do projeto;
+IV – Na análise da prestação de contas serão levados em consideração a Resolução nº 1/2023/FAPEG, de 26
+de dezembro de 2023, os termos definidos em chamada pública, ou convênio, conforme o caso, a proposta
+aprovada, o termo de outorga, os princípios constitucionais da economicidade, moralidade, impessoalidade,
+eficiência, legalidade, o interesse público e a eficácia;
+V – A responsabilidade pela prestação de contas é pessoal, indelegável e intransferível.
+VI – Os saldos remanescentes em conta ou eventuais saques em espécie cujo montante não tenha sido
+totalmente utilizado, deverão ser devolvidos à FAPEG/tesouro estadual, na forma determinada pela
+Fundação e por ela indicada ao beneficiário;
+CLÁUSULA DÉCIMA SEGUNDA – DAS SANÇÕES
+A violação de qualquer cláusula do presente termo ou a rejeição de prestação de contas final importará em
+suspensão e/ou cancelamento do recurso concedido e na retirada dos bens adquiridos, além da suspensão
+do beneficiário, e responsáveis, do direito de pleitear recursos à Fundação e outras sanções administrativas,
+civis e penais cabíveis, podendo ser determinada a devolução ao erário do fomento recebido e abertura de
+
+-- 13 of 15 --
+
+tomada de contas especial, nos casos em que:
+I – não sejam suficientes o alcance das metas previstas em plano de trabalho sem apresentação de
+justificativa ou demonstração da ocorrência de caso fortuito, força maior ou incidência de risco tecnológico;
+II – a utilização de parcela de recursos disponibilizada ao projeto pela FAPEG não atinja o patamar mínimo de
+execução de pelo menos 25%, a ser verificado quando da entrega de relatório parcial;
+III – os recursos concedidos forem utilizados em finalidade diversa daquela descrita na proposta aprovada e
+seu plano de trabalho, sem a devida adequação da impropriedade, de modo a não ser possível à FAPEG excluir
+a hipótese de dano ao erário;
+IV – não se observe os prazos estabelecidos pela Resolução nº 1/2023/FAPEG, de 26 de dezembro de 2023,
+para a entrega de relatórios ou para a promoção das devidas adequações de impropriedades, quando for o
+caso, decorridos mais de 30 (trinta) dias além do prazo máximo definido, o que caracterizará a omissão do
+dever de prestar contas;
+V – seja determinada a rejeição advinda de apuração formal procedida por órgãos de controle, de
+investigação ou persecução criminal.
+CLÁUSULA DÉCIMA TERCEIRA – DA ALTERAÇÃO DO TERMO DE OUTORGA
+Desde que não modifiquem o objeto da pesquisa inicialmente proposto, quaisquer alterações no que foi aqui
+estabelecido só poderão ser implementadas mediante a formalização de termo aditivo. A proposta de
+modificação deverá ser apresentada em, no mínimo, 60 (sessenta) dias antes do término da vigência deste
+termo de outorga, e sua implementação fica condicionada à aprovação pela FAPEG.
+CLÁUSULA DÉCIMA QUARTA – DA DENÚNCIA, SUSPENSÃO E DA RESCISÃO
+Independentemente de qualquer interpelação, o presente termo poderá ser rescindido pela FAPEG no caso
+de inadimplemento de quaisquer das cláusulas ou condições constantes deste instrumento, ou pela
+ocorrência de fatos supervenientes impeditivos à perfeita e completa conclusão das atividades previstas na
+Proposta aprovada e seu plano de trabalho, e, ainda:
+I – Poderá a FAPEG suspender o benefício aqui tratado a seu exclusivo critério e a qualquer tempo, sem que
+disso resulte qualquer dever de indenizar;
+II – O Beneficiário do Fomento poderá desistir do auxílio aqui tratado, desde que notifique formalmente a
+FAPEG, e proceda nos 60 dias seguintes, à prestação de contas final e restitua integralmente os recursos
+repassados, atualizados monetariamente e acrescidos de juros legais, levando em consideração as datas em
+que cada repasse foi realizado, sem prejuízo de outras sanções aplicáveis.
+PARÁGRAFO PRIMEIRO – Além das hipóteses previstas acima, a FAPEG poderá rescindir o presente termo
+unilateralmente caso não haja dotação orçamentária suficiente para arcar com as despesas previstas na
+proposta aprovada e seu plano de trabalho.
+PARÁGRAFO SEGUNDO – A execução da proposta poderá ser encerrada ou suspensa, após solicitação do
+interessado e decisão fundamentada da FAPEG, nas hipóteses em que o beneficiário do fomento seja
+acometido de doença incapacitante ou esteja em gozo de afastamento por maternidade.
+PARÁGRAFO TERCEIRO – Será considerado desistente dos recursos aqui tratados, o beneficiário que não
+iniciar a sua utilização no prazo de até 90 (noventa) dias, contados a partir do dia em que forem liberados.
+Neste caso, a FAPEG realizará o cancelamento do fomento, devendo o beneficiário apresentar a prestação
+de contas no prazo de até 30 (dias), sem prejuízo da aplicação das demais sanções previstas neste termo.
+PARÁGRAFO QUARTO – O cancelamento previsto no parágrafo terceiro poderá deixar de ser aplicado,
+mediante a apresentação de justificativa circunstanciada pelo beneficiário do fomento, que deverá ser
+analisada pela FAPEG.
+CLÁUSULA DÉCIMA QUINTA – DA CONCILIAÇÃO E DA MEDIAÇÃO
+As controvérsias eventualmente surgidas quanto à formalização, execução ou encerramento deste Termo
+serão submetidas à tentativa de conciliação ou mediação no âmbito da Câmara de Conciliação, Mediação e
+Arbitragem da Administração Estadual (CCMA), na forma da Lei nº 9.307, de 23 de setembro de 1996 e da
+Lei Complementar Estadual nº 144, de 24 de julho de 2018.
+
+-- 14 of 15 --
+
+CLÁUSULA DÉCIMA SEXTA – DA ADESÃO ÀS CLÁUSULAS E CONDIÇÕES
+O BENEFICIÁRIO (A) DO FOMENTO e a instituição de execução da Proposta declaram que aceitam, sem
+restrições, o presente auxílio financeiro, bem como declaram conhecer na íntegra as condições estipuladas
+neste Termo e na Resolução nº 1/2023/FAPEG, de 26 de dezembro de 2023, pelo que manifesta sua irrestrita
+concordância com as normas estabelecidas.
+CLÁUSULA DÉCIMA SÉTIMA – DA PUBLICAÇÃO
+O extrato deste Instrumento será publicado no Diário Oficial do Estado de Goiás.
+CLÁUSULA DÉCIMA OITAVA – DAS DISPOSIÇÕES FINAIS
+I – a FAPEG reserva-se o direito de, durante a execução da Proposta, solicitar informações adicionais visando
+aperfeiçoar o sistema de Avaliação e Acompanhamento, informações que poderão ser disponibilizadas
+publicamente na sua base de dados, salvo celebração de termo específico de sigilosidade;
+II – a assinatura do presente Termo e a concessão do auxílio não caracterizam relação de trabalho ou relação
+de emprego em nenhuma de suas formas;
+III – ocorrendo o falecimento do beneficiário é facultado a esta Fundação a retomada imediata da posse
+direta dos bens adquiridos com os recursos provenientes desse termo e a prerrogativa de bloquear e levantar
+o saldo existente na conta corrente vinculada ao presente Termo de Outorga;
+IV – Em qualquer caso, a liberação dos recursos condiciona-se à disponibilidade financeira e orçamentária da
+FAPEG, de modo que a assinatura deste termo não gera ao beneficiário direito adquirido ao recebimento dos
+valores previstos ou direito à qualquer tipo de indenização, podendo o ajuste porventura celebrado ser
+rescindido unilateralmente a qualquer tempo;
+V – Os casos omissos ou excepcionais serão resolvidos pela FAPEG.
+CLÁUSULA DÉCIMA NONA – DO FORO
+Fica eleito pelas partes o foro da Comarca de Goiânia, capital do Estado de Goiás, para dirimir as controvérsias
+decorrentes do presente Termo.
+E assim, por estarem justas e acordadas, assinam o presente Termo de Outorga para que produza os efeitos
+de direito.
+
+-- 15 of 15 --
+

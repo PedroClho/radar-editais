@@ -1,28 +1,151 @@
 {
-  "atualizadoEm": "2026-07-21T11:45:37.000Z",
+  "atualizadoEm": "2026-07-20T16:37:11.555Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 36,
-      "atualizadoEm": "2026-07-21T11:45:37.000Z"
+      "atualizadoEm": "2026-07-20T16:37:11.555Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 10,
-      "atualizadoEm": "2026-07-21T11:45:37.000Z"
+      "atualizadoEm": "2026-07-20T16:37:11.555Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-07-21T11:45:37.000Z"
+      "atualizadoEm": "2026-07-20T16:37:11.555Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-07-21T11:45:37.000Z"
+      "atualizadoEm": "2026-07-20T16:37:11.555Z"
     }
   },
   "editais": [
+    {
+      "id": "finep-f69c8a797050",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Subvenção Econômica Regional",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755080",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos, processos ou serviços inovadores que envolvam risco tecnológico em projetos realizados nas regiões Nordeste, Norte e Centro-Oeste, apoiando atividades que se encontrem entre os níveis de maturidade tecnológica (TRL) 3 a 9. Essas iniciativas devem estar obrigatoriamente estar alinhadas às seis",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-04-09T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "agro",
+        "tecnologia",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-316822cfc69e",
+      "fonte": "finep",
+      "titulo": "Prêmio Mulheres Inovadoras – 7ª edição – 2026",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755727",
+      "descricao": "O Programa Mulheres Inovadoras é uma iniciativa da Finep e do Ministério da Ciência, Tecnologia e Inovação (MCTI) para estimular startups lideradas por mulheres, de forma a contribuir para o aumento da representatividade feminina no cenário empreendedor nacional, por meio da capacitação e do reconhecimento de empreendimentos que possam favorecer o incremento da competitividade brasileira. Nesta ed",
+      "inscricaoInicio": "2026-03-13T00:00:00.000Z",
+      "inscricaoFim": "2026-05-11T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "educacao",
+        "energia",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": true,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-a18fd8509c9e",
+      "fonte": "finep",
+      "titulo": "FIP Startup Inteligência Artificial",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/756012",
+      "descricao": "EDITAL DE CHAMADA PÚBLICA PARA A SELEÇÃO DE FUNDO DE INVESTIMENTO EM PARTICIPAÇÕES DE STARTUPS DE INTELIGÊNCIA ARTIFICIAL   A BNDES PARTICIPAÇÕES S.A. - BNDESPAR (“BNDESPAR”), sociedade anônima constituída como subsidiária integral do BANCO NACIONAL DE DESENVOLVIMENTO ECONÔMICO E SOCIAL – BNDES, com sede em Brasília, Distrito Federal, e escritório central de serviços e domicílio fiscal na Cidade d",
+      "inscricaoInicio": "2026-04-09T00:00:00.000Z",
+      "inscricaoFim": "2026-05-28T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia"
+      ],
+      "ia": true,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-4eab10c8f9bd",
+      "fonte": "finep",
+      "titulo": "Pesquisa Aplicada Em Centros Temáticos 2025",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/753688",
+      "descricao": "Edital de apoio a projetos de pesquisa aplicada realizadas por Centros Nacionais de Infraestrutura Científica de Pesquisa e Tecnológica de caráter temático, nas áreas de cadeias agroindustriais sustentáveis; saúde; infraestrutura urbana e mobilidade sustentável; transformação digital; bioeconomia, descarbonização e transição e segurança energéticas; e defesa.   Tema(s):  Cadeias Agroindustriais Su",
+      "inscricaoInicio": "2025-02-19T00:00:00.000Z",
+      "inscricaoFim": "2026-05-29T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "agro",
+        "tecnologia",
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-b227359ba025",
+      "fonte": "finep",
+      "titulo": "Ecossistema Tecnológico de Biorrefino",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755795",
+      "descricao": "SELEÇÃO PÚBLICA FINEP/PETROBRAS EIXO TECNOLÓGICO - ROTAS BIOTECNOLÓGICAS PARA PRODUÇÃO DE COMBUSTÍVEIS RENOVÁVEIS E PRODUTOS DE BAIXO CARBONO A Financiadora de Estudos e Projetos – Finep e a Petrobras tornam pública a presente Seleção Pública, inciativa que faz parte da criação de um Ecossistema Tecnológico de Biorrefino, por meio do apoio a projetos de inovação voltados ao desenvolvimento de tecn",
+      "inscricaoInicio": "2026-03-25T00:00:00.000Z",
+      "inscricaoFim": "2026-06-08T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "energia",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-cb3b12ecf5b2",
+      "fonte": "finep",
+      "titulo": "Agricultura familiar para ICTs 2026",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755892",
+      "descricao": "CHAMADA PÚBLICA MCTI/FINEP/FNDCT CADEIAS SOCIOPRODUTIVAS DA AGRICULTURA FAMILIAR E SISTEMAS AGROALIMENTARES SUSTENTÁVEIS PARA ICTS 2026 Selecionar propostas para concessão de apoio financeiro à execução de projetos institucionais voltados ao desenvolvimento de soluções científicas e tecnológicas para enfrentar desafios na estruturação e no fortalecimento de cadeias socioprodutivas baseadas na biod",
+      "inscricaoInicio": "2026-03-25T00:00:00.000Z",
+      "inscricaoFim": "2026-07-03T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "fapeg-38735584a263",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 11/2026 — Legado Verdes do Cerrado - 2ª Edição",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-companhia-brasileira-de-aluminio-reserva-votorantim-no-11-2026-conservacao-da-biodiversidade-legado-verdes-do-cerrado-2a-edicao/",
+      "descricao": "Origem: Fapeg/CBC/Votorantim",
+      "situacao": "aberto",
+      "areas": [
+        "agro"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-07-03T23:59:59.000Z"
+    },
     {
       "id": "cnpq-c45921f4d9db",
       "fonte": "cnpq",
@@ -35,7 +158,7 @@
         "saude"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-b875688be325",
@@ -50,7 +173,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "cnpq-5640d32c2a8a",
@@ -64,7 +187,22 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
+    },
+    {
+      "id": "fapeg-452f0d931597",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 13/2026 — EDITAL DE APOIO À PESQUISA E INOVAÇÃO EM EDUCAÇÃO ESPECIAL INCLUSIVA",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-no-13-2026-edital-de-apoio-a-pesquisa-e-inovacao-em-educacao-especial-inclusiva/",
+      "descricao": "Origem: Fapeg",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-04T23:59:59.000Z"
     },
     {
       "id": "cnpq-0eb1dab4d822",
@@ -78,7 +216,22 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
+    },
+    {
+      "id": "finep-94631949e705",
+      "fonte": "finep",
+      "titulo": "MANUTENÇÃO UNIDADES DE PESQUISA MCTI – PROINFRA 2026",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/945796",
+      "descricao": "Selecionar propostas para concessão de apoio financeiro à manutenção corretiva e/ou preventiva de equipamentos de pesquisa das Unidades de Pesquisa do MCTI, visando colocar  o Brasil em condições de desenvolver projetos científicos e tecnológicos de ponta, focados no apoio a programas estratégicos nacionais.",
+      "inscricaoInicio": "2026-05-29T00:00:00.000Z",
+      "inscricaoFim": "2026-08-06T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "cnpq-6b44988a279b",
@@ -92,7 +245,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "cnpq-0c1b111983ee",
@@ -106,7 +259,36 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
+    },
+    {
+      "id": "fapeg-a420f0b8d5ff",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-12-2026-edital-complementar-a-chamada-erc-confap-2026/",
+      "descricao": "Origem: Fapeg/Confap/ERC",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-10T23:59:59.000Z"
+    },
+    {
+      "id": "finep-91cd26e24a0f",
+      "fonte": "finep",
+      "titulo": "FIP Conexões Startups – 2026",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/986129",
+      "descricao": "Chamada Pública para Seleção de Fundo de Investimento em Participações – FIP Conexões Startups – 2026 Em 18.06.2026, a BNDESPAR, sociedade de participações acionárias do BNDES, em parceria com a Financiadora de Estudos e Projetos (Finep), lançou edital de chamada pública para a seleção de gestor para um Fundo de Investimento em Participações (FIP) voltado a startups , em especial aquelas que tenha",
+      "inscricaoInicio": "2026-06-24T00:00:00.000Z",
+      "inscricaoFim": "2026-08-12T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "cnpq-5f3c1cf05710",
@@ -120,7 +302,7 @@
         "saude"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "cnpq-e4a02ba01854",
@@ -134,7 +316,120 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
+    },
+    {
+      "id": "finep-8228704a6fea",
+      "fonte": "finep",
+      "titulo": "BRICs - CHAMADA PÚBLICA Cooperação Multilateral em Inovação",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/991625",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para projetos de cooperação internacional visando o desenvolvimento de produtos, processos ou serviços inovadores das empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Orçamento da chamada: R$ 12 milhõ",
+      "inscricaoInicio": "2026-06-30T00:00:00.000Z",
+      "inscricaoFim": "2026-08-14T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "fapeg-3fcbdd1c8c26",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
+      "descricao": "Origem: Fapeg",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-21T23:59:59.000Z"
+    },
+    {
+      "id": "finep-38771efab004",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755376",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca fomentar o desenvolvimento de tecnologias inovado",
+      "inscricaoInicio": "2026-03-06T00:00:00.000Z",
+      "inscricaoFim": "2026-08-31T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-1def5f22d0e1",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755213",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias inovado",
+      "inscricaoInicio": "2026-02-13T00:00:00.000Z",
+      "inscricaoFim": "2026-08-31T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-154cf446df84",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754704",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas    Em caso de dúvidas e orientações sobre a seleção pública:  cp_mib_sbv_saude_2@finep.gov.br   Para apresentar sua proposta através d",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-08-31T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "tecnologia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-a40b55d03e6c",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754473",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o adensamento das cadeias de transformaç",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-08-31T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-371cdb70cc9c",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754567",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias essenci",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-08-31T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "cnpq-b3efe61487ad",
@@ -148,22 +443,104 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
-      "id": "finep-94631949e705",
+      "id": "finep-781ea30e0ea0",
       "fonte": "finep",
-      "titulo": "MANUTENÇÃO UNIDADES DE PESQUISA MCTI – PROINFRA 2026",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/945796",
-      "descricao": "Selecionar propostas para concessão de apoio financeiro à manutenção corretiva e/ou preventiva de equipamentos de pesquisa das Unidades de Pesquisa do MCTI, visando colocar  o Brasil em condições de desenvolver projetos científicos e tecnológicos de ponta, focados no apoio a programas estratégicos nacionais.",
-      "inscricaoInicio": "2026-05-29T00:00:00.000Z",
-      "inscricaoFim": "2026-09-04T23:59:59.000Z",
+      "titulo": "CARTA CONVITE MCTI/FINEP/FNDCT - PROMOÇÃO DA AUTONOMIA TECNOLÓGICA NA ÁREA DA DEFESA",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/943682",
+      "descricao": "Selecionar propostas para concessão de apoio financeiro a Instituições de Ciência, Tecnologia e Inovação do Ministério da Defesa (ICTMD), visando à execução de projetos de pesquisa para promover a capacidade e a autonomia científica, tecnológica e de inovação do Brasil em áreas críticas para a defesa nacional e para a segurança, priorizando projetos alinhados com a Estratégia Nacional de Defesa, c",
+      "inscricaoInicio": "2026-05-26T00:00:00.000Z",
+      "inscricaoFim": "2026-09-18T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "energia",
+        "industria"
+      ],
+      "ia": true,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-e0fd071f36b5",
+      "fonte": "finep",
+      "titulo": "DESAFIO TECNOLÓGICO ELETROLISADOR NACIONAL",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/968467",
+      "descricao": "SELEÇÃO PÚBLICA FINEP/PETROBRAS A Financiadora de Estudos e Projetos – Finep, a Petrobras e o Ministério da Ciência, Tecnologia e Inovação (MCTI), com apoio técnico do Ministério da Fazenda, tornam pública a presente Seleção Pública, cujo objetivo é apoiar o desenvolvimento de um projeto de inovação voltado para o desenvolvimento tecnológico de um Eletrolisador Nacional, seguindo as especificações",
+      "inscricaoInicio": "2026-06-16T00:00:00.000Z",
+      "inscricaoFim": "2026-09-21T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "energia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-b932d0832085",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755605",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 100.000.000,00 Público-alvo: Empresas    Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_semicondutores_2@finep.gov.br   Para apresentar sua proposta a",
+      "inscricaoInicio": "2026-03-12T00:00:00.000Z",
+      "inscricaoFim": "2026-09-30T23:59:59.000Z",
       "situacao": "aberto",
       "areas": [
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-993d4cf93d47",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
+      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas    Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_t",
+      "inscricaoInicio": "2026-03-12T00:00:00.000Z",
+      "inscricaoFim": "2026-09-30T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-75ed62c47d24",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 - Base Industrial de Defesa",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754961",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores dentro do escopo das linhas temáticas Tecnologias para Defesa Nacional e Sustentabilidade econômica para Base Industrial de Defesa (BID), promovendo a integração ICT-empresa.    Orçamento da chamada: R$ 300 milhões Público-alvo: Empresas   Em caso de dúvidas e orientaçõ",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-09-30T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-d335bb6a30db",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Cadeias Agroindustriais Sustentáveis",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754839",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores, promovendo o desenvolvimento da agroindústria nacional visando a garantida da segurança alimentar e nutricional da população brasileira. Também visa promover parcerias para o desenvolvimento entre empresas e ICTs, no desenvolvimento de projetos em redes. Orçamento da c",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-09-30T23:59:59.000Z",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "cnpq-1941baf2f023",
@@ -177,37 +554,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
-    },
-    {
-      "id": "finep-8228704a6fea",
-      "fonte": "finep",
-      "titulo": "BRICs - CHAMADA PÚBLICA Cooperação Multilateral em Inovação",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/991625",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para projetos de cooperação internacional visando o desenvolvimento de produtos, processos ou serviços inovadores das empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Orçamento da chamada: R$ 12 milhõ",
-      "inscricaoInicio": "2026-06-30T00:00:00.000Z",
-      "inscricaoFim": "2026-11-19T23:59:59.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-91cd26e24a0f",
-      "fonte": "finep",
-      "titulo": "FIP Conexões Startups – 2026",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/986129",
-      "descricao": "Chamada Pública para Seleção de Fundo de Investimento em Participações – FIP Conexões Startups – 2026 Em 18.06.2026, a BNDESPAR, sociedade de participações acionárias do BNDES, em parceria com a Financiadora de Estudos e Projetos (Finep), lançou edital de chamada pública para a seleção de gestor para um Fundo de Investimento em Participações (FIP) voltado a startups , em especial aquelas que tenha",
-      "inscricaoInicio": "2026-06-24T00:00:00.000Z",
-      "inscricaoFim": "2026-11-23T23:59:59.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-076a0a2b7bd2",
@@ -222,40 +569,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-781ea30e0ea0",
-      "fonte": "finep",
-      "titulo": "CARTA CONVITE MCTI/FINEP/FNDCT - PROMOÇÃO DA AUTONOMIA TECNOLÓGICA NA ÁREA DA DEFESA",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/943682",
-      "descricao": "Selecionar propostas para concessão de apoio financeiro a Instituições de Ciência, Tecnologia e Inovação do Ministério da Defesa (ICTMD), visando à execução de projetos de pesquisa para promover a capacidade e a autonomia científica, tecnológica e de inovação do Brasil em áreas críticas para a defesa nacional e para a segurança, priorizando projetos alinhados com a Estratégia Nacional de Defesa, c",
-      "inscricaoInicio": "2026-05-26T00:00:00.000Z",
-      "inscricaoFim": "2027-01-15T23:59:59.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "energia",
-        "industria"
-      ],
-      "ia": true,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-cb3b12ecf5b2",
-      "fonte": "finep",
-      "titulo": "Agricultura familiar para ICTs 2026",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755892",
-      "descricao": "CHAMADA PÚBLICA MCTI/FINEP/FNDCT CADEIAS SOCIOPRODUTIVAS DA AGRICULTURA FAMILIAR E SISTEMAS AGROALIMENTARES SUSTENTÁVEIS PARA ICTS 2026 Selecionar propostas para concessão de apoio financeiro à execução de projetos institucionais voltados ao desenvolvimento de soluções científicas e tecnológicas para enfrentar desafios na estruturação e no fortalecimento de cadeias socioprodutivas baseadas na biod",
-      "inscricaoInicio": "2026-03-25T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-0523bacf004a",
@@ -269,20 +583,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "fapeg-a420f0b8d5ff",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-12-2026-edital-complementar-a-chamada-erc-confap-2026/",
-      "descricao": "Origem: Fapeg/Confap/ERC",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.201Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-5fbe351df296",
@@ -295,47 +596,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "fapeg-38735584a263",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 11/2026 — Legado Verdes do Cerrado - 2ª Edição",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-companhia-brasileira-de-aluminio-reserva-votorantim-no-11-2026-conservacao-da-biodiversidade-legado-verdes-do-cerrado-2a-edicao/",
-      "descricao": "Origem: Fapeg/CBC/Votorantim",
-      "situacao": "aberto",
-      "areas": [
-        "agro"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.201Z"
-    },
-    {
-      "id": "fapeg-452f0d931597",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 13/2026 — EDITAL DE APOIO À PESQUISA E INOVAÇÃO EM EDUCAÇÃO ESPECIAL INCLUSIVA",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-no-13-2026-edital-de-apoio-a-pesquisa-e-inovacao-em-educacao-especial-inclusiva/",
-      "descricao": "Origem: Fapeg",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.201Z"
-    },
-    {
-      "id": "fapeg-3fcbdd1c8c26",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
-      "descricao": "Origem: Fapeg",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.201Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "fapeg-5c04f8be716f",
@@ -348,7 +609,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.201Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z"
     },
     {
       "id": "capes-7730401430fb",
@@ -360,7 +621,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.439Z"
+      "coletadoEm": "2026-07-20T16:37:11.986Z"
     },
     {
       "id": "cnpq-453d3c7f1ca1",
@@ -372,7 +633,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.273Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-a1fdd8f3d57d",
@@ -386,7 +647,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-5230abd39834",
@@ -401,40 +662,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-e0fd071f36b5",
-      "fonte": "finep",
-      "titulo": "DESAFIO TECNOLÓGICO ELETROLISADOR NACIONAL",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/968467",
-      "descricao": "SELEÇÃO PÚBLICA FINEP/PETROBRAS A Financiadora de Estudos e Projetos – Finep, a Petrobras e o Ministério da Ciência, Tecnologia e Inovação (MCTI), com apoio técnico do Ministério da Fazenda, tornam pública a presente Seleção Pública, cujo objetivo é apoiar o desenvolvimento de um projeto de inovação voltado para o desenvolvimento tecnológico de um Eletrolisador Nacional, seguindo as especificações",
-      "inscricaoInicio": "2026-06-16T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "energia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-b227359ba025",
-      "fonte": "finep",
-      "titulo": "Ecossistema Tecnológico de Biorrefino",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755795",
-      "descricao": "SELEÇÃO PÚBLICA FINEP/PETROBRAS EIXO TECNOLÓGICO - ROTAS BIOTECNOLÓGICAS PARA PRODUÇÃO DE COMBUSTÍVEIS RENOVÁVEIS E PRODUTOS DE BAIXO CARBONO A Financiadora de Estudos e Projetos – Finep e a Petrobras tornam pública a presente Seleção Pública, inciativa que faz parte da criação de um Ecossistema Tecnológico de Biorrefino, por meio do apoio a projetos de inovação voltados ao desenvolvimento de tecn",
-      "inscricaoInicio": "2026-03-25T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "energia",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "capes-95f58df736ce",
@@ -446,7 +674,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:38.439Z"
+      "coletadoEm": "2026-07-20T16:37:11.986Z"
     },
     {
       "id": "finep-438282e38da9",
@@ -459,7 +687,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-ae4accdfa8fe",
@@ -474,164 +702,7 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-154cf446df84",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754704",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas    Em caso de dúvidas e orientações sobre a seleção pública:  cp_mib_sbv_saude_2@finep.gov.br   Para apresentar sua proposta através d",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "tecnologia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-f69c8a797050",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Subvenção Econômica Regional",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755080",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos, processos ou serviços inovadores que envolvam risco tecnológico em projetos realizados nas regiões Nordeste, Norte e Centro-Oeste, apoiando atividades que se encontrem entre os níveis de maturidade tecnológica (TRL) 3 a 9. Essas iniciativas devem estar obrigatoriamente estar alinhadas às seis",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "agro",
-        "tecnologia",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-993d4cf93d47",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
-      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas    Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_t",
-      "inscricaoInicio": "2026-03-12T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-75ed62c47d24",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 - Base Industrial de Defesa",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754961",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores dentro do escopo das linhas temáticas Tecnologias para Defesa Nacional e Sustentabilidade econômica para Base Industrial de Defesa (BID), promovendo a integração ICT-empresa.    Orçamento da chamada: R$ 300 milhões Público-alvo: Empresas   Em caso de dúvidas e orientaçõ",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-d335bb6a30db",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Cadeias Agroindustriais Sustentáveis",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754839",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores, promovendo o desenvolvimento da agroindústria nacional visando a garantida da segurança alimentar e nutricional da população brasileira. Também visa promover parcerias para o desenvolvimento entre empresas e ICTs, no desenvolvimento de projetos em redes. Orçamento da c",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-1def5f22d0e1",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755213",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias inovado",
-      "inscricaoInicio": "2026-02-13T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-38771efab004",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755376",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca fomentar o desenvolvimento de tecnologias inovado",
-      "inscricaoInicio": "2026-03-06T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-b932d0832085",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755605",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 100.000.000,00 Público-alvo: Empresas    Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_semicondutores_2@finep.gov.br   Para apresentar sua proposta a",
-      "inscricaoInicio": "2026-03-12T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-a40b55d03e6c",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754473",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o adensamento das cadeias de transformaç",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-371cdb70cc9c",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754567",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias essenci",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-2f437fa6bca1",
@@ -645,21 +716,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-a18fd8509c9e",
-      "fonte": "finep",
-      "titulo": "FIP Startup Inteligência Artificial",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/756012",
-      "descricao": "EDITAL DE CHAMADA PÚBLICA PARA A SELEÇÃO DE FUNDO DE INVESTIMENTO EM PARTICIPAÇÕES DE STARTUPS DE INTELIGÊNCIA ARTIFICIAL   A BNDES PARTICIPAÇÕES S.A. - BNDESPAR (“BNDESPAR”), sociedade anônima constituída como subsidiária integral do BANCO NACIONAL DE DESENVOLVIMENTO ECONÔMICO E SOCIAL – BNDES, com sede em Brasília, Distrito Federal, e escritório central de serviços e domicílio fiscal na Cidade d",
-      "inscricaoInicio": "2026-04-09T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia"
-      ],
-      "ia": true,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-232da74fdc31",
@@ -674,44 +731,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-4eab10c8f9bd",
-      "fonte": "finep",
-      "titulo": "Pesquisa Aplicada Em Centros Temáticos 2025",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/753688",
-      "descricao": "Edital de apoio a projetos de pesquisa aplicada realizadas por Centros Nacionais de Infraestrutura Científica de Pesquisa e Tecnológica de caráter temático, nas áreas de cadeias agroindustriais sustentáveis; saúde; infraestrutura urbana e mobilidade sustentável; transformação digital; bioeconomia, descarbonização e transição e segurança energéticas; e defesa.   Tema(s):  Cadeias Agroindustriais Su",
-      "inscricaoInicio": "2025-02-19T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "agro",
-        "tecnologia",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
-    },
-    {
-      "id": "finep-316822cfc69e",
-      "fonte": "finep",
-      "titulo": "Prêmio Mulheres Inovadoras – 7ª edição – 2026",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755727",
-      "descricao": "O Programa Mulheres Inovadoras é uma iniciativa da Finep e do Ministério da Ciência, Tecnologia e Inovação (MCTI) para estimular startups lideradas por mulheres, de forma a contribuir para o aumento da representatividade feminina no cenário empreendedor nacional, por meio da capacitação e do reconhecimento de empreendimentos que possam favorecer o incremento da competitividade brasileira. Nesta ed",
-      "inscricaoInicio": "2026-03-13T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "educacao",
-        "energia",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": true,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-127d235d1a16",
@@ -724,7 +744,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-a46a444bde24",
@@ -739,7 +759,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-eaaefa1a1e42",
@@ -754,7 +774,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-00bf884ffa05",
@@ -768,7 +788,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-05071b49290c",
@@ -783,7 +803,7 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-0f97679cb0ad",
@@ -798,7 +818,7 @@
         "tecnologia"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-21T11:45:37.451Z"
+      "coletadoEm": "2026-07-20T16:37:11.752Z"
     }
   ]
 }

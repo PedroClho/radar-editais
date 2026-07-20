@@ -3,7 +3,7 @@ import { join } from 'node:path'
 import { describe, expect, test } from 'vitest'
 import { parseCapes } from '../scraper/fontes/capes'
 import { parseCnpq } from '../scraper/fontes/cnpq'
-import { parseFapeg } from '../scraper/fontes/fapeg'
+import { extrairPrazoCronograma, parseFapeg } from '../scraper/fontes/fapeg'
 import { parseFinep } from '../scraper/fontes/finep'
 import { EditalSchema } from '../scraper/schema'
 import { dataBrParaIso, fimDoDiaIso, gerarId } from '../scraper/util'
@@ -13,6 +13,11 @@ const AGORA = '2026-07-17T12:00:00.000Z'
 function fixture(nome: string): string {
   return readFileSync(join(__dirname, 'fixtures', nome), 'utf-8')
 }
+
+const cronograma = readFileSync(
+  new URL('./fixtures/fapeg-cronograma.txt', import.meta.url),
+  'utf8',
+)
 
 describe('util', () => {
   test('dataBrParaIso converte dd/mm/yyyy e dd/mm/yy', () => {
@@ -145,5 +150,65 @@ describe('parseCapes', () => {
     expect(editais.some((e) => e.titulo.includes('Edital nº 20/2026'))).toBe(
       true,
     )
+  })
+})
+
+describe('extrairPrazoCronograma', () => {
+  test('acha a data limite de submissão no cronograma do PDF', () => {
+    // Fixture real: Chamada Pública FAPEG nº 12/2026 (1ª retificação), item
+    // "2. CRONOGRAMA" — "Limite para Submissão das propostas na Plataforma
+    // Sparkx-FAPEG até às 17:00 horas do dia 10/08/2026".
+    expect(extrairPrazoCronograma(cronograma)).toBe('2026-08-10T23:59:59.000Z')
+  })
+
+  test('devolve undefined quando não há cronograma', () => {
+    expect(extrairPrazoCronograma('texto qualquer sem datas')).toBeUndefined()
+  })
+
+  test('ignora o sumário e pega a tabela real', () => {
+    const comSumario = [
+      '1. OBJETO .... 3',
+      '7. CRONOGRAMA .... 12',
+      'blá blá',
+      'CRONOGRAMA',
+      'Limite para Submissão das propostas até às 17:00 horas do dia 10/07/2026',
+    ].join('\n')
+    expect(extrairPrazoCronograma(comSumario)).toBe('2026-07-10T23:59:59.000Z')
+  })
+
+  test('aceita a variação de rótulo "Limite para Inscrições"', () => {
+    const texto = [
+      'CRONOGRAMA',
+      'Limite para Inscrições na plataforma SPARKX FAPEG De 25/06/2026 até 04/08/2026 às 17h',
+    ].join('\n')
+    expect(extrairPrazoCronograma(texto)).toBe('2026-08-04T23:59:59.000Z')
+  })
+
+  test('não deixa a data da linha seguinte da tabela vazar quando o rótulo já tem data própria', () => {
+    // Bug real descoberto nas fixtures da FAPEG: alguns PDFs extraem a linha
+    // "Limite para Inscrições ... 04/08/2026" já com data própria, seguida
+    // por outra linha de tabela que também tem data (resultado preliminar).
+    // Uma janela de busca larga demais pegaria essa data errada.
+    const texto = [
+      'CRONOGRAMA',
+      'Limite para Inscrições na plataforma SPARKX FAPEG De 25/06/2026 até 04/08/2026 às 17h',
+      '1ª ETAPA: ENQUADRAMENTO',
+      'Divulgação do resultado preliminar da etapa de enquadramento A partir de 10/08/2026',
+    ].join('\n')
+    expect(extrairPrazoCronograma(texto)).toBe('2026-08-04T23:59:59.000Z')
+  })
+
+  test('acompanha a data quando ela cai 2 linhas abaixo do rótulo (quebra de célula do PDF)', () => {
+    // Bug real: "Limite para Submissão das propostas na" / "Plataforma
+    // Sparkx-FAPEG" / "até às 17:00 horas do dia 10/08/2026" — a extração
+    // do PDF quebra a célula da tabela em 3 linhas: o rótulo, o meio, e só
+    // então a data. Um regex de linha única (sem olhar adiante) não acha
+    // nada aqui.
+    const texto = [
+      'Limite para Submissão das propostas na',
+      'Plataforma Sparkx-FAPEG',
+      'até às 17:00 horas do dia 10/08/2026',
+    ].join('\n')
+    expect(extrairPrazoCronograma(texto)).toBe('2026-08-10T23:59:59.000Z')
   })
 })
