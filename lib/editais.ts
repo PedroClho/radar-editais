@@ -125,6 +125,21 @@ export function normalizarCaixa(
     .replace(/^(\P{L}*)(\p{L})/u, (_, antes, letra) => antes + letra.toUpperCase())
 }
 
+// A FAPEG entrega a coluna "Origem" da tabela no campo `descricao`. É
+// informação útil — nomeia os co-financiadores — mas não descreve o edital, e
+// ocupando a linha da descrição só gasta espaço. Vira metadado.
+const RE_ORIGEM = /^origem:\s*(.+)$/i
+
+export function separarOrigem(descricao?: string): {
+  texto?: string
+  origem?: string
+} {
+  const limpo = descricao?.trim()
+  if (!limpo) return {}
+  const m = limpo.match(RE_ORIGEM)
+  return m ? { origem: m[1].trim() } : { texto: limpo }
+}
+
 export function resumir(texto: string, max = 180): string {
   const limpo = texto.replace(/\s+/g, ' ').trim()
   if (limpo.length <= max) return limpo

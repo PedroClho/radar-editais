@@ -4,6 +4,7 @@ import {
   nivelUrgencia,
   normalizarCaixa,
   resumir,
+  separarOrigem,
 } from '@/lib/editais'
 import { ROTULOS } from '@/scraper/classificador'
 import type { Edital, Fonte } from '@/scraper/schema'
@@ -67,10 +68,14 @@ export default function LinhaEdital({
   const areas = edital.areas.filter((a) => a !== 'geral')
   // A referência costuma repetir o nome da fonte ("CNPq/MinC nº 17/2026"), que
   // já aparece ao lado. Tira só o prefixo redundante e preserva o co-financiador.
-  const refEnxuta = referencia?.replace(
-    new RegExp(`^${NOMES_FONTES[edital.fonte]}/?`, 'i'),
-    '',
-  )
+  // Referência e origem costumam começar repetindo o nome da fonte, que já
+  // aparece ao lado ("CNPq/MinC nº 17/2026", "Origem: Fapeg/Confap/ERC").
+  // Tira só o prefixo redundante e preserva os co-financiadores.
+  const semFonte = (v: string) =>
+    v.replace(new RegExp(`^${NOMES_FONTES[edital.fonte]}/?`, 'i'), '').trim()
+  const refEnxuta = referencia && semFonte(referencia)
+  const { texto: descricao, origem } = separarOrigem(edital.descricao)
+  const origemEnxuta = origem && semFonte(origem)
 
   return (
     <li>
@@ -104,9 +109,9 @@ export default function LinhaEdital({
             {normalizarCaixa(titulo)}
           </h3>
 
-          {edital.descricao && (
+          {descricao && (
             <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-[var(--muted)]">
-              {normalizarCaixa(resumir(edital.descricao), 'frase')}
+              {normalizarCaixa(resumir(descricao), 'frase')}
             </p>
           )}
 
@@ -128,6 +133,12 @@ export default function LinhaEdital({
               <>
                 <span aria-hidden>·</span>
                 <span className="numeros">{refEnxuta}</span>
+              </>
+            )}
+            {origemEnxuta && (
+              <>
+                <span aria-hidden>·</span>
+                <span>{origemEnxuta}</span>
               </>
             )}
             <span aria-hidden>·</span>

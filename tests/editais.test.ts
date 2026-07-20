@@ -7,6 +7,7 @@ import {
   nivelUrgencia,
   normalizarCaixa,
   resumir,
+  separarOrigem,
 } from '../lib/editais'
 import type { Edital } from '../scraper/schema'
 
@@ -125,6 +126,26 @@ describe('normalizarCaixa', () => {
     expect(
       normalizarCaixa('FATURAMENTO ANUAL ATÉ R$ 16 MILHÕES DE REAIS', 'frase'),
     ).toBe('Faturamento anual até R$ 16 milhões de reais')
+  })
+})
+
+describe('separarOrigem', () => {
+  // A FAPEG entrega a coluna "Origem" da tabela no campo de descrição. É
+  // informação útil (co-financiadores), mas no lugar errado: ocupa a linha da
+  // descrição sem descrever nada.
+  test('reconhece "Origem:" e devolve como metadado, não como descrição', () => {
+    expect(separarOrigem('Origem: Fapeg/CBC/Votorantim')).toEqual({
+      origem: 'Fapeg/CBC/Votorantim',
+    })
+  })
+
+  test('descrição de verdade passa intacta', () => {
+    const real = 'Selecionar propostas para concessão de apoio financeiro'
+    expect(separarOrigem(real)).toEqual({ texto: real })
+  })
+
+  test('sem descrição devolve objeto vazio', () => {
+    expect(separarOrigem(undefined)).toEqual({})
   })
 })
 
