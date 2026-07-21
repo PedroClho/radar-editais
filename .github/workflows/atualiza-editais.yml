@@ -9,9 +9,15 @@ on:
 permissions:
   contents: write
 
+# Disparo manual durante o cron não pode gerar dois pushes concorrentes.
+concurrency:
+  group: atualiza-editais
+  cancel-in-progress: false
+
 jobs:
   atualizar:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
 
@@ -35,5 +41,7 @@ jobs:
             git config user.email "coelho@discente.ufg.br"
             git add data/editais.json
             git commit -m "chore: atualiza editais ($(date -u +%Y-%m-%d))"
+            # main pode ter avançado durante o scrape — rebase antes do push
+            git pull --rebase origin main
             git push
           fi

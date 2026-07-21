@@ -2,6 +2,11 @@
 
 Data: 2026-07-20
 
+> **Notas de 2026-07-21:** implementado (commits `95e4e58..c31dc79`).
+> `componentes/SemPrazo.tsx`, listado na Arquitetura, não foi criado — a
+> seção "Sem prazo divulgado" reutiliza `GrupoPrazo` desde o radar v3.
+> Evoluções posteriores em `2026-07-21-radar-v3.md`.
+
 ## Problema
 
 O front atual (`componentes/Dashboard.tsx`, 378 linhas, um único componente) é

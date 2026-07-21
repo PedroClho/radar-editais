@@ -1,5 +1,9 @@
 # Redesign do front — Implementation Plan
 
+> **Concluído em 2026-07-20** — todas as tasks implementadas nos commits
+> `95e4e58..c31dc79` (os checkboxes abaixo não foram marcados durante a
+> execução; confira o git log, não este arquivo).
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Substituir o dashboard atual por uma agenda de prazos onde a data é a espinha vertical da página, e corrigir os dados de prazo que a sustentam.

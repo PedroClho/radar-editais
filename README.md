@@ -11,9 +11,9 @@ A ideia nasceu de uma observação em sala na UFG: professores anotam **no quadr
 ```
 GitHub Actions (cron diário às 07h de Brasília)
   └─ npm run scrape
-       ├─ scraper/fontes/finep.ts   → API JSON pública da FINEP
-       ├─ scraper/fontes/cnpq.ts    → página de chamadas abertas (gov.br)
-       ├─ scraper/fontes/fapeg.ts   → tabela de inscrições abertas (goias.gov.br)
+       ├─ scraper/fontes/finep.ts   → API JSON pública da FINEP (com prazo real e público-alvo)
+       ├─ scraper/fontes/cnpq.ts    → chamadas abertas + página de cada chamada (descrição)
+       ├─ scraper/fontes/fapeg.ts   → tabela de abertas + PDF de cada edital (prazo do CRONOGRAMA)
        ├─ scraper/fontes/capes.ts   → página de editais e resultados (gov.br)
        ├─ scraper/classificador.ts  → rótulos por área + flag IA (palavras-chave)
        └─ data/editais.json         → commitado no repo se mudou
@@ -50,3 +50,5 @@ O dicionário de palavras-chave fica em `scraper/classificador.ts` (`AREAS` e `T
 ## Aviso
 
 Os dados são coletados automaticamente dos portais oficiais e podem conter erros ou atrasos. **Sempre confira o edital original** antes de submeter uma proposta.
+
+A flag **IA** vem de palavras-chave (decisão de custo zero, sem LLM): um edital que só *menciona* inteligência artificial numa lista de tecnologias também acende a flag. Trate-a como "IA aparece no edital", não como "o edital é de IA".
