@@ -3,11 +3,14 @@ import {
   agruparPorPrazo,
   diasAte,
   filtrar,
+  frescor,
   limparTitulo,
+  listarAreasDisponiveis,
   nivelUrgencia,
   normalizarCaixa,
   resumir,
   separarOrigem,
+  tirarPrefixoDeTitulo,
 } from '../lib/editais'
 import type { Edital } from '../scraper/schema'
 
@@ -72,6 +75,63 @@ describe('limparTitulo', () => {
   test('não corta quando sobraria um título vazio', () => {
     const so = 'Chamada CNPq nº 06/2026 - '
     expect(limparTitulo(so).titulo).toBe(so)
+  })
+
+  // Os 3 títulos reais do dataset que escapavam da primeira versão — o
+  // primeiro tem 137 caracteres, exatamente o máximo que motivou a função.
+  test('aceita "Chamamento Público" e assunto sem separador após o número', () => {
+    const r = limparTitulo(
+      'Chamamento Público CNPq/FNDCT/MCTI Nº 01/2026 Para Participação no Programa de Apoio à Popularização da Ciência nas Unidades da Federação',
+    )
+    expect(r.titulo).toBe(
+      'Participação no Programa de Apoio à Popularização da Ciência nas Unidades da Federação',
+    )
+    expect(r.referencia).toBe('CNPq/FNDCT/MCTI nº 01/2026')
+  })
+
+  test('aceita palavra entre o número e o traço', () => {
+    const r = limparTitulo(
+      'Chamada Pública MCTI/CNPq/MIR/MMulheres/MPI Nº 20/2026 Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência',
+    )
+    expect(r.titulo).toBe(
+      'Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência',
+    )
+    expect(r.referencia).toBe('MCTI/CNPq/MIR/MMulheres/MPI nº 20/2026')
+  })
+
+  test('padrão CAPES: referência no fim do título', () => {
+    const r = limparTitulo(
+      'Chamada Pública para Envio de Proposta de Curso Novo - Edital nº 20/2026',
+    )
+    expect(r.titulo).toBe('Envio de Proposta de Curso Novo')
+    expect(r.referencia).toBe('nº 20/2026')
+  })
+})
+
+describe('tirarPrefixoDeTitulo', () => {
+  test('remove a repetição do título no início da descrição', () => {
+    // Caso real da FINEP: a descrição abre repetindo o título inteiro.
+    const titulo = 'Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais'
+    const descricao = `${titulo} Esta Seleção Pública objetiva conceder recursos`
+    expect(tirarPrefixoDeTitulo(descricao, titulo)).toBe(
+      'Esta Seleção Pública objetiva conceder recursos',
+    )
+  })
+
+  test('compara sem acento e sem caixa', () => {
+    expect(
+      tirarPrefixoDeTitulo('EDUCAÇÃO ESPECIAL: o programa apoia', 'Educacao Especial'),
+    ).toBe('o programa apoia')
+  })
+
+  test('descrição sem o prefixo passa intacta', () => {
+    expect(tirarPrefixoDeTitulo('Outra coisa qualquer', 'Título')).toBe(
+      'Outra coisa qualquer',
+    )
+  })
+
+  test('não devolve vazio quando a descrição É só o título', () => {
+    expect(tirarPrefixoDeTitulo('Mesmo Texto', 'Mesmo Texto')).toBe('Mesmo Texto')
   })
 })
 
@@ -260,6 +320,58 @@ describe('agruparPorPrazo', () => {
     )
     expect(g.semPrazo.map((e) => e.id)).toEqual(['novo', 'antigo'])
   })
+
+  test('fronteiras exatas dos grupos: 7/8 e 30/31 dias', () => {
+    // AGORA é 2026-07-20 (09:00 em São Paulo).
+    const g = agruparPorPrazo(
+      [
+        edital({ id: 'd7', inscricaoFim: '2026-07-27T23:59:59.000-03:00' }),
+        edital({ id: 'd8', inscricaoFim: '2026-07-28T23:59:59.000-03:00' }),
+        edital({ id: 'd30', inscricaoFim: '2026-08-19T23:59:59.000-03:00' }),
+        edital({ id: 'd31', inscricaoFim: '2026-08-20T23:59:59.000-03:00' }),
+      ],
+      AGORA,
+    )
+    expect(g.estaSemana.map((e) => e.id)).toEqual(['d7'])
+    expect(g.proximasSemanas.map((e) => e.id)).toEqual(['d8', 'd30'])
+    expect(g.maisAdiante.map((e) => e.id)).toEqual(['d31'])
+  })
+})
+
+describe('listarAreasDisponiveis', () => {
+  test('ordena por frequência, exclui geral e põe IA na frente', () => {
+    const lista = [
+      edital({ id: 'a', areas: ['saude'], ia: true }),
+      edital({ id: 'b', areas: ['saude', 'agro'] }),
+      edital({ id: 'c', areas: ['agro'] }),
+      edital({ id: 'd', areas: ['agro'] }),
+      edital({ id: 'e', areas: ['geral'] }),
+    ]
+    expect(listarAreasDisponiveis(lista)).toEqual(['ia', 'agro', 'saude'])
+  })
+
+  test('sem nenhum edital de IA a pseudo-área não aparece', () => {
+    expect(listarAreasDisponiveis([edital({ areas: ['saude'] })])).toEqual([
+      'saude',
+    ])
+  })
+})
+
+describe('frescor', () => {
+  test('hoje, ontem e há N dias — em dias de calendário de São Paulo', () => {
+    expect(frescor('2026-07-20T08:00:00.000Z', AGORA)).toEqual({
+      texto: 'atualizado hoje',
+      velho: false,
+    })
+    expect(frescor('2026-07-19T08:00:00.000Z', AGORA)).toEqual({
+      texto: 'atualizado ontem',
+      velho: false,
+    })
+    expect(frescor('2026-07-15T08:00:00.000Z', AGORA)).toEqual({
+      texto: 'atualizado há 5 dias',
+      velho: true,
+    })
+  })
 })
 
 describe('filtrar', () => {
@@ -307,5 +419,42 @@ describe('filtrar', () => {
     ]
     const r = filtrar(mix, { busca: '', fonte: null, areas: ['ia', 'saude'] })
     expect(r.map((e) => e.id)).toEqual(['ia-agro', 'saude'])
+  })
+
+  // Buscar "ia" por substring devolvia 40 dos 53 editais reais (tecnologIA,
+  // estratégIA, ciêncIA...) — 75% do dataset na busca mais óbvia do público.
+  test('busca curta casa palavra inteira, não substring', () => {
+    const mix = [
+      edital({ id: 'tec', titulo: 'Apoio à tecnologia nacional' }),
+      edital({ id: 'ia-titulo', titulo: 'Bolsas para projetos de IA' }),
+    ]
+    const r = filtrar(mix, { busca: 'ia', fonte: null, areas: [] })
+    expect(r.map((e) => e.id)).toEqual(['ia-titulo'])
+  })
+
+  test('busca "ia" também alcança editais com a flag, mesmo sem a palavra', () => {
+    const mix = [
+      edital({ id: 'flag', titulo: 'Aprendizado de máquina na saúde', ia: true }),
+      edital({ id: 'nada', titulo: 'Estratégia industrial' }),
+    ]
+    const r = filtrar(mix, { busca: 'IA', fonte: null, areas: [] })
+    expect(r.map((e) => e.id)).toEqual(['flag'])
+  })
+
+  test('busca curta que não é "ia" segue palavra inteira: iot', () => {
+    const mix = [
+      edital({ id: 'iot', titulo: 'Chamada IoT para cidades' }),
+      edital({ id: 'riot', titulo: 'Programa Riotec' }),
+    ]
+    const r = filtrar(mix, { busca: 'iot', fonte: null, areas: [] })
+    expect(r.map((e) => e.id)).toEqual(['iot'])
+  })
+
+  test('busca longa continua por substring', () => {
+    const r = filtrar(
+      [edital({ id: 'endo', titulo: 'Pesquisas em Endometriose' })],
+      { busca: 'endometr', fonte: null, areas: [] },
+    )
+    expect(r.map((e) => e.id)).toEqual(['endo'])
   })
 })

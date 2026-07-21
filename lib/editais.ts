@@ -1,12 +1,17 @@
 import { normalizar } from '../scraper/classificador'
 import type { Edital, Fonte } from '../scraper/schema'
 
-// Prefixo burocrático das chamadas: "Chamada [Pública] [<órgão>] nº 12/2026 - ".
-// O assunto real vem depois do hífen; o número vira linha secundária. O órgão
-// é opcional: "Chamada Pública nº 11/2026 — X" não nomeia órgão nenhum, e
-// deixar o grupo obrigatório fazia o regex capturar "Pública" no lugar dele.
+// Prefixo burocrático das chamadas: "Chamada|Chamamento [Públic(a|o)]
+// [<órgão>] nº 12/2026 [—] <assunto>". O assunto real vem depois do número;
+// o número vira linha secundária. Variações reais cobertas: "Chamamento
+// Público" (CNPq), texto entre o número e o traço ("Nº 20/2026 Atlânticas -
+// Programa..."), e o padrão CAPES com a referência no FIM ("... - Edital
+// nº 20/2026").
 const RE_CHAMADA =
-  /^chamada\s+(?:p[úu]blica\s+)?(?:(\S+)\s+)?n[ºo°]\s*(\d{1,3}\/\d{4})\s*[-–—]\s*(.+)$/i
+  /^(?:chamada|chamamento)\s+(?:p[úu]blic[ao]\s+)?(.*?)\s*n[ºo°]\s*(\d{1,3}\/\d{4})\s*[-–—:]?\s*(.*)$/i
+
+const RE_CHAMADA_NO_FIM =
+  /^(?:chamada|chamamento)\s+(?:p[úu]blic[ao]\s+)?(?:para\s+)?(.+?)\s*[-–—]\s*edital\s+n[ºo°]\s*(\d{1,3}\/\d{4})$/i
 
 // Código de órgão tem ao menos duas maiúsculas seguidas ("CNPq", "MCTI",
 // "CNPq/Decit-SCTIE-MS"). Serve para descartar palavras comuns que caem no
@@ -17,14 +22,35 @@ export function limparTitulo(titulo: string): {
   titulo: string
   referencia?: string
 } {
-  const m = titulo.trim().match(RE_CHAMADA)
+  const bruto = titulo.trim()
+
+  // Padrão CAPES: o assunto vem primeiro e a referência fecha o título.
+  const fim = bruto.match(RE_CHAMADA_NO_FIM)
+  if (fim) {
+    const [, assunto, numero] = fim
+    if (assunto.trim()) {
+      return { titulo: assunto.trim(), referencia: `nº ${numero}` }
+    }
+  }
+
+  const m = bruto.match(RE_CHAMADA)
   if (!m) return { titulo }
-  const [, orgao, numero, resto] = m
-  const assunto = resto.trim()
+  const [, orgaoBruto, numero, resto] = m
+  // "Para Participação no Programa..." lê melhor sem a preposição de ligação.
+  const assunto = resto.trim().replace(/^para\s+/i, '')
   // Sem assunto sobrando, cortar só destruiria informação.
   if (!assunto) return { titulo }
-  const prefixo = orgao && RE_ORGAO.test(orgao) ? `${orgao} ` : ''
-  return { titulo: assunto, referencia: `${prefixo}nº ${numero}` }
+  // O órgão é o último token antes do número; multi-palavra ali é assunto
+  // capturado por engano, não órgão.
+  const orgao = orgaoBruto.trim().split(/\s+/).at(-1) ?? ''
+  const prefixo =
+    orgao && !orgaoBruto.trim().includes(' ') && RE_ORGAO.test(orgao)
+      ? `${orgao} `
+      : ''
+  return {
+    titulo: assunto.charAt(0).toUpperCase() + assunto.slice(1),
+    referencia: `${prefixo}nº ${numero}`,
+  }
 }
 
 // Siglas de agência/programa que precisam sobreviver à normalização mesmo
@@ -35,6 +61,7 @@ export function limparTitulo(titulo: string): {
 // propósito: "Programa Tecnova" lê melhor que "Programa TECNOVA".
 const SIGLAS = new Set([
   'MMULHERES',
+  'EFPC',
   'EMBRAPII',
   'SEBRAE',
   'FAPESP',
@@ -148,6 +175,17 @@ export function resumir(texto: string, max = 180): string {
   return `${(ultimoEspaco > 0 ? cortado.slice(0, ultimoEspaco) : cortado).replace(/[,.;:]$/, '')}…`
 }
 
+// Descrições da FINEP às vezes abrem repetindo o título inteiro — exibir as
+// duas coisas empilhadas gasta o line-clamp com redundância. A comparação é
+// normalizada (a limpeza preserva o comprimento caractere a caractere).
+export function tirarPrefixoDeTitulo(descricao: string, titulo: string): string {
+  const desc = descricao.trim()
+  const alvo = normalizar(titulo.trim())
+  if (!alvo || normalizar(desc).slice(0, alvo.length) !== alvo) return desc
+  const resto = desc.slice(alvo.length).replace(/^[\s\-–—:.,]+/, '')
+  return resto || desc
+}
+
 const FUSO = 'America/Sao_Paulo'
 const DIA_MS = 86_400_000
 
@@ -216,11 +254,31 @@ export function agruparPorPrazo(editais: Edital[], agoraMs: number): Grupos {
   return g
 }
 
+const ESCAPE_RE = /[.*+?^${}()|[\]\\]/g
+
 export function filtrar(
   editais: Edital[],
   f: { busca: string; fonte: Fonte | null; areas: string[] },
 ): Edital[] {
   const termo = normalizar(f.busca.trim())
+  // Termo curto casa por palavra inteira: "ia" por substring devolvia 75% do
+  // dataset (tecnologIA, estratégIA, ciêncIA...) — inútil justamente na
+  // busca mais óbvia do público deste site.
+  const reCurto =
+    termo && termo.length <= 3
+      ? new RegExp(
+          `(?<![\\p{L}\\p{N}])${termo.replace(ESCAPE_RE, '\\$&')}(?![\\p{L}\\p{N}])`,
+          'u',
+        )
+      : null
+  const casaBusca = (e: Edital): boolean => {
+    if (!termo) return true
+    const texto = normalizar(`${e.titulo} ${e.descricao ?? ''}`)
+    if (reCurto) {
+      return reCurto.test(texto) || (termo === 'ia' && e.ia)
+    }
+    return texto.includes(termo)
+  }
   return editais.filter(
     (e) =>
       (!f.fonte || e.fonte === f.fonte) &&
@@ -229,9 +287,43 @@ export function filtrar(
       // caso especial, IA seria a única categoria impossível de filtrar.
       (f.areas.length === 0 ||
         f.areas.some((a) => (a === 'ia' ? e.ia : e.areas.includes(a)))) &&
-      (!termo ||
-        normalizar(`${e.titulo} ${e.descricao ?? ''}`).includes(termo)),
+      casaBusca(e),
   )
+}
+
+// Ordem dos filtros de área que o usuário vê todo dia: por frequência no
+// dataset vigente, com IA — o recorte que originou o projeto — sempre à
+// frente quando existe. "geral" é ausência de rótulo, não área.
+export function listarAreasDisponiveis(editais: Edital[]): string[] {
+  const contagem = new Map<string, number>()
+  for (const e of editais) {
+    for (const a of e.areas) {
+      if (a !== 'geral') contagem.set(a, (contagem.get(a) ?? 0) + 1)
+    }
+  }
+  const ordenadas = [...contagem.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([a]) => a)
+  return editais.some((e) => e.ia) ? ['ia', ...ordenadas] : ordenadas
+}
+
+// Sinal de frescor do topo da página: se o GitHub Action parar em silêncio,
+// "atualizado há N dias" é o único alarme visível sem rolar até o rodapé.
+export function frescor(
+  atualizadoEmIso: string,
+  agoraMs: number,
+): { texto: string; velho: boolean } {
+  const dias = Math.max(
+    0,
+    diaCalendario(agoraMs) - diaCalendario(new Date(atualizadoEmIso).getTime()),
+  )
+  const texto =
+    dias === 0
+      ? 'atualizado hoje'
+      : dias === 1
+        ? 'atualizado ontem'
+        : `atualizado há ${dias} dias`
+  return { texto, velho: dias >= 2 }
 }
 
 // Nome de exibição de cada fonte. Fica aqui, e não nos componentes, porque
