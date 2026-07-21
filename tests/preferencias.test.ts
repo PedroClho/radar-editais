@@ -57,13 +57,29 @@ describe('preferências de área', () => {
     expect(lerAreas()).toEqual(['qualquer'])
   })
 
-  test('registrarVisita devolve a anterior e grava a atual', () => {
-    expect(registrarVisita('2026-07-20T10:00:00.000Z')).toBeNull()
-    expect(registrarVisita('2026-07-21T10:00:00.000Z')).toBe(
+  test('registrarVisita: primeira visita não marca nada, dia novo devolve o anterior', () => {
+    const mesmoDia = (a: string, b: string) => a.slice(0, 10) === b.slice(0, 10)
+    expect(registrarVisita('2026-07-20T10:00:00.000Z', mesmoDia)).toBeNull()
+    expect(registrarVisita('2026-07-21T10:00:00.000Z', mesmoDia)).toBe(
       '2026-07-20T10:00:00.000Z',
     )
-    expect(localStorage.getItem(CHAVE_ULTIMA_VISITA)).toBe(
-      '2026-07-21T10:00:00.000Z',
+  })
+
+  test('registrarVisita: reload no mesmo dia não apaga o "novo desde"', () => {
+    const mesmoDia = (a: string, b: string) => a.slice(0, 10) === b.slice(0, 10)
+    registrarVisita('2026-07-20T10:00:00.000Z', mesmoDia)
+    registrarVisita('2026-07-21T08:00:00.000Z', mesmoDia)
+    // segunda aba / reload mais tarde no MESMO dia: continua vendo os novos
+    expect(registrarVisita('2026-07-21T11:00:00.000Z', mesmoDia)).toBe(
+      '2026-07-20T10:00:00.000Z',
+    )
+  })
+
+  test('registrarVisita entende o formato antigo (string ISO pura)', () => {
+    const mesmoDia = (a: string, b: string) => a.slice(0, 10) === b.slice(0, 10)
+    localStorage.setItem(CHAVE_ULTIMA_VISITA, '2026-07-19T09:00:00.000Z')
+    expect(registrarVisita('2026-07-21T10:00:00.000Z', mesmoDia)).toBe(
+      '2026-07-19T09:00:00.000Z',
     )
   })
 })

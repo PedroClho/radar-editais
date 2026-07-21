@@ -29,13 +29,39 @@ export function salvarAreas(areas: string[]): void {
   }
 }
 
-// "Novo" é relativo à última visita de QUEM OLHA, não a uma janela fixa:
-// devolve a visita anterior e registra a atual. Primeira visita → null,
-// nada é marcado como novo.
-export function registrarVisita(agoraIso: string): string | null {
+// "Novo" é relativo ao último DIA de visita de quem olha, não ao último
+// mount: um reload (ou segunda aba) no mesmo dia não pode apagar os badges.
+// Guarda { atual, anterior }: quando a visita é de um dia novo, a atual vira
+// anterior; dentro do mesmo dia nada muda. Primeira visita → null.
+export function registrarVisita(
+  agoraIso: string,
+  mesmoDia: (a: string, b: string) => boolean,
+): string | null {
   try {
-    const anterior = localStorage.getItem(CHAVE_ULTIMA_VISITA)
-    localStorage.setItem(CHAVE_ULTIMA_VISITA, agoraIso)
+    const bruto = localStorage.getItem(CHAVE_ULTIMA_VISITA)
+    let atual: string | null = null
+    let anterior: string | null = null
+    if (bruto) {
+      try {
+        const v: unknown = JSON.parse(bruto)
+        if (v && typeof v === 'object') {
+          const o = v as { atual?: unknown; anterior?: unknown }
+          if (typeof o.atual === 'string') atual = o.atual
+          if (typeof o.anterior === 'string') anterior = o.anterior
+        }
+      } catch {
+        // formato antigo: string ISO pura
+        atual = bruto
+      }
+    }
+    if (!atual || !mesmoDia(atual, agoraIso)) {
+      anterior = atual
+      atual = agoraIso
+    }
+    localStorage.setItem(
+      CHAVE_ULTIMA_VISITA,
+      JSON.stringify({ atual, anterior }),
+    )
     return anterior
   } catch {
     return null

@@ -32,7 +32,10 @@ export default function Controles({
     // Numa página de 6.500px, filtrar sem rolar de volta ao topo é função.
     // O fundo levemente translúcido + blur mantém a leitura da lista por
     // baixo sem comprometer o contraste dos controles.
-    <div className="sticky top-0 z-10 -mx-5 mt-8 border-b border-[var(--line)] bg-[color-mix(in_srgb,var(--bg)_88%,transparent)] px-5 py-3 backdrop-blur-sm sm:-mx-8 sm:px-8">
+    // z-20: os ícones de agenda das linhas têm z-10 no mesmo stacking
+    // context — com z igual, a lista (depois no DOM) pintaria por cima da
+    // barra ao rolar.
+    <div className="sticky top-0 z-20 -mx-5 mt-8 border-b border-[var(--line)] bg-[color-mix(in_srgb,var(--bg)_88%,transparent)] px-5 py-3 backdrop-blur-sm sm:-mx-8 sm:px-8">
       <div className="flex items-center gap-5">
         <label className="flex min-w-0 flex-1 items-center gap-2">
           <Search

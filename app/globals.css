@@ -92,6 +92,12 @@ body {
   outline-offset: 2px;
 }
 
+/* O overlay da View Transition captura cliques durante a animação — sem
+   isto, cliques rápidos em sequência nos filtros seriam engolidos. */
+::view-transition {
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

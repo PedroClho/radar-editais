@@ -208,6 +208,15 @@ export function diasAte(fimIso: string, agoraMs: number): number {
   return diaCalendario(new Date(fimIso).getTime()) - diaCalendario(agoraMs)
 }
 
+// Mesmo dia de calendário em São Paulo — usado para tratar visitas do mesmo
+// dia como uma só (um reload não pode apagar os badges "novo").
+export function mesmoDiaSp(aIso: string, bIso: string): boolean {
+  return (
+    diaCalendario(new Date(aIso).getTime()) ===
+    diaCalendario(new Date(bIso).getTime())
+  )
+}
+
 export type Urgencia = 'critico' | 'proximo' | 'neutro'
 
 export function nivelUrgencia(dias: number | null): Urgencia {
@@ -263,11 +272,12 @@ export function filtrar(
   const termo = normalizar(f.busca.trim())
   // Termo curto casa por palavra inteira: "ia" por substring devolvia 75% do
   // dataset (tecnologIA, estratégIA, ciêncIA...) — inútil justamente na
-  // busca mais óbvia do público deste site.
+  // busca mais óbvia do público deste site. Sem lookbehind de propósito:
+  // Safari < 16.4 lança SyntaxError ao CONSTRUIR o regex, derrubando a página.
   const reCurto =
     termo && termo.length <= 3
       ? new RegExp(
-          `(?<![\\p{L}\\p{N}])${termo.replace(ESCAPE_RE, '\\$&')}(?![\\p{L}\\p{N}])`,
+          `(?:^|[^\\p{L}\\p{N}])${termo.replace(ESCAPE_RE, '\\$&')}(?:[^\\p{L}\\p{N}]|$)`,
           'u',
         )
       : null

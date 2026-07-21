@@ -10,6 +10,7 @@ import {
   filtrar,
   frescor,
   listarAreasDisponiveis,
+  mesmoDiaSp,
 } from '@/lib/editais'
 import { lerAreas, registrarVisita, salvarAreas } from '@/lib/preferencias'
 import { ROTULOS } from '@/scraper/classificador'
@@ -53,7 +54,7 @@ export default function Radar({ dados }: { dados: Dados }) {
     // qualquer um deles durante o render quebraria a hidratação.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setAgoraMs(Date.now())
-    setNovoDesde(registrarVisita(new Date().toISOString()))
+    setNovoDesde(registrarVisita(new Date().toISOString(), mesmoDiaSp))
 
     // Um link compartilhado ("olha os editais de IA desta semana") manda
     // sobre a preferência salva; sem parâmetros, vale o localStorage.
@@ -74,19 +75,29 @@ export default function Radar({ dados }: { dados: Dados }) {
     prontoRef.current = true
   }, [])
 
-  // Filtro vira URL compartilhável — replace, sem poluir o histórico.
+  // Filtro vira URL compartilhável — replace, sem poluir o histórico. Com
+  // debounce e try/catch: o Safari limita chamadas de replaceState por
+  // janela de tempo e LANÇA quando excede — digitação rápida não pode
+  // derrubar a página.
   useEffect(() => {
     if (!prontoRef.current) return
-    const params = new URLSearchParams()
-    if (busca.trim()) params.set('q', busca.trim())
-    if (fonte) params.set('fonte', fonte)
-    if (areas.length > 0) params.set('areas', areas.join(','))
-    const query = params.toString()
-    window.history.replaceState(
-      null,
-      '',
-      query ? `?${query}` : window.location.pathname,
-    )
+    const t = setTimeout(() => {
+      const params = new URLSearchParams()
+      if (busca.trim()) params.set('q', busca.trim())
+      if (fonte) params.set('fonte', fonte)
+      if (areas.length > 0) params.set('areas', areas.join(','))
+      const query = params.toString()
+      try {
+        window.history.replaceState(
+          null,
+          '',
+          query ? `?${query}` : window.location.pathname,
+        )
+      } catch {
+        // rate limit do navegador: a URL atualiza na próxima mudança
+      }
+    }, 300)
+    return () => clearTimeout(t)
   }, [busca, fonte, areas])
 
   function mudarAreas(novas: string[]) {

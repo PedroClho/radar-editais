@@ -189,7 +189,7 @@ export default function LinhaEdital({
               download={`prazo-${edital.id}.ics`}
               aria-label="Adicionar prazo à agenda"
               title="Adicionar prazo à agenda"
-              className="relative z-10 ml-auto p-1 -m-1 text-[var(--muted)] transition-colors duration-150 hover:text-[var(--ink)]"
+              className="relative z-10 ml-auto p-1.5 -m-1.5 text-[var(--muted)] transition-colors duration-150 hover:text-[var(--ink)]"
             >
               <CalendarPlus size={15} aria-hidden />
             </a>
