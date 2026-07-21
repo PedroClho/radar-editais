@@ -1,13 +1,38 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { flushSync } from 'react-dom'
 import Controles from '@/componentes/Controles'
 import GrupoPrazo from '@/componentes/GrupoPrazo'
-import LinhaEdital from '@/componentes/LinhaEdital'
 import StatusFontes from '@/componentes/StatusFontes'
-import { agruparPorPrazo, filtrar } from '@/lib/editais'
-import { lerAreas, salvarAreas } from '@/lib/preferencias'
-import type { Dados, Fonte } from '@/scraper/schema'
+import {
+  agruparPorPrazo,
+  filtrar,
+  frescor,
+  listarAreasDisponiveis,
+} from '@/lib/editais'
+import { lerAreas, registrarVisita, salvarAreas } from '@/lib/preferencias'
+import { ROTULOS } from '@/scraper/classificador'
+import { FONTES, type Dados, type Fonte } from '@/scraper/schema'
+
+// Troca de filtro anima com a View Transitions API quando ela existe e o
+// usuário não pediu menos movimento — zero dependência, degrada para troca
+// instantânea. A busca fica de fora: transição a cada tecla atrapalharia.
+function comTransicao(mudar: () => void) {
+  const doc = document as Document & {
+    startViewTransition?: (cb: () => void) => unknown
+  }
+  if (
+    typeof doc.startViewTransition === 'function' &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ) {
+    doc.startViewTransition(() => flushSync(mudar))
+  } else {
+    mudar()
+  }
+}
+
+const AREAS_VALIDAS = Object.keys(ROTULOS).filter((a) => a !== 'geral')
 
 export default function Radar({ dados }: { dados: Dados }) {
   // O primeiro render usa o timestamp da coleta, que é igual no servidor e no
@@ -18,18 +43,59 @@ export default function Radar({ dados }: { dados: Dados }) {
   const [busca, setBusca] = useState('')
   const [fonte, setFonte] = useState<Fonte | null>(null)
   const [areas, setAreas] = useState<string[]>([])
+  const [novoDesde, setNovoDesde] = useState<string | null>(null)
+  // Evita que o efeito de sincronizar a URL rode antes de a URL inicial ter
+  // sido lida — apagaria os parâmetros de um link compartilhado.
+  const prontoRef = useRef(false)
 
   useEffect(() => {
-    // Só no cliente existem o "agora" real e o localStorage. Ler qualquer um
-    // dos dois durante o render quebraria a hidratação.
+    // Só no cliente existem o "agora" real, o localStorage e a URL. Ler
+    // qualquer um deles durante o render quebraria a hidratação.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setAgoraMs(Date.now())
-    setAreas(lerAreas())
+    setNovoDesde(registrarVisita(new Date().toISOString()))
+
+    // Um link compartilhado ("olha os editais de IA desta semana") manda
+    // sobre a preferência salva; sem parâmetros, vale o localStorage.
+    const params = new URLSearchParams(window.location.search)
+    const fonteUrl = params.get('fonte')
+    const areasUrl = params.get('areas')
+    setBusca(params.get('q') ?? '')
+    setFonte(
+      fonteUrl && (FONTES as readonly string[]).includes(fonteUrl)
+        ? (fonteUrl as Fonte)
+        : null,
+    )
+    setAreas(
+      areasUrl !== null
+        ? areasUrl.split(',').filter((a) => AREAS_VALIDAS.includes(a))
+        : lerAreas(AREAS_VALIDAS),
+    )
+    prontoRef.current = true
   }, [])
 
+  // Filtro vira URL compartilhável — replace, sem poluir o histórico.
+  useEffect(() => {
+    if (!prontoRef.current) return
+    const params = new URLSearchParams()
+    if (busca.trim()) params.set('q', busca.trim())
+    if (fonte) params.set('fonte', fonte)
+    if (areas.length > 0) params.set('areas', areas.join(','))
+    const query = params.toString()
+    window.history.replaceState(
+      null,
+      '',
+      query ? `?${query}` : window.location.pathname,
+    )
+  }, [busca, fonte, areas])
+
   function mudarAreas(novas: string[]) {
-    setAreas(novas)
+    comTransicao(() => setAreas(novas))
     salvarAreas(novas)
+  }
+
+  function mudarFonte(nova: Fonte | null) {
+    comTransicao(() => setFonte(nova))
   }
 
   const vigentes = useMemo(() => {
@@ -37,21 +103,10 @@ export default function Radar({ dados }: { dados: Dados }) {
     return [...g.estaSemana, ...g.proximasSemanas, ...g.maisAdiante, ...g.semPrazo]
   }, [dados.editais, agoraMs])
 
-  const areasDisponiveis = useMemo(() => {
-    const contagem = new Map<string, number>()
-    for (const e of vigentes) {
-      for (const a of e.areas) {
-        if (a !== 'geral') contagem.set(a, (contagem.get(a) ?? 0) + 1)
-      }
-    }
-    const ordenadas = [...contagem.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .map(([a]) => a)
-    // IA vive numa flag booleana, fora de `areas`, por ser transversal — mas
-    // é o recorte que originou o projeto. Entra como pseudo-área, primeiro na
-    // fila, para ser selecionável como qualquer outra.
-    return vigentes.some((e) => e.ia) ? ['ia', ...ordenadas] : ordenadas
-  }, [vigentes])
+  const areasDisponiveis = useMemo(
+    () => listarAreasDisponiveis(vigentes),
+    [vigentes],
+  )
 
   const visiveis = useMemo(
     () => filtrar(vigentes, { busca, fonte, areas }),
@@ -65,11 +120,15 @@ export default function Radar({ dados }: { dados: Dados }) {
 
   const fechamEm7 = grupos.estaSemana.length
   const temFiltro = areas.length > 0 || fonte !== null || busca.trim() !== ''
+  const atualizacao = frescor(dados.atualizadoEm, agoraMs)
 
   function limpar() {
-    setBusca('')
-    setFonte(null)
-    mudarAreas([])
+    comTransicao(() => {
+      setBusca('')
+      setFonte(null)
+      setAreas([])
+    })
+    salvarAreas([])
   }
 
   return (
@@ -77,7 +136,7 @@ export default function Radar({ dados }: { dados: Dados }) {
       <header className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 pt-10 sm:pt-14">
         <h1 className="serif text-xl font-medium">Radar de Editais</h1>
         <p className="numeros text-sm text-[var(--muted)]">
-          {vigentes.length} abertos
+          {vigentes.length} {vigentes.length === 1 ? 'aberto' : 'abertos'}
           {fechamEm7 > 0 && (
             <>
               {' · '}
@@ -86,6 +145,12 @@ export default function Radar({ dados }: { dados: Dados }) {
               </span>
             </>
           )}
+          {' · '}
+          <span
+            className={atualizacao.velho ? 'text-[var(--critico)]' : undefined}
+          >
+            {atualizacao.texto}
+          </span>
         </p>
       </header>
 
@@ -95,7 +160,7 @@ export default function Radar({ dados }: { dados: Dados }) {
         areas={areas}
         areasDisponiveis={areasDisponiveis}
         onBusca={setBusca}
-        onFonte={setFonte}
+        onFonte={mudarFonte}
         onAreas={mudarAreas}
       />
 
@@ -113,33 +178,28 @@ export default function Radar({ dados }: { dados: Dados }) {
           titulo="Esta semana"
           editais={grupos.estaSemana}
           agoraMs={agoraMs}
+          novoDesde={novoDesde}
+          vazio={temFiltro ? undefined : 'nenhum prazo fecha esta semana'}
         />
         <GrupoPrazo
           titulo="Próximas semanas"
           editais={grupos.proximasSemanas}
           agoraMs={agoraMs}
+          novoDesde={novoDesde}
         />
         <GrupoPrazo
           titulo="Mais adiante"
           editais={grupos.maisAdiante}
           agoraMs={agoraMs}
+          novoDesde={novoDesde}
         />
-
-        {grupos.semPrazo.length > 0 && (
-          <section className="mt-12">
-            <h2 className="flex items-baseline gap-3 text-xs tracking-wider text-[var(--muted)] uppercase">
-              Sem prazo divulgado
-              <span className="numeros text-[var(--line)]">
-                {grupos.semPrazo.length}
-              </span>
-            </h2>
-            <ul className="mt-3 border-t border-[var(--line)]">
-              {grupos.semPrazo.map((e) => (
-                <LinhaEdital key={e.id} edital={e} agoraMs={agoraMs} />
-              ))}
-            </ul>
-          </section>
-        )}
+        <GrupoPrazo
+          titulo="Sem prazo divulgado"
+          editais={grupos.semPrazo}
+          agoraMs={agoraMs}
+          novoDesde={novoDesde}
+          comEspinha={false}
+        />
 
         {visiveis.length === 0 && (
           <div className="mt-20 text-center text-[var(--muted)]">

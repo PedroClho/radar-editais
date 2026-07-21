@@ -4,7 +4,7 @@
   --bg: #fbfbfa;
   --surface: #ffffff;
   --ink: #17181c;
-  --muted: #6a6e75;
+  --muted: #62666d;
   --line: #e4e5e1;
   --accent: #a86f00;
   --accent-forte: #7d5300;
@@ -42,6 +42,51 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* A espinha de datas: um fio contínuo por grupo temporal, com um nó por
+   edital na altura do título. A posição do fio fica no vão entre a coluna
+   de datas e o conteúdo (largura da coluna + metade do gap). Onde não há
+   tempo — "sem prazo divulgado" — não há espinha. */
+.com-espinha,
+.no-espinha {
+  --espinha-x: 3.75rem;
+}
+
+@media (min-width: 640px) {
+  .com-espinha,
+  .no-espinha {
+    --espinha-x: 5.25rem;
+  }
+}
+
+.com-espinha {
+  position: relative;
+}
+
+.com-espinha::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--espinha-x);
+  width: 1px;
+  background: var(--line);
+}
+
+.no-espinha {
+  position: relative;
+}
+
+.no-espinha::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--espinha-x) - 2px);
+  top: 2.05rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: var(--cor-no, var(--line));
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -53,5 +98,11 @@ body {
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
   }
 }

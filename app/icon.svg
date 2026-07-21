@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Marca do radar: arcos varrendo a partir da origem, um ponto detectado. -->
+  <style>
+    .traco { stroke: #a86f00; }
+    .cheio { fill: #a86f00; }
+    @media (prefers-color-scheme: dark) {
+      .traco { stroke: #f0b429; }
+      .cheio { fill: #f0b429; }
+    }
+  </style>
+  <g fill="none" stroke-width="2.5" stroke-linecap="round">
+    <path class="traco" d="M 7 17 A 8 8 0 0 1 15 25" />
+    <path class="traco" d="M 7 11 A 14 14 0 0 1 21 25" />
+  </g>
+  <circle class="cheio" cx="7" cy="25" r="2.6" />
+  <circle class="cheio" cx="23" cy="9" r="2.2" />
+</svg>
