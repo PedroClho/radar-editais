@@ -85,7 +85,7 @@ async function pdfDoEdital(urlPagina: string): Promise<string | undefined> {
   return $('section.entry-content a[href$=".pdf"]').first().attr('href')
 }
 
-async function prazoDoPdf(urlPagina: string): Promise<string | undefined> {
+async function textoDoPdf(urlPagina: string): Promise<string | undefined> {
   const hrefPdf = await pdfDoEdital(urlPagina)
   if (!hrefPdf) return undefined
 
@@ -101,7 +101,7 @@ async function prazoDoPdf(urlPagina: string): Promise<string | undefined> {
   const parser = new PDFParse({ data: dados })
   try {
     const { text } = await parser.getText()
-    return extrairPrazoCronograma(text)
+    return text
   } finally {
     await parser.destroy()
   }
@@ -116,9 +116,18 @@ export async function coletarFapeg(): Promise<Edital[]> {
     throw new Error('FAPEG retornou 0 editais abertos — layout mudou?')
   }
   for (const edital of editais) {
-    if (edital.inscricaoFim) continue
     try {
-      edital.inscricaoFim = await prazoDoPdf(edital.url)
+      const texto = await textoDoPdf(edital.url)
+      if (!texto) continue
+      if (!edital.inscricaoFim) {
+        edital.inscricaoFim = extrairPrazoCronograma(texto)
+      }
+      // A tabela curada só tem título e origem — 60% caía em "geral". O PDF
+      // inteiro já está baixado (veio pelo prazo): reclassificar com ele é
+      // ganho de graça, sem nenhuma requisição extra.
+      const { areas, ia } = classificar(`${edital.titulo} ${texto}`)
+      edital.areas = areas
+      edital.ia = ia
     } catch {
       // Sem prazo é um estado válido — segue com "prazo no edital". Um PDF
       // ilegível ou fora do ar não pode derrubar a fonte inteira.

@@ -109,4 +109,106 @@ describe('mesclar', () => {
     )
     expect(dados.editais).toHaveLength(1)
   })
+
+  test('preserva coletadoEm de edital já visto — o campo significa "primeiro visto"', () => {
+    const dados = mesclar(
+      {
+        finep: {
+          editais: [
+            edital({ id: 'finep-antigo', coletadoEm: AGORA }),
+            edital({ id: 'finep-inedito', url: 'https://example.com/novo' }),
+          ],
+        },
+        cnpq: { editais: [] },
+        fapeg: { editais: [] },
+        capes: { editais: [] },
+      },
+      anterior,
+      AGORA,
+    )
+    const antigo = dados.editais.find((e) => e.id === 'finep-antigo')
+    const inedito = dados.editais.find((e) => e.id === 'finep-inedito')
+    expect(antigo!.coletadoEm).toBe(ONTEM) // valor da primeira coleta
+    expect(inedito!.coletadoEm).toBe(AGORA)
+  })
+
+  test('deduplica registros com mesmo título+descrição na mesma fonte, preferindo o que tem prazo', () => {
+    // Caso real: o CMS da FINEP tem a mesma oportunidade em duas URLs.
+    const dados = mesclar(
+      {
+        finep: {
+          editais: [
+            edital({
+              id: 'finep-a',
+              url: 'https://example.com/721681',
+              descricao: 'EDITAL DE SELEÇÃO PÚBLICA 2017',
+            }),
+            edital({
+              id: 'finep-b',
+              url: 'https://example.com/721708',
+              descricao: 'EDITAL DE SELEÇÃO PÚBLICA 2017',
+              inscricaoFim: '2026-12-01T23:59:59.000-03:00',
+            }),
+          ],
+        },
+        cnpq: { editais: [] },
+        fapeg: { editais: [] },
+        capes: { editais: [] },
+      },
+      undefined,
+      AGORA,
+    )
+    expect(dados.editais).toHaveLength(1)
+    expect(dados.editais[0].id).toBe('finep-b') // o que tem prazo vence
+  })
+
+  test('sem descrição não há dedupe por conteúdo — títulos podem coincidir', () => {
+    const dados = mesclar(
+      {
+        capes: {
+          editais: [
+            edital({ id: 'capes-a', fonte: 'capes', url: 'https://example.com/a' }),
+            edital({ id: 'capes-b', fonte: 'capes', url: 'https://example.com/b' }),
+          ],
+        },
+        finep: { editais: [] },
+        cnpq: { editais: [] },
+        fapeg: { editais: [] },
+      },
+      undefined,
+      AGORA,
+    )
+    expect(dados.editais).toHaveLength(2)
+  })
+
+  test('normaliza situacao pelo prazo: vencido vira encerrado no JSON', () => {
+    const dados = mesclar(
+      {
+        finep: {
+          editais: [
+            edital({
+              id: 'vencido',
+              inscricaoFim: '2026-07-01T23:59:59.000-03:00',
+              situacao: 'aberto',
+            }),
+            edital({
+              id: 'vigente',
+              inscricaoFim: '2026-12-01T23:59:59.000-03:00',
+              situacao: 'aberto',
+            }),
+            edital({ id: 'sem-prazo', situacao: 'indefinido' }),
+          ],
+        },
+        cnpq: { editais: [] },
+        fapeg: { editais: [] },
+        capes: { editais: [] },
+      },
+      undefined,
+      AGORA,
+    )
+    const porId = new Map(dados.editais.map((e) => [e.id, e]))
+    expect(porId.get('vencido')!.situacao).toBe('encerrado')
+    expect(porId.get('vigente')!.situacao).toBe('aberto')
+    expect(porId.get('sem-prazo')!.situacao).toBe('indefinido')
+  })
 })

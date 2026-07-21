@@ -54,10 +54,11 @@ export const AREAS: Record<string, string[]> = {
     'irrigacao',
     'bioinsumo*',
   ],
+  // "inovacao"/"inovador*" ficam de FORA de propósito: num agregador de
+  // editais de fomento à inovação, todo edital casa — o rótulo cobria 70%
+  // do dataset e não recortava nada.
   tecnologia: [
     'tecnolog*',
-    'inovacao',
-    'inovador*',
     'startup*',
     'software*',
     'hardware*',
@@ -96,8 +97,15 @@ export const AREAS: Record<string, string[]> = {
     'petroleo',
   ],
   industria: ['industria*', 'manufatura*', 'mineracao', 'metalurg*'],
+  // O substantivo "sustentabilidade" só conta com colocação ambiental —
+  // "sustentabilidade econômica" (edital de defesa, caso real) não é esta
+  // área. O adjetivo ("cidades sustentáveis") segue casando via prefixo.
   sustentabilidade: [
-    'sustentab*',
+    'sustentav*',
+    'sustentabilidade ambiental',
+    'sustentabilidade climatica',
+    'desenvolvimento sustentavel',
+    'economia circular',
     'meio ambiente',
     'ambiental*',
     'clima',

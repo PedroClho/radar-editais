@@ -48,7 +48,35 @@ describe('classificar', () => {
   test('termos com prefixo* casam variações', () => {
     const r = classificar('Apoio à inovação farmacêutica no país')
     expect(r.areas).toContain('saude')
-    expect(r.areas).toContain('tecnologia')
+  })
+
+  test('"inovação" sozinha não é tecnologia — todo edital de fomento fala de inovação', () => {
+    const r = classificar('Subvenção econômica à inovação para propostas inovadoras')
+    expect(r.areas).toEqual(['geral'])
+  })
+
+  test('tecnologia continua casando termos específicos', () => {
+    const r = classificar('Desenvolvimento de software e robótica educacional')
+    expect(r.areas).toEqual(expect.arrayContaining(['tecnologia', 'educacao']))
+  })
+
+  test('sustentabilidade: adjetivo e colocação ambiental casam', () => {
+    expect(classificar('Economia Circular e Cidades Sustentáveis').areas).toContain(
+      'sustentabilidade',
+    )
+    expect(
+      classificar('Programa de reciclagem e biodiversidade no Cerrado').areas,
+    ).toContain('sustentabilidade')
+  })
+
+  test('"sustentabilidade econômica" não é a área sustentabilidade', () => {
+    // Caso real: "Finep Mais Inovação Brasil – Rodada 2 - Base Industrial de
+    // Defesa" fala de "Sustentabilidade econômica para BID" e era rotulado
+    // como sustentabilidade ambiental.
+    const r = classificar(
+      'Base Industrial de Defesa — Sustentabilidade econômica para empresas do setor',
+    )
+    expect(r.areas).not.toContain('sustentabilidade')
   })
 
   test('ciência de dados na saúde: IA + saude', () => {
