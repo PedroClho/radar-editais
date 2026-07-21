@@ -54,11 +54,12 @@ export const AREAS: Record<string, string[]> = {
     'irrigacao',
     'bioinsumo*',
   ],
-  // "inovacao"/"inovador*" ficam de FORA de propósito: num agregador de
-  // editais de fomento à inovação, todo edital casa — o rótulo cobria 70%
-  // do dataset e não recortava nada.
+  // "inovacao"/"inovador*"/"tecnolog*" ficam de FORA de propósito: num
+  // agregador de fomento à inovação, todo edital tem "risco tecnológico" e
+  // "Ciência, Tecnologia e Inovação" no boilerplate — com eles o rótulo
+  // cobria 89% do dataset e não recortava nada. Tecnologia aqui significa
+  // o SETOR (TIC, startups, semicondutores...), não a palavra.
   tecnologia: [
-    'tecnolog*',
     'startup*',
     'software*',
     'hardware*',

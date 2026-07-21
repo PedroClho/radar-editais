@@ -55,6 +55,13 @@ describe('classificar', () => {
     expect(r.areas).toEqual(['geral'])
   })
 
+  test('"risco tecnológico" no boilerplate também não é a área tecnologia', () => {
+    const r = classificar(
+      'Apoio a projetos com risco tecnológico do Ministério da Ciência, Tecnologia e Inovação',
+    )
+    expect(r.areas).toEqual(['geral'])
+  })
+
   test('tecnologia continua casando termos específicos', () => {
     const r = classificar('Desenvolvimento de software e robótica educacional')
     expect(r.areas).toEqual(expect.arrayContaining(['tecnologia', 'educacao']))
