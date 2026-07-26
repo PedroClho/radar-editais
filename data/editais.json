@@ -1,25 +1,27 @@
 {
-  "atualizadoEm": "2026-07-25T11:07:35.626Z",
+  "atualizadoEm": "2026-07-26T11:18:05.418Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-07-25T11:07:35.626Z"
+      "atualizadoEm": "2026-07-26T11:18:05.418Z"
     },
     "cnpq": {
-      "ok": true,
+      "ok": false,
       "quantidade": 10,
-      "atualizadoEm": "2026-07-25T11:07:35.626Z"
+      "atualizadoEm": "2026-07-25T11:07:35.626Z",
+      "erro": "fetch failed"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-07-25T11:07:35.626Z"
+      "atualizadoEm": "2026-07-26T11:18:05.418Z"
     },
     "capes": {
-      "ok": true,
+      "ok": false,
       "quantidade": 2,
-      "atualizadoEm": "2026-07-25T11:07:35.626Z"
+      "atualizadoEm": "2026-07-25T11:07:35.626Z",
+      "erro": "fetch failed"
     }
   },
   "editais": [
@@ -172,6 +174,7 @@
       "fonte": "cnpq",
       "titulo": "Chamada CNPq/Decit-SCTIE-MS Nº 18/2026 - Avaliações de Políticas, Programas, Projetos e Ações em Saúde",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-18-2026/chamada-publica-cnpq-N-18-2026",
+      "descricao": "Com financiamento do Departamento de Ciência e Tecnologia, da Secretaria de Ciência, Tecnologia e Inovação em Saúde do Ministério da Saúde (Decit/SCTIE/MS), o Conselho Nacional de Desenvolvimento Científico e Tecnológico – CNPq torna pública a presente Chamada e convida os interessados a apresentarem propostas nos termos aqui estabelecidos.",
       "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
       "inscricaoFim": "2026-07-29T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -179,8 +182,7 @@
         "saude"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Com financiamento do Departamento de Ciência e Tecnologia, da Secretaria de Ciência, Tecnologia e Inovação em Saúde do Ministério da Saúde (Decit/SCTIE/MS), o Conselho Nacional de Desenvolvimento Científico e Tecnológico – CNPq torna pública a presente Chamada e convida os interessados a apresentarem propostas nos termos aqui estabelecidos."
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-b875688be325",
@@ -202,6 +204,7 @@
       "fonte": "cnpq",
       "titulo": "Chamada CNPq/FNDCT nº 06/2026 – UNIVERSAL",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-06-2026/chamada-publica-cnpq-N-06-2026",
+      "descricao": "O CNPq torna pública a Chamada CNPq/FNDCT n° 06/2026 - Universal, que tem por objeto apoiar projetos de pesquisa que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País, em qualquer área do conhecimento.",
       "inscricaoInicio": "2026-06-17T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-03T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -209,8 +212,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O CNPq torna pública a Chamada CNPq/FNDCT n° 06/2026 - Universal, que tem por objeto apoiar projetos de pesquisa que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País, em qualquer área do conhecimento."
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "fapeg-452f0d931597",
@@ -233,6 +235,7 @@
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq N° 07/2026 - Programa Institucional de Bolsas de Pós-Graduação (PIBPG)",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-07-2026/chamada-publica-cnpq-N-07-2026",
+      "descricao": "São objetivos desta Chamada: promover a capacitação de recursos humanos para a pesquisa científica, tecnológica e de inovação de grupos consolidados e emergentes; fomentar o desenvolvimento de pesquisas com foco na geração de inovação e impacto socioambiental, social, econômico e cultural, em nível local, regional e nacional; e incentivar o desenvolvimento científico, tecnológico e de inovação nos temas estratégicos de pesquisa das IES/ICT.",
       "inscricaoInicio": "2026-05-28T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-05T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -240,8 +243,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "São objetivos desta Chamada: promover a capacitação de recursos humanos para a pesquisa científica, tecnológica e de inovação de grupos consolidados e emergentes; fomentar o desenvolvimento de pesquisas com foco na geração de inovação e impacto socioambiental, social, econômico e cultural, em nível local, regional e nacional; e incentivar o desenvolvimento científico, tecnológico e de inovação nos temas estratégicos de pesquisa das IES/ICT."
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-94631949e705",
@@ -263,6 +265,7 @@
       "fonte": "cnpq",
       "titulo": "Chamada CNPq/MinC nº 17/2026 - Apoio ao funcionamento de incubadoras voltadas à Economia Criativa",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-17-2026/chamada-publica-cnpq-N-17-2026",
+      "descricao": "O CNPq torna pública a Chamada CNPq/MinC nº 17/2026 - Apoio ao funcionamento de incubadoras voltadas à Economia Criativa, que tem por objeto apoiar projetos de pesquisa que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País, nas áreas da Economia Criativa e fortalecer empreendimentos culturais e criativos, por intermédio da implantação e acompanhamento de incubadoras realizadas através das ações da Escola de Formação Solano Trindade - EscultAqui e do Programa Nacional de Incubadoras Populares - PRONINC, garantindo formação, orientação…",
       "inscricaoInicio": "2026-06-19T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-10T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -270,14 +273,14 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O CNPq torna pública a Chamada CNPq/MinC nº 17/2026 - Apoio ao funcionamento de incubadoras voltadas à Economia Criativa, que tem por objeto apoiar projetos de pesquisa que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País, nas áreas da Economia Criativa e fortalecer empreendimentos culturais e criativos, por intermédio da implantação e acompanhamento de incubadoras realizadas através das ações da Escola de Formação Solano Trindade - EscultAqui e do Programa Nacional de Incubadoras Populares - PRONINC, garantindo formação, orientação…"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "cnpq-0c1b111983ee",
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/MMULHERES Nº 19/2026 - Programa Asas para o Futuro",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada-publica-cnpq-N-19-2026",
+      "descricao": "Esta chamada deste Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), com financiamento do Ministério das Mulheres (MMulheres), convida Institutos Federais de Educação, Ciência e Tecnologia (IFs) e Universidades Federais (UFs) a apresentarem propostas para a implementação do Programa Asas para o Futuro com o objetivo de ampliar a participação de mulheres jovens em setores estratégicos para o desenvolvimento econômico.",
       "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-10T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -285,8 +288,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Esta chamada deste Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), com financiamento do Ministério das Mulheres (MMulheres), convida Institutos Federais de Educação, Ciência e Tecnologia (IFs) e Universidades Federais (UFs) a apresentarem propostas para a implementação do Programa Asas para o Futuro com o objetivo de ampliar a participação de mulheres jovens em setores estratégicos para o desenvolvimento econômico."
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "fapeg-a420f0b8d5ff",
@@ -329,6 +331,7 @@
       "fonte": "cnpq",
       "titulo": "Chamada CNPq/MCTI nº 25/2026 - Endometriose e Saúde Menstrual",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/chamada-publica-cnpq-N-25-2026",
+      "descricao": "O CNPq torna pública a Chamada CNPq/MCTI nº 25/2026 - Endometriose e Saúde Menstrual, que tem por objeto o apoio à pesquisa científica e ao desenvolvimento de tecnologias e produtos inovadores para o enfrentamento da endometriose e promoção da saúde menstrual, com foco em soluções aplicáveis no contexto do Sistema Único de Saúde (SUS) e alinhadas às diretrizes da Estratégia Nacional de CT&I 2023–2030. Chamada Anexo I - Modelo de Projeto (Word) Anexo I - Modelo de Projeto (PDF)INSCRIÇÕES: 10/07/2026 a 12/08/2026",
       "inscricaoInicio": "2026-07-10T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-12T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -336,14 +339,14 @@
         "saude"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O CNPq torna pública a Chamada CNPq/MCTI nº 25/2026 - Endometriose e Saúde Menstrual, que tem por objeto o apoio à pesquisa científica e ao desenvolvimento de tecnologias e produtos inovadores para o enfrentamento da endometriose e promoção da saúde menstrual, com foco em soluções aplicáveis no contexto do Sistema Único de Saúde (SUS) e alinhadas às diretrizes da Estratégia Nacional de CT&I 2023–2030. Chamada Anexo I - Modelo de Projeto (Word) Anexo I - Modelo de Projeto (PDF)INSCRIÇÕES: 10/07/2026 a 12/08/2026"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "cnpq-e4a02ba01854",
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/CAPES/MRE N° 16/2026 - Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG)",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/chamada-publica-cnpq-N-16-2026",
+      "descricao": "O Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG) é coordenado pelo MRE, pela CAPES e pelo CNPq e constitui uma importante iniciativa de cooperação internacional, promovendo a atração de estudantes estrangeiros para o Brasil, o intercâmbio de conhecimentos entre os países participantes e o fortalecimento da internacionalização das instituições brasileiras de ensino e pesquisa.",
       "inscricaoInicio": "2026-06-29T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-13T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -351,8 +354,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG) é coordenado pelo MRE, pela CAPES e pelo CNPq e constitui uma importante iniciativa de cooperação internacional, promovendo a atração de estudantes estrangeiros para o Brasil, o intercâmbio de conhecimentos entre os países participantes e o fortalecimento da internacionalização das instituições brasileiras de ensino e pesquisa."
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-8228704a6fea",
@@ -503,6 +505,7 @@
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/MCTI nº 15/2026 - Programa de Cooperação Afro-Brasileira em Ciência e Tecnologia - PROAFRICA",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/chamada-publica-cnpq-N-15-2026",
+      "descricao": "Apoiar projetos de pesquisa colaborativa que visem contribuir significativamente para o fortalecimento da cooperação científica, tecnológica e de inovação entre o Brasil e os países Africanos.",
       "inscricaoInicio": "2026-05-25T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -510,8 +513,7 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Apoiar projetos de pesquisa colaborativa que visem contribuir significativamente para o fortalecimento da cooperação científica, tecnológica e de inovação entre o Brasil e os países Africanos."
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-781ea30e0ea0",
@@ -640,6 +642,7 @@
       "fonte": "cnpq",
       "titulo": "Chamada Pública MCTI/CNPq/MIR/MMulheres/MPI Nº 20/2026 Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada-publica-cnpq-N-20-2026",
+      "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)",
       "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -647,8 +650,7 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "finep-076a0a2b7bd2",
@@ -698,13 +700,13 @@
       "fonte": "cnpq",
       "titulo": "Chamamento Público CNPq/FNDCT/MCTI Nº 01/2026 Para Participação no Programa de Apoio à Popularização da Ciência nas Unidades da Federação",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/chamamento-publico-01-2026",
+      "descricao": "O Conselho Nacional de Desenvolvimento Científico e Tecnológico – CNPq e o Ministério da Ciência, Tecnologia e Inovação – MCTI convidam as fundações estaduais de amparo à pesquisa – FAPs a apresentarem propostas estaduais e do Distrito Federal para apoio a projetos de popularização da ciência, apresentadas por FAPs, visando o desenvolvimento científico, tecnológico e a inovação no País, com os seguintes objetivos:",
       "situacao": "aberto",
       "areas": [
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O Conselho Nacional de Desenvolvimento Científico e Tecnológico – CNPq e o Ministério da Ciência, Tecnologia e Inovação – MCTI convidam as fundações estaduais de amparo à pesquisa – FAPs a apresentarem propostas estaduais e do Distrito Federal para apoio a projetos de popularização da ciência, apresentadas por FAPs, visando o desenvolvimento científico, tecnológico e a inovação no País, com os seguintes objetivos:"
+      "coletadoEm": "2026-07-20T16:37:11.766Z"
     },
     {
       "id": "capes-95f58df736ce",
