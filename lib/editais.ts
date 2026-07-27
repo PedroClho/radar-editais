@@ -263,11 +263,85 @@ export function agruparPorPrazo(editais: Edital[], agoraMs: number): Grupos {
   return g
 }
 
+// A janela de inscrição é o período inteiro entre abertura e fechamento. O
+// prazo em dias responde "quanto falta"; a janela responde "quanto do período
+// já queimou" — duas perguntas diferentes para quem decide se ainda dá tempo
+// de montar uma proposta. Só existe quando a fonte publica as duas pontas.
+export type Janela = { pctRestante: number }
+
+export function janelaInscricao(e: Edital, agoraMs: number): Janela | null {
+  if (!e.inscricaoInicio || !e.inscricaoFim) return null
+  const inicio = new Date(e.inscricaoInicio).getTime()
+  const fim = new Date(e.inscricaoFim).getTime()
+  if (!Number.isFinite(inicio) || !Number.isFinite(fim)) return null
+  const total = fim - inicio
+  // A FINEP publica editais com início e fim no mesmo instante; dividir por
+  // zero devolveria NaN e a barra sumiria sem explicar por quê.
+  if (total <= 0) return { pctRestante: 1 }
+  const resta = (fim - agoraMs) / total
+  return { pctRestante: Math.min(1, Math.max(0, resta)) }
+}
+
+export type Ordem = 'prazo' | 'janela'
+
+function chavePrazo(e: Edital, agoraMs: number): number {
+  return e.inscricaoFim
+    ? diasAte(e.inscricaoFim, agoraMs)
+    : Number.POSITIVE_INFINITY
+}
+
+export function ordenarEditais(
+  editais: Edital[],
+  ordem: Ordem,
+  agoraMs: number,
+): Edital[] {
+  const copia = [...editais]
+  if (ordem === 'prazo') {
+    return copia.sort((a, b) => chavePrazo(a, agoraMs) - chavePrazo(b, agoraMs))
+  }
+  // Ordenar por janela não pode embaralhar quem não tem janela: metade do
+  // dataset não publica data de abertura. Esses caem para a ordem de prazo,
+  // atrás de quem tem janela.
+  return copia.sort((a, b) => {
+    const ja = janelaInscricao(a, agoraMs)?.pctRestante
+    const jb = janelaInscricao(b, agoraMs)?.pctRestante
+    if (ja !== undefined && jb !== undefined) return ja - jb
+    if (ja !== undefined) return -1
+    if (jb !== undefined) return 1
+    return chavePrazo(a, agoraMs) - chavePrazo(b, agoraMs)
+  })
+}
+
+export type FaixaPrazo = '7' | '30' | 'sem'
+
+export const FAIXAS_PRAZO: { id: FaixaPrazo; rotulo: string }[] = [
+  { id: '7', rotulo: 'até 7 dias' },
+  { id: '30', rotulo: 'até 30 dias' },
+  { id: 'sem', rotulo: 'sem prazo' },
+]
+
+// Faixas cumulativas de propósito: quem procura "até 30 dias" quer incluir o
+// que fecha amanhã, não excluir.
+function naFaixa(e: Edital, faixa: FaixaPrazo, agoraMs: number): boolean {
+  const dias = e.inscricaoFim ? diasAte(e.inscricaoFim, agoraMs) : null
+  if (faixa === 'sem') return dias === null
+  if (dias === null) return false
+  return dias <= Number(faixa)
+}
+
+export type Filtros = {
+  busca: string
+  fontes: Fonte[]
+  areas: string[]
+  prazo: FaixaPrazo | null
+}
+
 const ESCAPE_RE = /[.*+?^${}()|[\]\\]/g
 
 export function filtrar(
   editais: Edital[],
-  f: { busca: string; fonte: Fonte | null; areas: string[] },
+  f: Filtros,
+  agoraMs: number,
 ): Edital[] {
   const termo = normalizar(f.busca.trim())
   // Termo curto casa por palavra inteira: "ia" por substring devolvia 75% do
@@ -291,14 +365,56 @@ export function filtrar(
   }
   return editais.filter(
     (e) =>
-      (!f.fonte || e.fonte === f.fonte) &&
+      (f.fontes.length === 0 || f.fontes.includes(e.fonte)) &&
       // "ia" é pseudo-área: o classificador guarda IA como flag booleana,
       // porque é transversal (um edital de saúde pode ser de IA). Sem este
       // caso especial, IA seria a única categoria impossível de filtrar.
       (f.areas.length === 0 ||
         f.areas.some((a) => (a === 'ia' ? e.ia : e.areas.includes(a)))) &&
+      (!f.prazo || naFaixa(e, f.prazo, agoraMs)) &&
       casaBusca(e),
   )
+}
+
+// Contadores da barra lateral. Cada faceta é contada IGNORANDO o próprio
+// filtro: se a contagem de um órgão respeitasse o filtro de órgão, todos os
+// não-selecionados mostrariam zero e a barra viraria um beco sem saída — você
+// nunca saberia que trocar de órgão traria resultado.
+export type Facetas = {
+  fontes: Partial<Record<Fonte, number>>
+  areas: Record<string, number>
+  prazos: Record<FaixaPrazo, number>
+}
+
+export function contarFacetas(
+  editais: Edital[],
+  f: Filtros,
+  agoraMs: number,
+): Facetas {
+  const fontes: Partial<Record<Fonte, number>> = {}
+  for (const e of filtrar(editais, { ...f, fontes: [] }, agoraMs)) {
+    fontes[e.fonte] = (fontes[e.fonte] ?? 0) + 1
+  }
+
+  const areas: Record<string, number> = {}
+  for (const e of filtrar(editais, { ...f, areas: [] }, agoraMs)) {
+    // Mesma semântica do filtro: "geral" é ausência de rótulo, e IA entra
+    // como pseudo-área porque é assim que ela é filtrável.
+    for (const a of e.areas) {
+      if (a !== 'geral') areas[a] = (areas[a] ?? 0) + 1
+    }
+    if (e.ia) areas.ia = (areas.ia ?? 0) + 1
+  }
+
+  const semPrazo = filtrar(editais, { ...f, prazo: null }, agoraMs)
+  const prazos = { '7': 0, '30': 0, sem: 0 } as Record<FaixaPrazo, number>
+  for (const faixa of FAIXAS_PRAZO) {
+    prazos[faixa.id] = semPrazo.filter((e) =>
+      naFaixa(e, faixa.id, agoraMs),
+    ).length
+  }
+
+  return { fontes, areas, prazos }
 }
 
 // Ordem dos filtros de área que o usuário vê todo dia: por frequência no

@@ -1,13 +1,16 @@
 import { describe, expect, test } from 'vitest'
 import {
   agruparPorPrazo,
+  contarFacetas,
   diasAte,
   filtrar,
   frescor,
+  janelaInscricao,
   limparTitulo,
   listarAreasDisponiveis,
   nivelUrgencia,
   normalizarCaixa,
+  ordenarEditais,
   resumir,
   separarOrigem,
   tirarPrefixoDeTitulo,
@@ -381,21 +384,21 @@ describe('filtrar', () => {
   ]
 
   test('sem filtro devolve tudo', () => {
-    expect(filtrar(lista, { busca: '', fonte: null, areas: [] })).toHaveLength(2)
+    expect(filtrar(lista, { busca: '', fontes: [], areas: [], prazo: null }, AGORA)).toHaveLength(2)
   })
 
   test('busca ignora acento e caixa', () => {
-    const r = filtrar(lista, { busca: 'ENDOMETRIOSE', fonte: null, areas: [] })
+    const r = filtrar(lista, { busca: 'ENDOMETRIOSE', fontes: [], areas: [], prazo: null }, AGORA)
     expect(r.map((e) => e.id)).toEqual(['saude'])
   })
 
   test('áreas funcionam como OU', () => {
-    const r = filtrar(lista, { busca: '', fonte: null, areas: ['saude', 'agro'] })
+    const r = filtrar(lista, { busca: '', fontes: [], areas: ['saude', 'agro'], prazo: null }, AGORA)
     expect(r).toHaveLength(2)
   })
 
   test('fonte e área se combinam como E', () => {
-    const r = filtrar(lista, { busca: '', fonte: 'finep', areas: ['saude'] })
+    const r = filtrar(lista, { busca: '', fontes: ['finep'], areas: ['saude'], prazo: null }, AGORA)
     expect(r).toHaveLength(0)
   })
 
@@ -407,7 +410,7 @@ describe('filtrar', () => {
       edital({ id: 'ia-saude', areas: ['saude'], ia: true }),
       edital({ id: 'so-saude', areas: ['saude'], ia: false }),
     ]
-    const r = filtrar(comIA, { busca: '', fonte: null, areas: ['ia'] })
+    const r = filtrar(comIA, { busca: '', fontes: [], areas: ['ia'], prazo: null }, AGORA)
     expect(r.map((e) => e.id)).toEqual(['ia-saude'])
   })
 
@@ -417,7 +420,7 @@ describe('filtrar', () => {
       edital({ id: 'saude', areas: ['saude'], ia: false }),
       edital({ id: 'energia', areas: ['energia'], ia: false }),
     ]
-    const r = filtrar(mix, { busca: '', fonte: null, areas: ['ia', 'saude'] })
+    const r = filtrar(mix, { busca: '', fontes: [], areas: ['ia', 'saude'], prazo: null }, AGORA)
     expect(r.map((e) => e.id)).toEqual(['ia-agro', 'saude'])
   })
 
@@ -428,7 +431,7 @@ describe('filtrar', () => {
       edital({ id: 'tec', titulo: 'Apoio à tecnologia nacional' }),
       edital({ id: 'ia-titulo', titulo: 'Bolsas para projetos de IA' }),
     ]
-    const r = filtrar(mix, { busca: 'ia', fonte: null, areas: [] })
+    const r = filtrar(mix, { busca: 'ia', fontes: [], areas: [], prazo: null }, AGORA)
     expect(r.map((e) => e.id)).toEqual(['ia-titulo'])
   })
 
@@ -437,7 +440,7 @@ describe('filtrar', () => {
       edital({ id: 'flag', titulo: 'Aprendizado de máquina na saúde', ia: true }),
       edital({ id: 'nada', titulo: 'Estratégia industrial' }),
     ]
-    const r = filtrar(mix, { busca: 'IA', fonte: null, areas: [] })
+    const r = filtrar(mix, { busca: 'IA', fontes: [], areas: [], prazo: null }, AGORA)
     expect(r.map((e) => e.id)).toEqual(['flag'])
   })
 
@@ -446,15 +449,217 @@ describe('filtrar', () => {
       edital({ id: 'iot', titulo: 'Chamada IoT para cidades' }),
       edital({ id: 'riot', titulo: 'Programa Riotec' }),
     ]
-    const r = filtrar(mix, { busca: 'iot', fonte: null, areas: [] })
+    const r = filtrar(mix, { busca: 'iot', fontes: [], areas: [], prazo: null }, AGORA)
     expect(r.map((e) => e.id)).toEqual(['iot'])
   })
 
   test('busca longa continua por substring', () => {
     const r = filtrar(
       [edital({ id: 'endo', titulo: 'Pesquisas em Endometriose' })],
-      { busca: 'endometr', fonte: null, areas: [] },
+      { busca: 'endometr', fontes: [], areas: [], prazo: null },
+      AGORA,
     )
     expect(r.map((e) => e.id)).toEqual(['endo'])
+  })
+})
+
+describe('janelaInscricao', () => {
+  test('devolve a fração do período que ainda resta', () => {
+    // Janela de 10 dias com o agora exatamente no meio: restam 50%.
+    const e = edital({
+      inscricaoInicio: '2026-07-15T12:00:00.000Z',
+      inscricaoFim: '2026-07-25T12:00:00.000Z',
+    })
+    expect(janelaInscricao(e, AGORA)?.pctRestante).toBeCloseTo(0.5, 5)
+  })
+
+  test('sem início não há janela — a barra mentiria sobre o período', () => {
+    const e = edital({ inscricaoFim: '2026-07-26T00:00:00.000Z' })
+    expect(janelaInscricao(e, AGORA)).toBeNull()
+  })
+
+  test('sem fim não há janela', () => {
+    const e = edital({ inscricaoInicio: '2026-07-16T00:00:00.000Z' })
+    expect(janelaInscricao(e, AGORA)).toBeNull()
+  })
+
+  test('prazo vencido satura em zero, nunca negativo', () => {
+    const e = edital({
+      inscricaoInicio: '2026-07-01T00:00:00.000Z',
+      inscricaoFim: '2026-07-10T00:00:00.000Z',
+    })
+    expect(janelaInscricao(e, AGORA)?.pctRestante).toBe(0)
+  })
+
+  test('período que ainda nem abriu satura em um', () => {
+    const e = edital({
+      inscricaoInicio: '2026-08-01T00:00:00.000Z',
+      inscricaoFim: '2026-08-30T00:00:00.000Z',
+    })
+    expect(janelaInscricao(e, AGORA)?.pctRestante).toBe(1)
+  })
+
+  // A FINEP publica editais com início e fim no mesmo instante; dividir pela
+  // duração levaria a NaN e a barra sumiria sem explicação.
+  test('janela de duração zero não vira NaN', () => {
+    const e = edital({
+      inscricaoInicio: '2026-07-26T00:00:00.000Z',
+      inscricaoFim: '2026-07-26T00:00:00.000Z',
+    })
+    const j = janelaInscricao(e, AGORA)
+    expect(j?.pctRestante).toBe(1)
+    expect(Number.isNaN(j?.pctRestante)).toBe(false)
+  })
+})
+
+describe('ordenarEditais', () => {
+  const lista = [
+    edital({ id: 'longe', inscricaoFim: '2026-09-20T23:59:59.000Z' }),
+    edital({ id: 'sem' }),
+    edital({ id: 'perto', inscricaoFim: '2026-07-22T23:59:59.000Z' }),
+  ]
+
+  test('por prazo: mais apertado primeiro, sem prazo por último', () => {
+    const r = ordenarEditais(lista, 'prazo', AGORA)
+    expect(r.map((e) => e.id)).toEqual(['perto', 'longe', 'sem'])
+  })
+
+  test('não muta o array recebido', () => {
+    const antes = lista.map((e) => e.id)
+    ordenarEditais(lista, 'prazo', AGORA)
+    expect(lista.map((e) => e.id)).toEqual(antes)
+  })
+
+  test('por janela: quem tem menos período restante primeiro', () => {
+    const comJanela = [
+      edital({
+        id: 'folgado',
+        inscricaoInicio: '2026-07-19T00:00:00.000Z',
+        inscricaoFim: '2026-08-19T00:00:00.000Z',
+      }),
+      edital({
+        id: 'acabando',
+        inscricaoInicio: '2026-01-01T00:00:00.000Z',
+        inscricaoFim: '2026-07-22T00:00:00.000Z',
+      }),
+    ]
+    expect(ordenarEditais(comJanela, 'janela', AGORA).map((e) => e.id)).toEqual([
+      'acabando',
+      'folgado',
+    ])
+  })
+
+  // Ordenar por janela não pode esconder quem não tem janela: eles vão ao
+  // fim, mas continuam na lista.
+  test('por janela mantém quem não tem janela, no fim', () => {
+    const r = ordenarEditais(lista, 'janela', AGORA)
+    expect(r).toHaveLength(3)
+    expect(r.at(-1)?.id).toBe('sem')
+  })
+})
+
+describe('filtrar por faixa de prazo', () => {
+  const lista = [
+    edital({ id: 'urgente', inscricaoFim: '2026-07-24T23:59:59.000Z' }),
+    edital({ id: 'mes', inscricaoFim: '2026-08-14T23:59:59.000Z' }),
+    edital({ id: 'longe', inscricaoFim: '2026-11-14T23:59:59.000Z' }),
+    edital({ id: 'sem' }),
+  ]
+  const vazio = { busca: '', fontes: [], areas: [] }
+
+  test('até 7 dias pega só o que fecha na semana', () => {
+    const r = filtrar(lista, { ...vazio, prazo: '7' }, AGORA)
+    expect(r.map((e) => e.id)).toEqual(['urgente'])
+  })
+
+  test('até 30 dias inclui o de 7 — as faixas são cumulativas', () => {
+    const r = filtrar(lista, { ...vazio, prazo: '30' }, AGORA)
+    expect(r.map((e) => e.id)).toEqual(['urgente', 'mes'])
+  })
+
+  test('sem prazo isola exatamente quem não tem data', () => {
+    const r = filtrar(lista, { ...vazio, prazo: 'sem' }, AGORA)
+    expect(r.map((e) => e.id)).toEqual(['sem'])
+  })
+
+  test('sem faixa devolve tudo', () => {
+    expect(filtrar(lista, { ...vazio, prazo: null }, AGORA)).toHaveLength(4)
+  })
+})
+
+describe('filtrar por múltiplos órgãos', () => {
+  const lista = [
+    edital({ id: 'a', fonte: 'finep' }),
+    edital({ id: 'b', fonte: 'cnpq' }),
+    edital({ id: 'c', fonte: 'capes' }),
+  ]
+  const base = { busca: '', areas: [], prazo: null }
+
+  test('lista vazia de órgãos não filtra nada', () => {
+    expect(filtrar(lista, { ...base, fontes: [] }, AGORA)).toHaveLength(3)
+  })
+
+  test('vários órgãos se combinam como OU', () => {
+    const r = filtrar(lista, { ...base, fontes: ['finep', 'capes'] }, AGORA)
+    expect(r.map((e) => e.id)).toEqual(['a', 'c'])
+  })
+})
+
+describe('contarFacetas', () => {
+  const lista = [
+    edital({ id: 'a', fonte: 'finep', areas: ['saude'] }),
+    edital({ id: 'b', fonte: 'cnpq', areas: ['saude'] }),
+    edital({ id: 'c', fonte: 'cnpq', areas: ['agro'] }),
+  ]
+  const vazio = { busca: '', fontes: [], areas: [], prazo: null }
+
+  test('sem filtro conta o dataset inteiro', () => {
+    const c = contarFacetas(lista, vazio, AGORA)
+    expect(c.fontes.cnpq).toBe(2)
+    expect(c.fontes.finep).toBe(1)
+    expect(c.areas.saude).toBe(2)
+  })
+
+  // Se a contagem de um órgão respeitasse o próprio filtro de órgão, todos os
+  // não-selecionados mostrariam zero e a barra viraria um beco sem saída.
+  test('a contagem de órgãos ignora o filtro de órgão', () => {
+    const c = contarFacetas(lista, { ...vazio, fontes: ['finep'] }, AGORA)
+    expect(c.fontes.cnpq).toBe(2)
+    expect(c.fontes.finep).toBe(1)
+  })
+
+  test('mas a contagem de órgãos respeita o filtro de área', () => {
+    const c = contarFacetas(lista, { ...vazio, areas: ['agro'] }, AGORA)
+    expect(c.fontes.cnpq).toBe(1)
+    expect(c.fontes.finep ?? 0).toBe(0)
+  })
+
+  test('a contagem de áreas ignora o filtro de área e respeita o de órgão', () => {
+    const c = contarFacetas(lista, { ...vazio, fontes: ['cnpq'], areas: ['saude'] }, AGORA)
+    expect(c.areas.saude).toBe(1)
+    expect(c.areas.agro).toBe(1)
+  })
+
+  test('a busca vale para todas as facetas', () => {
+    const comTitulo = [
+      edital({ id: 'a', fonte: 'finep', titulo: 'Endometriose', areas: ['saude'] }),
+      edital({ id: 'b', fonte: 'cnpq', titulo: 'Milho', areas: ['agro'] }),
+    ]
+    const c = contarFacetas(comTitulo, { ...vazio, busca: 'endometriose' }, AGORA)
+    expect(c.fontes.finep).toBe(1)
+    expect(c.fontes.cnpq ?? 0).toBe(0)
+    expect(c.areas.agro ?? 0).toBe(0)
+  })
+
+  test('conta as faixas de prazo ignorando a faixa selecionada', () => {
+    const comPrazo = [
+      edital({ id: 'urgente', inscricaoFim: '2026-07-24T23:59:59.000Z' }),
+      edital({ id: 'mes', inscricaoFim: '2026-08-14T23:59:59.000Z' }),
+      edital({ id: 'sem' }),
+    ]
+    const c = contarFacetas(comPrazo, { ...vazio, prazo: '7' }, AGORA)
+    expect(c.prazos['7']).toBe(1)
+    expect(c.prazos['30']).toBe(2)
+    expect(c.prazos.sem).toBe(1)
   })
 })
