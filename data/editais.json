@@ -1,26 +1,25 @@
 {
-  "atualizadoEm": "2026-08-04T12:01:40.567Z",
+  "atualizadoEm": "2026-08-05T11:58:26.583Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-08-04T12:01:40.567Z"
+      "atualizadoEm": "2026-08-05T11:58:26.583Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 9,
-      "atualizadoEm": "2026-08-04T12:01:40.567Z"
+      "quantidade": 11,
+      "atualizadoEm": "2026-08-05T11:58:26.583Z"
     },
     "fapeg": {
-      "ok": false,
-      "quantidade": 4,
-      "atualizadoEm": "2026-08-02T11:14:51.460Z",
-      "erro": "HTTP 403 em https://goias.gov.br/fapeg/editais/inscricoes-abertas/"
+      "ok": true,
+      "quantidade": 5,
+      "atualizadoEm": "2026-08-05T11:58:26.583Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-08-04T12:01:40.567Z"
+      "atualizadoEm": "2026-08-05T11:58:26.583Z"
     }
   },
   "editais": [
@@ -230,7 +229,6 @@
       "titulo": "Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
       "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-12-2026-edital-complementar-a-chamada-erc-confap-2026/",
       "descricao": "Origem: Fapeg/Confap/ERC",
-      "inscricaoFim": "2026-08-10T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -240,7 +238,8 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-10T23:59:59.000-03:00"
     },
     {
       "id": "fapeg-452f0d931597",
@@ -248,7 +247,6 @@
       "titulo": "Chamada Pública nº 13/2026 — EDITAL DE APOIO À PESQUISA E INOVAÇÃO EM EDUCAÇÃO ESPECIAL INCLUSIVA",
       "url": "https://goias.gov.br/fapeg/chamada-publica-no-13-2026-edital-de-apoio-a-pesquisa-e-inovacao-em-educacao-especial-inclusiva/",
       "descricao": "Origem: Fapeg",
-      "inscricaoFim": "2026-08-11T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -256,7 +254,8 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-11T23:59:59.000-03:00"
     },
     {
       "id": "finep-91cd26e24a0f",
@@ -330,7 +329,6 @@
       "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
       "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
       "descricao": "Origem: Fapeg",
-      "inscricaoFim": "2026-08-21T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -339,7 +337,8 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-21T23:59:59.000-03:00"
     },
     {
       "id": "finep-38771efab004",
@@ -606,6 +605,21 @@
       ]
     },
     {
+      "id": "cnpq-763b16405a87",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública CNPq/ERC Nº 21/2026",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/chamada-publica-cnpq-N-21-2026",
+      "inscricaoInicio": "2026-08-03T00:00:00.000-03:00",
+      "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-05T11:58:27.702Z",
+      "descricao": "Chamada Pública CNPq/ERC Nº 21/2026, entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e o Conselho Europeu de Pesquisa - ERC"
+    },
+    {
       "id": "cnpq-1941baf2f023",
       "fonte": "cnpq",
       "titulo": "Chamada Pública MCTI/CNPq/MIR/MMulheres/MPI Nº 20/2026 Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência",
@@ -619,6 +633,25 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.766Z",
       "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)"
+    },
+    {
+      "id": "fapeg-c9fda93efcc5",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
+      "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
+      "descricao": "Origem: Fapeg/CNPq/Capes",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "agro",
+        "tecnologia",
+        "educacao",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": true,
+      "coletadoEm": "2026-08-05T11:58:28.418Z",
+      "inscricaoFim": "2026-10-01T23:59:59.000-03:00"
     },
     {
       "id": "finep-076a0a2b7bd2",
@@ -635,6 +668,19 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.752Z",
       "fluxoContinuo": true
+    },
+    {
+      "id": "cnpq-d2ed26ed5537",
+      "fonte": "cnpq",
+      "titulo": "Chamada CNPq/SETEC/MCTI N° 13/2026 - Apoio a Eventos de Promoção do Empreendedorismo e da Inovação no Brasil",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/chamada-publica-cnpq-N-13-2026",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-05T11:58:27.702Z",
+      "descricao": "A Chamada objetiva apoiar a realização de eventos nacionais e internacionais no Brasil nas áreas de promoção do empreendedorismo e da inovação. Os tipos de eventos incluem conferências, congressos, seminários, fóruns, entre outros, desde que que contribuam significativamente para o desenvolvimento do Sistema Nacional de Ciência, Tecnologia e Inovação (SNCTI) e para a promoção da cultura do empreendedorismo inovador no Brasil, proporcionando oportunidades de difusão do conhecimento, fortalecimento da propriedade intelectual e da transferência tecnológica, aproximação da academia com o setor…"
     },
     {
       "id": "fapeg-5c04f8be716f",
