@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-05T11:58:26.583Z",
+  "atualizadoEm": "2026-08-06T12:01:15.750Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 28,
-      "atualizadoEm": "2026-08-05T11:58:26.583Z"
+      "quantidade": 29,
+      "atualizadoEm": "2026-08-06T12:01:15.750Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 11,
-      "atualizadoEm": "2026-08-05T11:58:26.583Z"
+      "atualizadoEm": "2026-08-06T12:01:15.750Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-08-05T11:58:26.583Z"
+      "atualizadoEm": "2026-08-06T12:01:15.750Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-08-05T11:58:26.583Z"
+      "atualizadoEm": "2026-08-06T12:01:15.750Z"
     }
   },
   "editais": [
@@ -170,7 +170,7 @@
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-07-2026/chamada-publica-cnpq-N-07-2026",
       "inscricaoInicio": "2026-05-28T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-05T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "educacao"
       ],
@@ -308,7 +308,7 @@
     {
       "id": "finep-8228704a6fea",
       "fonte": "finep",
-      "titulo": "BRICs - CHAMADA PÚBLICA Cooperação Multilateral em Inovação",
+      "titulo": "BRICs - Chamada pública Cooperação Multilateral em Inovação",
       "url": "https://www.finep.gov.br/e/chamada-publica/222684/991625",
       "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para projetos de cooperação internacional visando o desenvolvimento de produtos, processos ou serviços inovadores das empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Orçamento da chamada: R$ 12 milhões Público-alvo: Empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Em…",
       "inscricaoInicio": "2026-06-30T00:00:00.000Z",
@@ -384,15 +384,16 @@
       ]
     },
     {
-      "id": "finep-a40b55d03e6c",
+      "id": "finep-371cdb70cc9c",
       "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754473",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o adensamento das cadeias de transformação mineral, com foco em minerais críticos e estratégicos, contribuindo para uma descarbonização e uma transição energética seguras e sustentáveis, no âmbito das seguintes linhas temáticas definidas…",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754567",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias essenciais para a transição energética, em temáticas como tecnologias para geração de eletricidade, armazenamento de energia, hidrogênio de baixa emissão de carbono, biocombustíveis, biogás e biometano…",
       "inscricaoInicio": "2026-02-06T00:00:00.000Z",
       "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
+        "agro",
         "tecnologia",
         "energia",
         "sustentabilidade"
@@ -427,16 +428,15 @@
       ]
     },
     {
-      "id": "finep-371cdb70cc9c",
+      "id": "finep-a40b55d03e6c",
       "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754567",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias essenciais para a transição energética, em temáticas como tecnologias para geração de eletricidade, armazenamento de energia, hidrogênio de baixa emissão de carbono, biocombustíveis, biogás e biometano…",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754473",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o adensamento das cadeias de transformação mineral, com foco em minerais críticos e estratégicos, contribuindo para uma descarbonização e uma transição energética seguras e sustentáveis, no âmbito das seguintes linhas temáticas definidas…",
       "inscricaoInicio": "2026-02-06T00:00:00.000Z",
       "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
-        "agro",
         "tecnologia",
         "energia",
         "sustentabilidade"
@@ -668,6 +668,22 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.752Z",
       "fluxoContinuo": true
+    },
+    {
+      "id": "finep-a20299d6aaeb",
+      "fonte": "finep",
+      "titulo": "5ª Chamada Pública Conjunta - Finep e Conselho Norueguês de Pesquisa (RCN)",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/1019381",
+      "descricao": "O Conselho Norueguês de Pesquisa (RCN) e a Financiadora de Estudos e Projetos (Finep), do Brasil, com o intuito de implementar o acordado no Memorando de Entendimentos que celebraram em novembro de 2014, instituem, por meio deste documento, a quinta chamada pública conjunta Finep-RCN em 2026, para apoio de projetos a serem iniciados em 2027, com a observância dos termos e procedimentos adiante estabelecidos. Alinhados com o acordo BN21 (Brasil-Noruega Século XXI), a Finep e o RCN lançam esta chamada conjunta com vistas a aumentar a colaboração entre a Noruega e o Brasil por meio de parcerias…",
+      "inscricaoInicio": "2026-08-05T00:00:00.000Z",
+      "inscricaoFim": "2026-12-16T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-06T12:01:16.497Z"
     },
     {
       "id": "cnpq-d2ed26ed5537",
