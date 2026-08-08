@@ -1,26 +1,25 @@
 {
-  "atualizadoEm": "2026-08-07T10:50:26.625Z",
+  "atualizadoEm": "2026-08-08T10:29:47.981Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-07T10:50:26.625Z"
+      "atualizadoEm": "2026-08-08T10:29:47.981Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 10,
-      "atualizadoEm": "2026-08-07T10:50:26.625Z"
+      "atualizadoEm": "2026-08-08T10:29:47.981Z"
     },
     "fapeg": {
-      "ok": false,
-      "quantidade": 5,
-      "atualizadoEm": "2026-08-06T12:01:15.750Z",
-      "erro": "HTTP 403 em https://goias.gov.br/fapeg/editais/inscricoes-abertas/"
+      "ok": true,
+      "quantidade": 6,
+      "atualizadoEm": "2026-08-08T10:29:47.981Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-08-07T10:50:26.625Z"
+      "atualizadoEm": "2026-08-08T10:29:47.981Z"
     }
   },
   "editais": [
@@ -215,7 +214,6 @@
       "titulo": "Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
       "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-12-2026-edital-complementar-a-chamada-erc-confap-2026/",
       "descricao": "Origem: Fapeg/Confap/ERC",
-      "inscricaoFim": "2026-08-10T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -225,7 +223,8 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-10T23:59:59.000-03:00"
     },
     {
       "id": "fapeg-452f0d931597",
@@ -233,7 +232,6 @@
       "titulo": "Chamada Pública nº 13/2026 — EDITAL DE APOIO À PESQUISA E INOVAÇÃO EM EDUCAÇÃO ESPECIAL INCLUSIVA",
       "url": "https://goias.gov.br/fapeg/chamada-publica-no-13-2026-edital-de-apoio-a-pesquisa-e-inovacao-em-educacao-especial-inclusiva/",
       "descricao": "Origem: Fapeg",
-      "inscricaoFim": "2026-08-11T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -241,7 +239,8 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-11T23:59:59.000-03:00"
     },
     {
       "id": "finep-91cd26e24a0f",
@@ -315,7 +314,6 @@
       "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
       "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
       "descricao": "Origem: Fapeg",
-      "inscricaoFim": "2026-08-21T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -324,7 +322,8 @@
         "industria"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-21T23:59:59.000-03:00"
     },
     {
       "id": "finep-38771efab004",
@@ -642,7 +641,6 @@
       "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
       "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
       "descricao": "Origem: Fapeg/CNPq/Capes",
-      "inscricaoFim": "2026-10-01T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -653,7 +651,8 @@
         "sustentabilidade"
       ],
       "ia": true,
-      "coletadoEm": "2026-08-05T11:58:28.418Z"
+      "coletadoEm": "2026-08-05T11:58:28.418Z",
+      "inscricaoFim": "2026-10-01T23:59:59.000-03:00"
     },
     {
       "id": "finep-076a0a2b7bd2",
@@ -683,6 +682,24 @@
       "ia": false,
       "coletadoEm": "2026-08-05T11:58:27.702Z",
       "descricao": "A Chamada objetiva apoiar a realização de eventos nacionais e internacionais no Brasil nas áreas de promoção do empreendedorismo e da inovação. Os tipos de eventos incluem conferências, congressos, seminários, fóruns, entre outros, desde que que contribuam significativamente para o desenvolvimento do Sistema Nacional de Ciência, Tecnologia e Inovação (SNCTI) e para a promoção da cultura do empreendedorismo inovador no Brasil, proporcionando oportunidades de difusão do conhecimento, fortalecimento da propriedade intelectual e da transferência tecnológica, aproximação da academia com o setor…"
+    },
+    {
+      "id": "fapeg-d337756ea1d0",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública Complementar nº 17/2026 — Edital Complementar à Chamada CONFAP-WBI (Wallonie Bruxelles International)",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-17-2026-edital-complementar-a-chamada-confap-wbi-wallonie-bruxelles-international/",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "agro",
+        "tecnologia",
+        "educacao",
+        "energia",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-08T10:29:49.813Z"
     },
     {
       "id": "fapeg-5c04f8be716f",
