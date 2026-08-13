@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-12T10:58:52.580Z",
+  "atualizadoEm": "2026-08-13T10:59:42.548Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-12T10:58:52.580Z"
+      "atualizadoEm": "2026-08-13T10:59:42.548Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 9,
-      "atualizadoEm": "2026-08-12T10:58:52.580Z"
+      "atualizadoEm": "2026-08-13T10:59:42.548Z"
     },
     "fapeg": {
       "ok": true,
-      "quantidade": 6,
-      "atualizadoEm": "2026-08-12T10:58:52.580Z"
+      "quantidade": 7,
+      "atualizadoEm": "2026-08-13T10:59:42.548Z"
     },
     "capes": {
       "ok": true,
-      "quantidade": 2,
-      "atualizadoEm": "2026-08-12T10:58:52.580Z"
+      "quantidade": 1,
+      "atualizadoEm": "2026-08-13T10:59:42.548Z"
     }
   },
   "editais": [
@@ -235,7 +235,7 @@
       "descricao": "Chamada Pública para Seleção de Fundo de Investimento em Participações – FIP Conexões Startups – 2026 Em 18.06.2026, a BNDESPAR, sociedade de participações acionárias do BNDES, em parceria com a Financiadora de Estudos e Projetos (Finep), lançou edital de chamada pública para a seleção de gestor para um Fundo de Investimento em Participações (FIP) voltado a startups , em especial aquelas que tenham obtido apoio pregresso de programas de fomento à inovação, subvenção e/ou aceleração realizados no país. O objetivo da iniciativa é contribuir para o fortalecimento do ecossistema de inovação e…",
       "inscricaoInicio": "2026-06-24T00:00:00.000Z",
       "inscricaoFim": "2026-08-12T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "tecnologia"
       ],
@@ -252,7 +252,7 @@
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/chamada-publica-cnpq-N-25-2026",
       "inscricaoInicio": "2026-07-10T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-12T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "saude"
       ],
@@ -640,6 +640,25 @@
       "inscricaoFim": "2026-10-01T23:59:59.000-03:00"
     },
     {
+      "id": "fapeg-03c6fa7e888b",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-no-18-2026-senar-fapeg-programa-acelera-campo-2026/",
+      "descricao": "Origem: Fapeg/ Senar GO",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "agro",
+        "tecnologia",
+        "educacao",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-13T10:59:44.385Z",
+      "inscricaoFim": "2026-10-12T23:59:59.000-03:00"
+    },
+    {
       "id": "finep-076a0a2b7bd2",
       "fonte": "finep",
       "titulo": "Subvenção Descentralizada Seleção de Parceiros em Fluxo Contínuo - Pró Amazônia Empreende",
@@ -725,18 +744,6 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.766Z",
       "descricao": "O Conselho Nacional de Desenvolvimento Científico e Tecnológico – CNPq e o Ministério da Ciência, Tecnologia e Inovação – MCTI convidam as fundações estaduais de amparo à pesquisa – FAPs a apresentarem propostas estaduais e do Distrito Federal para apoio a projetos de popularização da ciência, apresentadas por FAPs, visando o desenvolvimento científico, tecnológico e a inovação no País, com os seguintes objetivos:"
-    },
-    {
-      "id": "capes-95f58df736ce",
-      "fonte": "capes",
-      "titulo": "Edital Conjunto nº 5/2026 - Programa OBEDUC-EI - Observatório da Educação Especial Inclusiva",
-      "url": "https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/edital-no-5.pdf/@@display-file/file",
-      "situacao": "indefinido",
-      "areas": [
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.986Z"
     },
     {
       "id": "finep-2f437fa6bca1",
