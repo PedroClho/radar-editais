@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-13T10:59:42.548Z",
+  "atualizadoEm": "2026-08-14T10:56:12.868Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-13T10:59:42.548Z"
+      "atualizadoEm": "2026-08-14T10:56:12.868Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 9,
-      "atualizadoEm": "2026-08-13T10:59:42.548Z"
+      "quantidade": 8,
+      "atualizadoEm": "2026-08-14T10:56:12.868Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-13T10:59:42.548Z"
+      "atualizadoEm": "2026-08-14T10:56:12.868Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-13T10:59:42.548Z"
+      "atualizadoEm": "2026-08-14T10:56:12.868Z"
     }
   },
   "editais": [
@@ -179,21 +179,6 @@
       "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
-      "id": "cnpq-0c1b111983ee",
-      "fonte": "cnpq",
-      "titulo": "Chamada Pública CNPq/MMULHERES Nº 19/2026 - Programa Asas para o Futuro",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada-publica-cnpq-N-19-2026",
-      "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
-      "inscricaoFim": "2026-08-10T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Esta chamada deste Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), com financiamento do Ministério das Mulheres (MMulheres), convida Institutos Federais de Educação, Ciência e Tecnologia (IFs) e Universidades Federais (UFs) a apresentarem propostas para a implementação do Programa Asas para o Futuro com o objetivo de ampliar a participação de mulheres jovens em setores estratégicos para o desenvolvimento econômico."
-    },
-    {
       "id": "fapeg-a420f0b8d5ff",
       "fonte": "fapeg",
       "titulo": "Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
@@ -246,28 +231,13 @@
       ]
     },
     {
-      "id": "cnpq-5f3c1cf05710",
-      "fonte": "cnpq",
-      "titulo": "Chamada CNPq/MCTI nº 25/2026 - Endometriose e Saúde Menstrual",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-25-2026/chamada-publica-cnpq-N-25-2026",
-      "inscricaoInicio": "2026-07-10T00:00:00.000-03:00",
-      "inscricaoFim": "2026-08-12T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "saude"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O CNPq torna pública a Chamada CNPq/MCTI nº 25/2026 - Endometriose e Saúde Menstrual, que tem por objeto o apoio à pesquisa científica e ao desenvolvimento de tecnologias e produtos inovadores para o enfrentamento da endometriose e promoção da saúde menstrual, com foco em soluções aplicáveis no contexto do Sistema Único de Saúde (SUS) e alinhadas às diretrizes da Estratégia Nacional de CT&I 2023–2030. Chamada Anexo I - Modelo de Projeto (Word) Anexo I - Modelo de Projeto (PDF)INSCRIÇÕES: 10/07/2026 a 12/08/2026"
-    },
-    {
       "id": "cnpq-e4a02ba01854",
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/CAPES/MRE N° 16/2026 - Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG)",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/chamada-publica-cnpq-N-16-2026",
       "inscricaoInicio": "2026-06-29T00:00:00.000-03:00",
       "inscricaoFim": "2026-08-13T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "educacao"
       ],
@@ -354,29 +324,6 @@
       ]
     },
     {
-      "id": "finep-371cdb70cc9c",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754567",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias essenciais para a transição energética, em temáticas como tecnologias para geração de eletricidade, armazenamento de energia, hidrogênio de baixa emissão de carbono, biocombustíveis, biogás e biometano…",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
-        "empresas"
-      ]
-    },
-    {
       "id": "finep-154cf446df84",
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
@@ -418,6 +365,44 @@
         "cooperativas",
         "empresas"
       ]
+    },
+    {
+      "id": "finep-371cdb70cc9c",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754567",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias essenciais para a transição energética, em temáticas como tecnologias para geração de eletricidade, armazenamento de energia, hidrogênio de baixa emissão de carbono, biocombustíveis, biogás e biometano…",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z",
+      "publicoAlvo": [
+        "startups",
+        "cooperativas",
+        "empresas"
+      ]
+    },
+    {
+      "id": "cnpq-0c1b111983ee",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública CNPq/MMULHERES Nº 19/2026 - Programa Asas para o Futuro",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada-publica-cnpq-N-19-2026",
+      "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
+      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.766Z",
+      "descricao": "Esta chamada deste Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), com financiamento do Ministério das Mulheres (MMulheres), convida Institutos Federais de Educação, Ciência e Tecnologia (IFs) e Universidades Federais (UFs) a apresentarem propostas para a implementação do Programa Asas para o Futuro com o objetivo de ampliar a participação de mulheres jovens em setores estratégicos para o desenvolvimento econômico."
     },
     {
       "id": "cnpq-b3efe61487ad",
@@ -508,11 +493,11 @@
       ]
     },
     {
-      "id": "finep-993d4cf93d47",
+      "id": "finep-b932d0832085",
       "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
-      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_tecnologiasdigitais_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no…",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755605",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 100.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_semicondutores_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no sistema: Manuais Manual do Cliente - Cadastro Manual do Cliente -…",
       "inscricaoInicio": "2026-03-12T00:00:00.000Z",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -528,11 +513,11 @@
       ]
     },
     {
-      "id": "finep-b932d0832085",
+      "id": "finep-993d4cf93d47",
       "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755605",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 100.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_semicondutores_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no sistema: Manuais Manual do Cliente - Cadastro Manual do Cliente -…",
+      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
+      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_tecnologiasdigitais_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no…",
       "inscricaoInicio": "2026-03-12T00:00:00.000Z",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -593,7 +578,7 @@
     {
       "id": "cnpq-763b16405a87",
       "fonte": "cnpq",
-      "titulo": "Chamada Pública CNPq/ERC Nº 21/2026",
+      "titulo": "Chamada Pública CNPq/ERC (Conselho Europeu de Pesquisa) Nº 21/2026",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/chamada-publica-cnpq-N-21-2026",
       "inscricaoInicio": "2026-08-03T00:00:00.000-03:00",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
@@ -603,7 +588,7 @@
       ],
       "ia": false,
       "coletadoEm": "2026-08-05T11:58:27.702Z",
-      "descricao": "Chamada Pública CNPq/ERC Nº 21/2026, entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e o Conselho Europeu de Pesquisa - ERC"
+      "descricao": "A Chamada Pública CNPq/ERC Nº 21/2026, entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e o Conselho Europeu de Pesquisa - ERC tem por objetivo selecionar projetos de pesquisa que contem com a participação de pesquisadores(as) brasileiros(as) doutores(as) em colaborações científicas apoiadas pelo Conselho Europeu de Pesquisa (European Research Council – ERC), com vistas a contribuir significativamente para o desenvolvimento científico, tecnológico e da inovação no País. Os(As) proponentes deverão observar as condições específicas estabelecidas no Anexo I –…"
     },
     {
       "id": "cnpq-1941baf2f023",
