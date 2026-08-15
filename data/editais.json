@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-14T10:56:12.868Z",
+  "atualizadoEm": "2026-08-15T10:19:21.683Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-14T10:56:12.868Z"
+      "atualizadoEm": "2026-08-15T10:19:21.683Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 8,
-      "atualizadoEm": "2026-08-14T10:56:12.868Z"
+      "quantidade": 7,
+      "atualizadoEm": "2026-08-15T10:19:21.683Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-14T10:56:12.868Z"
+      "atualizadoEm": "2026-08-15T10:19:21.683Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-14T10:56:12.868Z"
+      "atualizadoEm": "2026-08-15T10:19:21.683Z"
     }
   },
   "editais": [
@@ -197,22 +197,6 @@
       "inscricaoFim": "2026-08-10T23:59:59.000-03:00"
     },
     {
-      "id": "fapeg-452f0d931597",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 13/2026 — EDITAL DE APOIO À PESQUISA E INOVAÇÃO EM EDUCAÇÃO ESPECIAL INCLUSIVA",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-no-13-2026-edital-de-apoio-a-pesquisa-e-inovacao-em-educacao-especial-inclusiva/",
-      "descricao": "Origem: Fapeg",
-      "situacao": "encerrado",
-      "areas": [
-        "saude",
-        "tecnologia",
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z",
-      "inscricaoFim": "2026-08-11T23:59:59.000-03:00"
-    },
-    {
       "id": "finep-91cd26e24a0f",
       "fonte": "finep",
       "titulo": "FIP Conexões Startups – 2026",
@@ -231,21 +215,6 @@
       ]
     },
     {
-      "id": "cnpq-e4a02ba01854",
-      "fonte": "cnpq",
-      "titulo": "Chamada Pública CNPq/CAPES/MRE N° 16/2026 - Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG)",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-16-2026/chamada-publica-cnpq-N-16-2026",
-      "inscricaoInicio": "2026-06-29T00:00:00.000-03:00",
-      "inscricaoFim": "2026-08-13T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG) é coordenado pelo MRE, pela CAPES e pelo CNPq e constitui uma importante iniciativa de cooperação internacional, promovendo a atração de estudantes estrangeiros para o Brasil, o intercâmbio de conhecimentos entre os países participantes e o fortalecimento da internacionalização das instituições brasileiras de ensino e pesquisa."
-    },
-    {
       "id": "finep-8228704a6fea",
       "fonte": "finep",
       "titulo": "BRICs - Chamada pública Cooperação Multilateral em Inovação",
@@ -253,7 +222,7 @@
       "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para projetos de cooperação internacional visando o desenvolvimento de produtos, processos ou serviços inovadores das empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Orçamento da chamada: R$ 12 milhões Público-alvo: Empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Em…",
       "inscricaoInicio": "2026-06-30T00:00:00.000Z",
       "inscricaoFim": "2026-08-14T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "geral"
       ],
@@ -689,6 +658,19 @@
       ],
       "ia": false,
       "coletadoEm": "2026-08-08T10:29:49.813Z"
+    },
+    {
+      "id": "fapeg-452f0d931597",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 13/2026 — EDITAL DE APOIO À PESQUISA E INOVAÇÃO EM EDUCAÇÃO ESPECIAL INCLUSIVA",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-no-13-2026-edital-de-apoio-a-pesquisa-e-inovacao-em-educacao-especial-inclusiva/",
+      "descricao": "Origem: Fapeg",
+      "situacao": "aberto",
+      "areas": [
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.655Z"
     },
     {
       "id": "fapeg-5c04f8be716f",
