@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-17T10:29:15.655Z",
+  "atualizadoEm": "2026-08-18T10:25:31.212Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-17T10:29:15.655Z"
+      "atualizadoEm": "2026-08-18T10:25:31.212Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-17T10:29:15.655Z"
+      "atualizadoEm": "2026-08-18T10:25:31.212Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-17T10:29:15.655Z"
+      "atualizadoEm": "2026-08-18T10:25:31.212Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-17T10:29:15.655Z"
+      "atualizadoEm": "2026-08-18T10:25:31.212Z"
     }
   },
   "editais": [
@@ -575,25 +575,6 @@
       "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)"
     },
     {
-      "id": "fapeg-c9fda93efcc5",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
-      "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
-      "descricao": "Origem: Fapeg/CNPq/Capes",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "agro",
-        "tecnologia",
-        "educacao",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": true,
-      "coletadoEm": "2026-08-05T11:58:28.418Z",
-      "inscricaoFim": "2026-10-01T23:59:59.000-03:00"
-    },
-    {
       "id": "fapeg-03c6fa7e888b",
       "fonte": "fapeg",
       "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
@@ -686,6 +667,21 @@
       ],
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.655Z"
+    },
+    {
+      "id": "fapeg-c9fda93efcc5",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
+      "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
+      "descricao": "Origem: Fapeg/CNPq/Capes",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "tecnologia",
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-05T11:58:28.418Z"
     },
     {
       "id": "capes-7730401430fb",
