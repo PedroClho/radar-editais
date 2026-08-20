@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-19T10:25:06.775Z",
+  "atualizadoEm": "2026-08-20T10:26:57.396Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-19T10:25:06.775Z"
+      "atualizadoEm": "2026-08-20T10:26:57.396Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 7,
-      "atualizadoEm": "2026-08-19T10:25:06.775Z"
+      "quantidade": 9,
+      "atualizadoEm": "2026-08-20T10:26:57.396Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-19T10:25:06.775Z"
+      "atualizadoEm": "2026-08-20T10:26:57.396Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-19T10:25:06.775Z"
+      "atualizadoEm": "2026-08-20T10:26:57.396Z"
     }
   },
   "editais": [
@@ -575,6 +575,22 @@
       "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)"
     },
     {
+      "id": "cnpq-7284daf1c47e",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública CNPq/SETEC/SETAD/MCTI/FNDCT Nº 29/2026 – RHAE IA – Recursos Humanos em Áreas Estratégicas – Pesquisador na Empresa – Inteligência Artificial",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamada-publica-cnpq-N-29-2026",
+      "inscricaoInicio": "2026-08-19T00:00:00.000-03:00",
+      "inscricaoFim": "2026-10-09T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "industria"
+      ],
+      "ia": true,
+      "coletadoEm": "2026-08-20T10:26:58.183Z",
+      "descricao": "A Chamada RHAE IA visa apoiar projetos de Pesquisa, Desenvolvimento e Inovação (PD&I) que visem contribuir para o desenvolvimento tecnológico, a inovação e o empreendedorismo no Brasil, por meio da inserção de pesquisadores em empresas inovadoras e startups que desenvolvam soluções na temática de inteligência artificial (IA), alinhadas às missões do Programa Nova Indústria Brasil (NIB) e ao Plano Brasileiro de Inteligência Artificial (PBIA)."
+    },
+    {
       "id": "fapeg-03c6fa7e888b",
       "fonte": "fapeg",
       "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
@@ -608,6 +624,21 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.752Z",
       "fluxoContinuo": true
+    },
+    {
+      "id": "cnpq-7d5094d445fa",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública CNPq/CAPES Nº 30/2026 – Programa de Mestrado e Doutorado Acadêmico para Inovação – MAI/DAI",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamada-publica-cnpq-N-30-2026",
+      "inscricaoInicio": "2026-08-19T00:00:00.000-03:00",
+      "inscricaoFim": "2026-12-11T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-20T10:26:58.183Z",
+      "descricao": "A edição de 2026 do Programa de Mestrado e Doutorado para Inovação (MAI/DAI), que estimula a realização de pesquisas de mestrado e doutorado em universidades em parceria com empresas, recebe propostas até o dia 11 de dezembro. A chamada é realizada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e conta com a parceria da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)."
     },
     {
       "id": "cnpq-d2ed26ed5537",
