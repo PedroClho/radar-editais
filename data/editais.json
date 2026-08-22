@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-21T10:27:07.831Z",
+  "atualizadoEm": "2026-08-22T10:19:52.676Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-21T10:27:07.831Z"
+      "atualizadoEm": "2026-08-22T10:19:52.676Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 9,
-      "atualizadoEm": "2026-08-21T10:27:07.831Z"
+      "atualizadoEm": "2026-08-22T10:19:52.676Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-21T10:27:07.831Z"
+      "atualizadoEm": "2026-08-22T10:19:52.676Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-21T10:27:07.831Z"
+      "atualizadoEm": "2026-08-22T10:19:52.676Z"
     }
   },
   "editais": [
@@ -238,7 +238,7 @@
       "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
       "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
       "descricao": "Origem: Fapeg",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "saude",
         "tecnologia",
