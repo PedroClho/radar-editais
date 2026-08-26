@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-25T10:29:13.477Z",
+  "atualizadoEm": "2026-08-26T10:32:31.960Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 29,
-      "atualizadoEm": "2026-08-25T10:29:13.477Z"
+      "atualizadoEm": "2026-08-26T10:32:31.960Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 9,
-      "atualizadoEm": "2026-08-25T10:29:13.477Z"
+      "quantidade": 8,
+      "atualizadoEm": "2026-08-26T10:32:31.960Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-25T10:29:13.477Z"
+      "atualizadoEm": "2026-08-26T10:32:31.960Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-25T10:29:13.477Z"
+      "atualizadoEm": "2026-08-26T10:32:31.960Z"
     }
   },
   "editais": [
@@ -231,23 +231,6 @@
       "publicoAlvo": [
         "empresas"
       ]
-    },
-    {
-      "id": "fapeg-3fcbdd1c8c26",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
-      "descricao": "Origem: Fapeg",
-      "situacao": "encerrado",
-      "areas": [
-        "saude",
-        "tecnologia",
-        "educacao",
-        "industria"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z",
-      "inscricaoFim": "2026-08-21T23:59:59.000-03:00"
     },
     {
       "id": "finep-38771efab004",
@@ -685,6 +668,19 @@
       "coletadoEm": "2026-07-20T16:37:11.655Z"
     },
     {
+      "id": "fapeg-3fcbdd1c8c26",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
+      "descricao": "Origem: Fapeg",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.655Z"
+    },
+    {
       "id": "fapeg-5c04f8be716f",
       "fonte": "fapeg",
       "titulo": "Chamada Pública nº 15/2026 — Edital Complementar à Chamada Mobility CONFAP Italy 2026",
@@ -725,19 +721,6 @@
       ],
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.986Z"
-    },
-    {
-      "id": "cnpq-453d3c7f1ca1",
-      "fonte": "cnpq",
-      "titulo": "Chamamento Público CNPq/FNDCT/MCTI Nº 01/2026 Para Participação no Programa de Apoio à Popularização da Ciência nas Unidades da Federação",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamamento-no-01-2026/chamamento-publico-01-2026",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "O Conselho Nacional de Desenvolvimento Científico e Tecnológico – CNPq e o Ministério da Ciência, Tecnologia e Inovação – MCTI convidam as fundações estaduais de amparo à pesquisa – FAPs a apresentarem propostas estaduais e do Distrito Federal para apoio a projetos de popularização da ciência, apresentadas por FAPs, visando o desenvolvimento científico, tecnológico e a inovação no País, com os seguintes objetivos:"
     },
     {
       "id": "finep-2f437fa6bca1",
