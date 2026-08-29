@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-28T21:04:47.478Z",
+  "atualizadoEm": "2026-08-29T14:55:35.960Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 29,
-      "atualizadoEm": "2026-08-28T21:04:47.478Z"
+      "quantidade": 30,
+      "atualizadoEm": "2026-08-29T14:55:35.960Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 8,
-      "atualizadoEm": "2026-08-28T21:04:47.478Z"
+      "atualizadoEm": "2026-08-29T14:55:35.960Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-28T21:04:47.478Z"
+      "atualizadoEm": "2026-08-29T14:55:35.960Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-28T21:04:47.478Z"
+      "atualizadoEm": "2026-08-29T14:55:35.960Z"
     }
   },
   "editais": [
@@ -233,27 +233,6 @@
       ]
     },
     {
-      "id": "finep-38771efab004",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755376",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca fomentar o desenvolvimento de tecnologias inovadoras em mobilidade, com impactos na sustentabilidade e no adensamento das cadeias produtivas brasileiras, nas seguintes temáticas: mobilidade aérea, metroferroviária, aquaviária e micromobilidade…",
-      "inscricaoInicio": "2026-03-06T00:00:00.000Z",
-      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
-        "empresas"
-      ]
-    },
-    {
       "id": "finep-1def5f22d0e1",
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
@@ -266,27 +245,6 @@
         "agro",
         "tecnologia",
         "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
-        "empresas"
-      ]
-    },
-    {
-      "id": "finep-154cf446df84",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754704",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_saude_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no sistema: Manuais Manual do Cliente - Cadastro Manual do Cliente -…",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "tecnologia"
       ],
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.752Z",
@@ -388,6 +346,20 @@
       "coletadoEm": "2026-08-06T12:01:16.497Z"
     },
     {
+      "id": "finep-a1fdd8f3d57d",
+      "fonte": "finep",
+      "titulo": "Conhecimento Brasil",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/749717",
+      "descricao": "O Ministério da Ciência, Tecnologia e Inovação (MCTI) e a Financiadora de Estudos e Projetos (Finep) tornam pública a presente Seleção, cujo objetivo é conceder recursos de subvenção econômica para viabilizar: (i) a repatriação de pesquisadores e profissionais técnicos especializados, brasileiros, que estejam trabalhando em outro país no momento de submissão da proposta e que tenham disponibilidade para voltar a trabalhar no Brasil e se dedicar às atividades previstas no plano de trabalho; e/ou (ii) a fixação de pesquisadores doutores, brasileiros, que não estejam trabalhando em atividades de…",
+      "inscricaoFim": "2026-09-11T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "industria"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-29T14:55:36.566Z"
+    },
+    {
       "id": "finep-781ea30e0ea0",
       "fonte": "finep",
       "titulo": "CARTA CONVITE MCTI/FINEP/FNDCT - PROMOÇÃO DA AUTONOMIA TECNOLÓGICA NA ÁREA DA DEFESA",
@@ -403,6 +375,27 @@
       ],
       "ia": true,
       "coletadoEm": "2026-07-20T16:37:11.752Z"
+    },
+    {
+      "id": "finep-154cf446df84",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Saúde / Empresas",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754704",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_saude_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no sistema: Manuais Manual do Cliente - Cadastro Manual do Cliente -…",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-09-18T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "tecnologia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z",
+      "publicoAlvo": [
+        "startups",
+        "cooperativas",
+        "empresas"
+      ]
     },
     {
       "id": "cnpq-8cba7a14692a",
@@ -442,6 +435,27 @@
         "startups",
         "empresas",
         "ICTs"
+      ]
+    },
+    {
+      "id": "finep-38771efab004",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755376",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca fomentar o desenvolvimento de tecnologias inovadoras em mobilidade, com impactos na sustentabilidade e no adensamento das cadeias produtivas brasileiras, nas seguintes temáticas: mobilidade aérea, metroferroviária, aquaviária e micromobilidade…",
+      "inscricaoInicio": "2026-03-06T00:00:00.000Z",
+      "inscricaoFim": "2026-09-25T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z",
+      "publicoAlvo": [
+        "startups",
+        "cooperativas",
+        "empresas"
       ]
     },
     {
@@ -507,27 +521,6 @@
       ]
     },
     {
-      "id": "finep-75ed62c47d24",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 - Base Industrial de Defesa",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754961",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores dentro do escopo das linhas temáticas Tecnologias para Defesa Nacional e Sustentabilidade econômica para Base Industrial de Defesa (BID), promovendo a integração ICT-empresa. Orçamento da chamada: R$ 300 milhões Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_defesa@finep.gov.br. Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e…",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "industria"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "empresas",
-        "cooperativas"
-      ]
-    },
-    {
       "id": "cnpq-763b16405a87",
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/ERC (Conselho Europeu de Pesquisa) Nº 21/2026",
@@ -556,6 +549,27 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.766Z",
       "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)"
+    },
+    {
+      "id": "finep-75ed62c47d24",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 - Base Industrial de Defesa",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754961",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores dentro do escopo das linhas temáticas Tecnologias para Defesa Nacional e Sustentabilidade econômica para Base Industrial de Defesa (BID), promovendo a integração ICT-empresa. Orçamento da chamada: R$ 300 milhões Público-alvo: Empresas Prazo para envio das propostas alterado para 02/10/2026, 18h00 (horário de Brasília) Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_defesa@finep.gov.br. Para apresentar sua proposta através da Plataforma de Apoio…",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-10-02T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "industria"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z",
+      "publicoAlvo": [
+        "startups",
+        "empresas",
+        "cooperativas"
+      ]
     },
     {
       "id": "cnpq-7284daf1c47e",
