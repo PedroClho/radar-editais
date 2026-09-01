@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-08-31T17:23:13.945Z",
+  "atualizadoEm": "2026-09-01T14:30:25.625Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 30,
-      "atualizadoEm": "2026-08-31T17:23:13.945Z"
+      "atualizadoEm": "2026-09-01T14:30:25.625Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 8,
-      "atualizadoEm": "2026-08-31T17:23:13.945Z"
+      "quantidade": 6,
+      "atualizadoEm": "2026-09-01T14:30:25.625Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-08-31T17:23:13.945Z"
+      "atualizadoEm": "2026-09-01T14:30:25.625Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-08-31T17:23:13.945Z"
+      "atualizadoEm": "2026-09-01T14:30:25.625Z"
     }
   },
   "editais": [
@@ -240,7 +240,7 @@
       "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias inovadoras voltadas à Economia Circular e às Cidades Sustentáveis, abrangendo temáticas como o desenvolvimento de produtos e processos que incorporem princípios de circularidade; o desenvolvimento de…",
       "inscricaoInicio": "2026-02-13T00:00:00.000Z",
       "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "agro",
         "tecnologia",
@@ -253,36 +253,6 @@
         "cooperativas",
         "empresas"
       ]
-    },
-    {
-      "id": "cnpq-0c1b111983ee",
-      "fonte": "cnpq",
-      "titulo": "Chamada Pública CNPq/MMULHERES Nº 19/2026 - Programa Asas para o Futuro",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-19-2026/chamada-publica-cnpq-N-19-2026",
-      "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
-      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Esta chamada deste Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), com financiamento do Ministério das Mulheres (MMulheres), convida Institutos Federais de Educação, Ciência e Tecnologia (IFs) e Universidades Federais (UFs) a apresentarem propostas para a implementação do Programa Asas para o Futuro com o objetivo de ampliar a participação de mulheres jovens em setores estratégicos para o desenvolvimento econômico."
-    },
-    {
-      "id": "cnpq-b3efe61487ad",
-      "fonte": "cnpq",
-      "titulo": "Chamada Pública CNPq/MCTI nº 15/2026 - Programa de Cooperação Afro-Brasileira em Ciência e Tecnologia - PROAFRICA",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-15-2026/chamada-publica-cnpq-N-15-2026",
-      "inscricaoInicio": "2026-05-25T00:00:00.000-03:00",
-      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Apoiar projetos de pesquisa colaborativa que visem contribuir significativamente para o fortalecimento da cooperação científica, tecnológica e de inovação entre o Brasil e os países Africanos."
     },
     {
       "id": "finep-371cdb70cc9c",
