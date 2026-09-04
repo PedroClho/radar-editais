@@ -1,28 +1,25 @@
 {
-  "atualizadoEm": "2026-09-03T14:07:15.250Z",
+  "atualizadoEm": "2026-09-04T13:59:41.129Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 30,
-      "atualizadoEm": "2026-09-03T14:07:15.250Z"
+      "quantidade": 28,
+      "atualizadoEm": "2026-09-04T13:59:41.129Z"
     },
     "cnpq": {
-      "ok": false,
-      "quantidade": 6,
-      "atualizadoEm": "2026-09-02T14:08:56.148Z",
-      "erro": "fetch failed"
+      "ok": true,
+      "quantidade": 7,
+      "atualizadoEm": "2026-09-04T13:59:41.129Z"
     },
     "fapeg": {
-      "ok": false,
-      "quantidade": 7,
-      "atualizadoEm": "2026-09-02T14:08:56.148Z",
-      "erro": "fetch failed"
+      "ok": true,
+      "quantidade": 8,
+      "atualizadoEm": "2026-09-04T13:59:41.129Z"
     },
     "capes": {
-      "ok": false,
+      "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-02T14:08:56.148Z",
-      "erro": "fetch failed"
+      "atualizadoEm": "2026-09-04T13:59:41.129Z"
     }
   },
   "editais": [
@@ -187,7 +184,6 @@
       "titulo": "Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
       "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-12-2026-edital-complementar-a-chamada-erc-confap-2026/",
       "descricao": "Origem: Fapeg/Confap/ERC",
-      "inscricaoFim": "2026-08-10T23:59:59.000-03:00",
       "situacao": "encerrado",
       "areas": [
         "saude",
@@ -197,7 +193,8 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
+      "coletadoEm": "2026-07-20T16:37:11.655Z",
+      "inscricaoFim": "2026-08-10T23:59:59.000-03:00"
     },
     {
       "id": "finep-91cd26e24a0f",
@@ -232,73 +229,6 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.752Z",
       "publicoAlvo": [
-        "empresas"
-      ]
-    },
-    {
-      "id": "finep-1def5f22d0e1",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Economia Circular e Cidades Sustentáveis",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755213",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias inovadoras voltadas à Economia Circular e às Cidades Sustentáveis, abrangendo temáticas como o desenvolvimento de produtos e processos que incorporem princípios de circularidade; o desenvolvimento de…",
-      "inscricaoInicio": "2026-02-13T00:00:00.000Z",
-      "inscricaoFim": "2026-08-31T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
-        "empresas"
-      ]
-    },
-    {
-      "id": "finep-371cdb70cc9c",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transição Energética",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754567",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o desenvolvimento de tecnologias essenciais para a transição energética, em temáticas como tecnologias para geração de eletricidade, armazenamento de energia, hidrogênio de baixa emissão de carbono, biocombustíveis, biogás e biometano…",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "inscricaoFim": "2026-09-02T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "agro",
-        "tecnologia",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
-        "empresas"
-      ]
-    },
-    {
-      "id": "finep-a40b55d03e6c",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754473",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o adensamento das cadeias de transformação mineral, com foco em minerais críticos e estratégicos, contribuindo para uma descarbonização e uma transição energética seguras e sustentáveis, no âmbito das seguintes linhas temáticas definidas…",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "inscricaoFim": "2026-09-04T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
         "empresas"
       ]
     },
@@ -375,7 +305,6 @@
       "fonte": "cnpq",
       "titulo": "Chamada CNPq/CT-Biotec/FNDCT/MCTI Nº 24/2026 - Apoio à Pesquisa, Desenvolvimento e Inovação em Biotecnologia",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/chamada-publica-cnpq-N-24-2026",
-      "descricao": "Com financiamento do Ministério da Ciência Tecnologia e Inovação (MCTI), o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq torna pública a presente Chamada, que tem por objeto apoiar projetos de pesquisa que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País, nas seguintes áreas: Biotecnologia para saúde humana, Biotecnologia agropecuária, Biotecnologia ambiental e Biotecnologia industrial.",
       "inscricaoInicio": "2026-08-03T00:00:00.000-03:00",
       "inscricaoFim": "2026-09-18T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -386,7 +315,8 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-08-04T12:01:41.267Z"
+      "coletadoEm": "2026-08-04T12:01:41.267Z",
+      "descricao": "Com financiamento do Ministério da Ciência Tecnologia e Inovação (MCTI), o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq torna pública a presente Chamada, que tem por objeto apoiar projetos de pesquisa que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País, nas seguintes áreas: Biotecnologia para saúde humana, Biotecnologia agropecuária, Biotecnologia ambiental e Biotecnologia industrial."
     },
     {
       "id": "finep-e0fd071f36b5",
@@ -432,11 +362,11 @@
       ]
     },
     {
-      "id": "finep-b932d0832085",
+      "id": "finep-993d4cf93d47",
       "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755605",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 100.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_semicondutores_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no sistema: Manuais Manual do Cliente - Cadastro Manual do Cliente -…",
+      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
+      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_tecnologiasdigitais_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no…",
       "inscricaoInicio": "2026-03-12T00:00:00.000Z",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -452,11 +382,11 @@
       ]
     },
     {
-      "id": "finep-993d4cf93d47",
+      "id": "finep-b932d0832085",
       "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
-      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_tecnologiasdigitais_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no…",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755605",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 100.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_semicondutores_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no sistema: Manuais Manual do Cliente - Cadastro Manual do Cliente -…",
       "inscricaoInicio": "2026-03-12T00:00:00.000Z",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -498,7 +428,6 @@
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/ERC (Conselho Europeu de Pesquisa) Nº 21/2026",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/chamada-publica-cnpq-N-21-2026",
-      "descricao": "A Chamada Pública CNPq/ERC Nº 21/2026, entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e o Conselho Europeu de Pesquisa - ERC tem por objetivo selecionar projetos de pesquisa que contem com a participação de pesquisadores(as) brasileiros(as) doutores(as) em colaborações científicas apoiadas pelo Conselho Europeu de Pesquisa (European Research Council – ERC), com vistas a contribuir significativamente para o desenvolvimento científico, tecnológico e da inovação no País. Os(As) proponentes deverão observar as condições específicas estabelecidas no Anexo I –…",
       "inscricaoInicio": "2026-08-03T00:00:00.000-03:00",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -506,14 +435,14 @@
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-08-05T11:58:27.702Z"
+      "coletadoEm": "2026-08-05T11:58:27.702Z",
+      "descricao": "A Chamada Pública CNPq/ERC Nº 21/2026, entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e o Conselho Europeu de Pesquisa - ERC tem por objetivo selecionar projetos de pesquisa que contem com a participação de pesquisadores(as) brasileiros(as) doutores(as) em colaborações científicas apoiadas pelo Conselho Europeu de Pesquisa (European Research Council – ERC), com vistas a contribuir significativamente para o desenvolvimento científico, tecnológico e da inovação no País. Os(As) proponentes deverão observar as condições específicas estabelecidas no Anexo I –…"
     },
     {
       "id": "cnpq-1941baf2f023",
       "fonte": "cnpq",
       "titulo": "Chamada Pública MCTI/CNPq/MIR/MMulheres/MPI Nº 20/2026 Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada-publica-cnpq-N-20-2026",
-      "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)",
       "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -521,7 +450,8 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z"
+      "coletadoEm": "2026-07-20T16:37:11.766Z",
+      "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)"
     },
     {
       "id": "finep-75ed62c47d24",
@@ -549,7 +479,6 @@
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/SETEC/SETAD/MCTI/FNDCT Nº 29/2026 – RHAE IA – Recursos Humanos em Áreas Estratégicas – Pesquisador na Empresa – Inteligência Artificial",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamada-publica-cnpq-N-29-2026",
-      "descricao": "A Chamada RHAE IA visa apoiar projetos de Pesquisa, Desenvolvimento e Inovação (PD&I) que visem contribuir para o desenvolvimento tecnológico, a inovação e o empreendedorismo no Brasil, por meio da inserção de pesquisadores em empresas inovadoras e startups que desenvolvam soluções na temática de inteligência artificial (IA), alinhadas às missões do Programa Nova Indústria Brasil (NIB) e ao Plano Brasileiro de Inteligência Artificial (PBIA).",
       "inscricaoInicio": "2026-08-19T00:00:00.000-03:00",
       "inscricaoFim": "2026-10-09T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -558,7 +487,8 @@
         "industria"
       ],
       "ia": true,
-      "coletadoEm": "2026-08-20T10:26:58.183Z"
+      "coletadoEm": "2026-08-20T10:26:58.183Z",
+      "descricao": "A Chamada RHAE IA visa apoiar projetos de Pesquisa, Desenvolvimento e Inovação (PD&I) que visem contribuir para o desenvolvimento tecnológico, a inovação e o empreendedorismo no Brasil, por meio da inserção de pesquisadores em empresas inovadoras e startups que desenvolvam soluções na temática de inteligência artificial (IA), alinhadas às missões do Programa Nova Indústria Brasil (NIB) e ao Plano Brasileiro de Inteligência Artificial (PBIA)."
     },
     {
       "id": "fapeg-03c6fa7e888b",
@@ -566,7 +496,6 @@
       "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
       "url": "https://goias.gov.br/fapeg/chamada-publica-no-18-2026-senar-fapeg-programa-acelera-campo-2026/",
       "descricao": "Origem: Fapeg/ Senar GO",
-      "inscricaoFim": "2026-10-12T23:59:59.000-03:00",
       "situacao": "aberto",
       "areas": [
         "saude",
@@ -577,7 +506,30 @@
         "sustentabilidade"
       ],
       "ia": false,
-      "coletadoEm": "2026-08-13T10:59:44.385Z"
+      "coletadoEm": "2026-08-13T10:59:44.385Z",
+      "inscricaoFim": "2026-10-12T23:59:59.000-03:00"
+    },
+    {
+      "id": "finep-a40b55d03e6c",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/754473",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca promover o adensamento das cadeias de transformação mineral, com foco em minerais críticos e estratégicos, contribuindo para uma descarbonização e uma transição energética seguras e sustentáveis, no âmbito das seguintes linhas temáticas definidas…",
+      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
+      "inscricaoFim": "2026-11-30T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z",
+      "publicoAlvo": [
+        "startups",
+        "cooperativas",
+        "empresas"
+      ]
     },
     {
       "id": "finep-076a0a2b7bd2",
@@ -600,7 +552,6 @@
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/CAPES Nº 30/2026 – Programa de Mestrado e Doutorado Acadêmico para Inovação – MAI/DAI",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-30-2026/chamada-publica-cnpq-N-30-2026",
-      "descricao": "A edição de 2026 do Programa de Mestrado e Doutorado para Inovação (MAI/DAI), que estimula a realização de pesquisas de mestrado e doutorado em universidades em parceria com empresas, recebe propostas até o dia 11 de dezembro. A chamada é realizada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e conta com a parceria da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES).",
       "inscricaoInicio": "2026-08-19T00:00:00.000-03:00",
       "inscricaoFim": "2026-12-11T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -608,20 +559,36 @@
         "educacao"
       ],
       "ia": false,
-      "coletadoEm": "2026-08-20T10:26:58.183Z"
+      "coletadoEm": "2026-08-20T10:26:58.183Z",
+      "descricao": "A edição de 2026 do Programa de Mestrado e Doutorado para Inovação (MAI/DAI), que estimula a realização de pesquisas de mestrado e doutorado em universidades em parceria com empresas, recebe propostas até o dia 11 de dezembro. A chamada é realizada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e conta com a parceria da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)."
+    },
+    {
+      "id": "cnpq-4736ed7da0ed",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública MCTI/CNPq/ANR N° 32/2026",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-32-2026/chamada-publica-cnpq-N-32-2026",
+      "inscricaoInicio": "2026-09-03T00:00:00.000-03:00",
+      "inscricaoFim": "2027-03-31T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-09-04T13:59:41.935Z",
+      "descricao": "Chamada Pública entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e a Agência Nacional de Pesquisa - ANR, tendo por objetivo selecionar projetos de pesquisa conjuntos entre grupos brasileiros e franceses, que visem contribuir para o desenvolvimento científico, tecnológico e a inovação do país."
     },
     {
       "id": "cnpq-d2ed26ed5537",
       "fonte": "cnpq",
       "titulo": "Chamada CNPq/SETEC/MCTI N° 13/2026 - Apoio a Eventos de Promoção do Empreendedorismo e da Inovação no Brasil",
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/chamada-publica-cnpq-N-13-2026",
-      "descricao": "A Chamada objetiva apoiar a realização de eventos nacionais e internacionais no Brasil nas áreas de promoção do empreendedorismo e da inovação. Os tipos de eventos incluem conferências, congressos, seminários, fóruns, entre outros, desde que que contribuam significativamente para o desenvolvimento do Sistema Nacional de Ciência, Tecnologia e Inovação (SNCTI) e para a promoção da cultura do empreendedorismo inovador no Brasil, proporcionando oportunidades de difusão do conhecimento, fortalecimento da propriedade intelectual e da transferência tecnológica, aproximação da academia com o setor…",
       "situacao": "aberto",
       "areas": [
         "geral"
       ],
       "ia": false,
-      "coletadoEm": "2026-08-05T11:58:27.702Z"
+      "coletadoEm": "2026-08-05T11:58:27.702Z",
+      "descricao": "A Chamada objetiva apoiar a realização de eventos nacionais e internacionais no Brasil nas áreas de promoção do empreendedorismo e da inovação. Os tipos de eventos incluem conferências, congressos, seminários, fóruns, entre outros, desde que que contribuam significativamente para o desenvolvimento do Sistema Nacional de Ciência, Tecnologia e Inovação (SNCTI) e para a promoção da cultura do empreendedorismo inovador no Brasil, proporcionando oportunidades de difusão do conhecimento, fortalecimento da propriedade intelectual e da transferência tecnológica, aproximação da academia com o setor…"
     },
     {
       "id": "fapeg-d337756ea1d0",
@@ -640,6 +607,21 @@
       ],
       "ia": false,
       "coletadoEm": "2026-08-08T10:29:49.813Z"
+    },
+    {
+      "id": "fapeg-8b2eb5ae3a4a",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 08/2026 — 2º Ciclo - Programa Goiás pelo Mundo",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-no-08-2026-2o-ciclo-programa-goias-pelo-mundo/",
+      "descricao": "Origem: Fapeg",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "tecnologia",
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-09-04T13:59:42.312Z"
     },
     {
       "id": "fapeg-452f0d931597",
