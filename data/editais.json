@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-08T14:07:41.124Z",
+  "atualizadoEm": "2026-09-09T14:09:05.042Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-08T14:07:41.124Z"
+      "atualizadoEm": "2026-09-09T14:09:05.042Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-09-08T14:07:41.124Z"
+      "atualizadoEm": "2026-09-09T14:09:05.042Z"
     },
     "fapeg": {
       "ok": true,
-      "quantidade": 8,
-      "atualizadoEm": "2026-09-08T14:07:41.124Z"
+      "quantidade": 6,
+      "atualizadoEm": "2026-09-09T14:09:05.042Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-08T14:07:41.124Z"
+      "atualizadoEm": "2026-09-09T14:09:05.042Z"
     }
   },
   "editais": [
@@ -622,32 +622,6 @@
       ],
       "ia": false,
       "coletadoEm": "2026-09-04T13:59:42.312Z"
-    },
-    {
-      "id": "fapeg-452f0d931597",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 13/2026 — EDITAL DE APOIO À PESQUISA E INOVAÇÃO EM EDUCAÇÃO ESPECIAL INCLUSIVA",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-no-13-2026-edital-de-apoio-a-pesquisa-e-inovacao-em-educacao-especial-inclusiva/",
-      "descricao": "Origem: Fapeg",
-      "situacao": "aberto",
-      "areas": [
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
-    },
-    {
-      "id": "fapeg-3fcbdd1c8c26",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 14/2026 — PROGRAMA APOIO À ESTRUTURAÇÃO E CONSOLIDAÇÃO DE INDICAÇÕES GEOGRÁFICAS EM GOIÁS",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-14-2026-programa-apoio-a-estruturacao-e-consolidacao-de-indicacoes-geograficas-em-goias/",
-      "descricao": "Origem: Fapeg",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
     },
     {
       "id": "fapeg-5c04f8be716f",
