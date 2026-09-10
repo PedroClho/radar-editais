@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-09T14:09:05.042Z",
+  "atualizadoEm": "2026-09-10T14:03:05.022Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-09T14:09:05.042Z"
+      "atualizadoEm": "2026-09-10T14:03:05.022Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-09-09T14:09:05.042Z"
+      "atualizadoEm": "2026-09-10T14:03:05.022Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-09T14:09:05.042Z"
+      "atualizadoEm": "2026-09-10T14:03:05.022Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-09T14:09:05.042Z"
+      "atualizadoEm": "2026-09-10T14:03:05.022Z"
     }
   },
   "editais": [
@@ -240,7 +240,7 @@
       "descricao": "O Conselho Norueguês de Pesquisa (RCN) e a Financiadora de Estudos e Projetos (Finep) instituem a quinta chamada pública conjunta Finep-RCN em 2026, para apoio de projetos a serem iniciados em 2027, com a observância dos termos e procedimentos adiante estabelecidos. Alinhados com o acordo BN21 (Brasil-Noruega Século XXI), a Finep e o RCN lançam esta chamada conjunta com vistas a aumentar a colaboração entre a Noruega e o Brasil por meio de parcerias entre instituições científicas e tecnológicas e empresas de ambos os países para o desenvolvimento de produtos, processos e serviços inovadores…",
       "inscricaoInicio": "2026-08-05T00:00:00.000Z",
       "inscricaoFim": "2026-09-09T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "energia",
         "sustentabilidade"
