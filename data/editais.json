@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-10T14:03:05.022Z",
+  "atualizadoEm": "2026-09-11T14:02:44.034Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-10T14:03:05.022Z"
+      "atualizadoEm": "2026-09-11T14:02:44.034Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-09-10T14:03:05.022Z"
+      "atualizadoEm": "2026-09-11T14:02:44.034Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-10T14:03:05.022Z"
+      "atualizadoEm": "2026-09-11T14:02:44.034Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-10T14:03:05.022Z"
+      "atualizadoEm": "2026-09-11T14:02:44.034Z"
     }
   },
   "editais": [
