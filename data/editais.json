@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-11T14:02:44.034Z",
+  "atualizadoEm": "2026-09-12T13:20:23.506Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-11T14:02:44.034Z"
+      "atualizadoEm": "2026-09-12T13:20:23.506Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-09-11T14:02:44.034Z"
+      "atualizadoEm": "2026-09-12T13:20:23.506Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-11T14:02:44.034Z"
+      "atualizadoEm": "2026-09-12T13:20:23.506Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-11T14:02:44.034Z"
+      "atualizadoEm": "2026-09-12T13:20:23.506Z"
     }
   },
   "editais": [
@@ -255,7 +255,7 @@
       "url": "https://www.finep.gov.br/e/chamada-publica/222684/749717",
       "descricao": "O Ministério da Ciência, Tecnologia e Inovação (MCTI) e a Financiadora de Estudos e Projetos (Finep) tornam pública a presente Seleção, cujo objetivo é conceder recursos de subvenção econômica para viabilizar: (i) a repatriação de pesquisadores e profissionais técnicos especializados, brasileiros, que estejam trabalhando em outro país no momento de submissão da proposta e que tenham disponibilidade para voltar a trabalhar no Brasil e se dedicar às atividades previstas no plano de trabalho; e/ou (ii) a fixação de pesquisadores doutores, brasileiros, que não estejam trabalhando em atividades de…",
       "inscricaoFim": "2026-09-11T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "industria"
       ],
@@ -611,7 +611,7 @@
     {
       "id": "fapeg-8b2eb5ae3a4a",
       "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 08/2026 — 2º Ciclo - Programa Goiás pelo Mundo",
+      "titulo": "Chamada Pública nº 08/2026 — Participação em Eventos no Exterior (2026-2027) – 2º CICLO",
       "url": "https://goias.gov.br/fapeg/chamada-publica-no-08-2026-2o-ciclo-programa-goias-pelo-mundo/",
       "descricao": "Origem: Fapeg",
       "situacao": "aberto",
