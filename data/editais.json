@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-18T14:05:26.448Z",
+  "atualizadoEm": "2026-09-19T13:40:59.346Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-18T14:05:26.448Z"
+      "atualizadoEm": "2026-09-19T13:40:59.346Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-09-18T14:05:26.448Z"
+      "atualizadoEm": "2026-09-19T13:40:59.346Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-18T14:05:26.448Z"
+      "atualizadoEm": "2026-09-19T13:40:59.346Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-18T14:05:26.448Z"
+      "atualizadoEm": "2026-09-19T13:40:59.346Z"
     }
   },
   "editais": [
@@ -256,7 +256,7 @@
       "descricao": "Selecionar propostas para concessão de apoio financeiro a Instituições de Ciência, Tecnologia e Inovação do Ministério da Defesa (ICTMD), visando à execução de projetos de pesquisa para promover a capacidade e a autonomia científica, tecnológica e de inovação do Brasil em áreas críticas para a defesa nacional e para a segurança, priorizando projetos alinhados com a Estratégia Nacional de Defesa, com tecnologias transversais e arranjos interinstitucionais, que possibilitem a superação de entraves e bloqueios, bem como o transbordamento de tecnologias e inovações para a área civil. Linhas…",
       "inscricaoInicio": "2026-05-26T00:00:00.000Z",
       "inscricaoFim": "2026-09-18T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "tecnologia",
         "energia",
@@ -273,7 +273,7 @@
       "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_saude_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no sistema: Manuais Manual do Cliente - Cadastro Manual do Cliente -…",
       "inscricaoInicio": "2026-02-06T00:00:00.000Z",
       "inscricaoFim": "2026-09-18T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "saude",
         "tecnologia"
@@ -293,7 +293,7 @@
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/chamada-publica-cnpq-N-24-2026",
       "inscricaoInicio": "2026-08-03T00:00:00.000-03:00",
       "inscricaoFim": "2026-09-18T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "saude",
         "agro",
@@ -461,24 +461,6 @@
       ]
     },
     {
-      "id": "finep-ac072a2d71b3",
-      "fonte": "finep",
-      "titulo": "Programa Nacional de Incubadoras Tecnológicas de Cooperativas Populares (Proninc) / 2026",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/1057230",
-      "descricao": "CHAMADA PÚBLICA MCTI/FINEP/FNDCT PROGRAMA NACIONAL DE INCUBADORAS TECNOLÓGICAS DE COOPERATIVAS POPULARES (PRONINC) / 2026 SELEÇÃO PÚBLICA DE PROPOSTAS PARA CONCESSÃO DE APOIO FINANCEIRO NÃO REEMBOLSÁVEL PARA O DESENVOLVIMENTO DE TECNOLOGIAS E INOVAÇÃO SOCIAL EM ECONOMIA SOLIDÁRIA Selecionar propostas para concessão de apoio financeiro não reembolsável à execução de projetos conduzidos por Instituições Científicas, Tecnológicas e de Inovação (ICTs), por meio da atuação conjunta de Incubadoras Tecnológicas de Cooperativas Populares (ITCPs) e Núcleos de Inovação Tecnológica (NITs), voltados ao…",
-      "inscricaoInicio": "2027-01-14T00:00:00.000Z",
-      "inscricaoFim": "2026-10-09T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-09-18T14:05:27.052Z",
-      "publicoAlvo": [
-        "ICTs"
-      ]
-    },
-    {
       "id": "cnpq-7284daf1c47e",
       "fonte": "cnpq",
       "titulo": "Chamada Pública CNPq/SETEC/SETAD/MCTI/FNDCT Nº 29/2026 – RHAE IA – Recursos Humanos em Áreas Estratégicas – Pesquisador na Empresa – Inteligência Artificial",
@@ -565,6 +547,28 @@
       "ia": false,
       "coletadoEm": "2026-08-20T10:26:58.183Z",
       "descricao": "A edição de 2026 do Programa de Mestrado e Doutorado para Inovação (MAI/DAI), que estimula a realização de pesquisas de mestrado e doutorado em universidades em parceria com empresas, recebe propostas até o dia 11 de dezembro. A chamada é realizada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e conta com a parceria da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)."
+    },
+    {
+      "id": "finep-ac072a2d71b3",
+      "fonte": "finep",
+      "titulo": "Programa Nacional de Incubadoras Tecnológicas de Cooperativas Populares (Proninc) / 2026",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/1057230",
+      "descricao": "Seleção pública de propostas para concessão de apoio financeiro não reembolsável para o desenvolvimento de tecnologias e inovação social em economia solidária. Selecionar propostas para apoio à execução de projetos conduzidos por Instituições Científicas, Tecnológicas e de Inovação (ICTs), por meio da atuação conjunta de Incubadoras Tecnológicas de Cooperativas Populares (ITCPs) e Núcleos de Inovação Tecnológica (NITs), voltados ao desenvolvimento ou à adaptação de soluções tecnológicas para fins de economia solidária, aplicáveis aos Empreendimentos Econômicos Solidários (EES). As propostas…",
+      "inscricaoInicio": "2026-09-18T00:00:00.000Z",
+      "inscricaoFim": "2027-01-14T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "agro",
+        "tecnologia",
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-09-18T14:05:27.052Z",
+      "publicoAlvo": [
+        "ICTs"
+      ]
     },
     {
       "id": "cnpq-4736ed7da0ed",
