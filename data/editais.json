@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-20T13:56:45.834Z",
+  "atualizadoEm": "2026-09-21T16:11:43.567Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-20T13:56:45.834Z"
+      "atualizadoEm": "2026-09-21T16:11:43.567Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 7,
-      "atualizadoEm": "2026-09-20T13:56:45.834Z"
+      "quantidade": 6,
+      "atualizadoEm": "2026-09-21T16:11:43.567Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-20T13:56:45.834Z"
+      "atualizadoEm": "2026-09-21T16:11:43.567Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-20T13:56:45.834Z"
+      "atualizadoEm": "2026-09-21T16:11:43.567Z"
     }
   },
   "editais": [
@@ -287,24 +287,6 @@
       ]
     },
     {
-      "id": "cnpq-8cba7a14692a",
-      "fonte": "cnpq",
-      "titulo": "Chamada CNPq/CT-Biotec/FNDCT/MCTI Nº 24/2026 - Apoio à Pesquisa, Desenvolvimento e Inovação em Biotecnologia",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-24-2026/chamada-publica-cnpq-N-24-2026",
-      "inscricaoInicio": "2026-08-03T00:00:00.000-03:00",
-      "inscricaoFim": "2026-09-18T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "saude",
-        "agro",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-08-04T12:01:41.267Z",
-      "descricao": "Com financiamento do Ministério da Ciência Tecnologia e Inovação (MCTI), o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq torna pública a presente Chamada, que tem por objeto apoiar projetos de pesquisa que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País, nas seguintes áreas: Biotecnologia para saúde humana, Biotecnologia agropecuária, Biotecnologia ambiental e Biotecnologia industrial."
-    },
-    {
       "id": "finep-e0fd071f36b5",
       "fonte": "finep",
       "titulo": "DESAFIO TECNOLÓGICO ELETROLISADOR NACIONAL",
@@ -553,7 +535,7 @@
       "fonte": "finep",
       "titulo": "Programa Nacional de Incubadoras Tecnológicas de Cooperativas Populares (Proninc) / 2026",
       "url": "https://www.finep.gov.br/e/chamada-publica/222684/1057230",
-      "descricao": "Seleção pública de propostas para concessão de apoio financeiro não reembolsável para o desenvolvimento de tecnologias e inovação social em economia solidária. Selecionar propostas para apoio à execução de projetos conduzidos por Instituições Científicas, Tecnológicas e de Inovação (ICTs), por meio da atuação conjunta de Incubadoras Tecnológicas de Cooperativas Populares (ITCPs) e Núcleos de Inovação Tecnológica (NITs), voltados ao desenvolvimento ou à adaptação de soluções tecnológicas para fins de economia solidária, aplicáveis aos Empreendimentos Econômicos Solidários (EES). As propostas…",
+      "descricao": "Seleção pública de propostas para concessão de apoio financeiro não reembolsável para o desenvolvimento de tecnologias e inovação social em economia solidária. OBJETIVO DA CHAMADA PÚBLICA PRONINC/2026 Selecionar propostas para apoio à execução de projetos conduzidos por Instituições Científicas, Tecnológicas e de Inovação (ICTs), por meio da atuação conjunta de Incubadoras Tecnológicas de Cooperativas Populares (ITCPs) e Núcleos de Inovação Tecnológica (NITs), voltados ao desenvolvimento ou à adaptação de soluções tecnológicas para fins de economia solidária, aplicáveis aos Empreendimentos…",
       "inscricaoInicio": "2026-09-18T00:00:00.000Z",
       "inscricaoFim": "2027-01-14T23:59:59.000-03:00",
       "situacao": "aberto",
