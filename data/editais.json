@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-21T16:11:43.567Z",
+  "atualizadoEm": "2026-09-22T14:19:47.325Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 28,
-      "atualizadoEm": "2026-09-21T16:11:43.567Z"
+      "quantidade": 26,
+      "atualizadoEm": "2026-09-22T14:19:47.325Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 6,
-      "atualizadoEm": "2026-09-21T16:11:43.567Z"
+      "quantidade": 5,
+      "atualizadoEm": "2026-09-22T14:19:47.325Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-21T16:11:43.567Z"
+      "atualizadoEm": "2026-09-22T14:19:47.325Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-21T16:11:43.567Z"
+      "atualizadoEm": "2026-09-22T14:19:47.325Z"
     }
   },
   "editais": [
@@ -287,28 +287,6 @@
       ]
     },
     {
-      "id": "finep-e0fd071f36b5",
-      "fonte": "finep",
-      "titulo": "DESAFIO TECNOLÓGICO ELETROLISADOR NACIONAL",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/968467",
-      "descricao": "SELEÇÃO PÚBLICA FINEP/PETROBRAS A Financiadora de Estudos e Projetos – Finep, a Petrobras e o Ministério da Ciência, Tecnologia e Inovação (MCTI), com apoio técnico do Ministério da Fazenda, tornam pública a presente Seleção Pública, cujo objetivo é apoiar o desenvolvimento de um projeto de inovação voltado para o desenvolvimento tecnológico de um Eletrolisador Nacional, seguindo as especificações apresentadas no Edital e seus anexos, especialmente, no Anexo 1. A executora líder do projeto deverá ser necessariamente uma empresa brasileira, com participação de, no mínimo, duas empresas…",
-      "inscricaoInicio": "2026-06-16T00:00:00.000Z",
-      "inscricaoFim": "2026-09-21T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "empresas",
-        "ICTs"
-      ]
-    },
-    {
       "id": "finep-38771efab004",
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
@@ -568,19 +546,6 @@
       "descricao": "Chamada Pública entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e a Agência Nacional de Pesquisa - ANR, tendo por objetivo selecionar projetos de pesquisa conjuntos entre grupos brasileiros e franceses, que visem contribuir para o desenvolvimento científico, tecnológico e a inovação do país."
     },
     {
-      "id": "cnpq-d2ed26ed5537",
-      "fonte": "cnpq",
-      "titulo": "Chamada CNPq/SETEC/MCTI N° 13/2026 - Apoio a Eventos de Promoção do Empreendedorismo e da Inovação no Brasil",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-13-2026/chamada-publica-cnpq-N-13-2026",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-08-05T11:58:27.702Z",
-      "descricao": "A Chamada objetiva apoiar a realização de eventos nacionais e internacionais no Brasil nas áreas de promoção do empreendedorismo e da inovação. Os tipos de eventos incluem conferências, congressos, seminários, fóruns, entre outros, desde que que contribuam significativamente para o desenvolvimento do Sistema Nacional de Ciência, Tecnologia e Inovação (SNCTI) e para a promoção da cultura do empreendedorismo inovador no Brasil, proporcionando oportunidades de difusão do conhecimento, fortalecimento da propriedade intelectual e da transferência tecnológica, aproximação da academia com o setor…"
-    },
-    {
       "id": "fapeg-d337756ea1d0",
       "fonte": "fapeg",
       "titulo": "Chamada Pública Complementar nº 17/2026 — Edital Complementar à Chamada CONFAP-WBI (Wallonie Bruxelles International)",
@@ -727,21 +692,6 @@
       "publicoAlvo": [
         "cooperativas"
       ]
-    },
-    {
-      "id": "finep-0f97679cb0ad",
-      "fonte": "finep",
-      "titulo": "SOLUÇÕES TECNOLÓGICAS PARA AUMENTO DA PRODUTIVIDADE NA AGRICULTURA FAMILIAR, AQUICULTURA E PESCA ARTESANAL",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/748141",
-      "descricao": "SELEÇÃO PÚBLICA MCTI/FINEP/FNDCT - Subvenção Econômica à Inovação em Fluxo Contínuo - SOLUÇÕES TECNOLÓGICAS PARA AUMENTO DA PRODUTIVIDADE NA AGRICULTURA FAMILIAR, AQUICULTURA E PESCA ARTESANAL O Ministério da Ciência, Tecnologia e Inovação (MCTI) e a Financiadora de Estudos e Projetos - Finep tornam pública a presente Seleção, cujo objetivo é conceder recursos de subvenção econômica para projetos inovadores e de risco tecnológico, que atendam as finalidades definidas neste regulamento e no Anexo 1.",
-      "inscricaoInicio": "2024-07-08T00:00:00.000Z",
-      "situacao": "aberto",
-      "areas": [
-        "agro"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "fluxoContinuo": true
     }
   ]
 }
