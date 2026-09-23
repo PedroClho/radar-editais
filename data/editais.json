@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-22T14:19:47.325Z",
+  "atualizadoEm": "2026-09-23T14:39:51.040Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 26,
-      "atualizadoEm": "2026-09-22T14:19:47.325Z"
+      "quantidade": 28,
+      "atualizadoEm": "2026-09-23T14:39:51.040Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-09-22T14:19:47.325Z"
+      "atualizadoEm": "2026-09-23T14:39:51.040Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-22T14:19:47.325Z"
+      "atualizadoEm": "2026-09-23T14:39:51.040Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-22T14:19:47.325Z"
+      "atualizadoEm": "2026-09-23T14:39:51.040Z"
     }
   },
   "editais": [
@@ -478,6 +478,27 @@
       ]
     },
     {
+      "id": "finep-01a595645b7f",
+      "fonte": "finep",
+      "titulo": "COOPERAMAIS Tecnologia - ICT",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/1060260",
+      "descricao": "EDITAL DE SELEÇÃO PÚBLICA DE PROJETOS PARA O DESENVOLVIMENTO DE SOLUÇÕES TECNOLÓGICAS PARA A AGRICULTURA FAMILIAR, EM PARCERIA COM COOPERATIVAS DA AGRICULTURA FAMILIAR A chamada tem por objetivo selecionar projetos de P,D&I apresentados por ICTs públicas e privadas para desenvolvimento de soluções tecnológicas voltadas à agricultura familiar brasileira, obrigatoriamente em parceria com cooperativas da agricultura familiar. Orçamento total R$ 100 milhões em recursos não reembolsáveis do FNDCT/CT-Agro. Pelo menos 30% dos recursos deverão ser destinados às regiões Norte, Nordeste e Centro-Oeste…",
+      "inscricaoInicio": "2026-09-22T00:00:00.000Z",
+      "inscricaoFim": "2026-12-01T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "energia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-09-23T14:39:51.682Z",
+      "publicoAlvo": [
+        "ICTs"
+      ]
+    },
+    {
       "id": "finep-076a0a2b7bd2",
       "fonte": "finep",
       "titulo": "Subvenção Descentralizada Seleção de Parceiros em Fluxo Contínuo - Pró Amazônia Empreende",
@@ -544,6 +565,26 @@
       "ia": false,
       "coletadoEm": "2026-09-04T13:59:41.935Z",
       "descricao": "Chamada Pública entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e a Agência Nacional de Pesquisa - ANR, tendo por objetivo selecionar projetos de pesquisa conjuntos entre grupos brasileiros e franceses, que visem contribuir para o desenvolvimento científico, tecnológico e a inovação do país."
+    },
+    {
+      "id": "finep-f9c8094eefd6",
+      "fonte": "finep",
+      "titulo": "Finep COOPERAMAIS Brasil Tecnologias – Empresas",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/1060720",
+      "descricao": "SELEÇÃO PÚBLICA MCTI/FINEP/FNDCT - Subvenção Econômica à Inovação em Fluxo Contínuo – Finep COOPERAMAIS Brasil Tecnologias – Empresas Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores, promovendo o desenvolvimento da agroindústria nacional visando a garantida da segurança alimentar e nutricional da população brasileira. Também visa promover parcerias para o desenvolvimento entre empresas e cooperativas cadastradas no CAF com, no mínimo, 70% de agricultores familiares associados. Orçamento da chamada: R$ 120…",
+      "inscricaoInicio": "2026-09-22T00:00:00.000Z",
+      "inscricaoFim": "2027-04-30T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "industria"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-09-23T14:39:51.682Z",
+      "publicoAlvo": [
+        "empresas"
+      ],
+      "fluxoContinuo": true
     },
     {
       "id": "fapeg-d337756ea1d0",
