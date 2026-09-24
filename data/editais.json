@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-23T14:39:51.040Z",
+  "atualizadoEm": "2026-09-24T14:37:28.463Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-23T14:39:51.040Z"
+      "atualizadoEm": "2026-09-24T14:37:28.463Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-09-23T14:39:51.040Z"
+      "atualizadoEm": "2026-09-24T14:37:28.463Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-23T14:39:51.040Z"
+      "atualizadoEm": "2026-09-24T14:37:28.463Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-23T14:39:51.040Z"
+      "atualizadoEm": "2026-09-24T14:37:28.463Z"
     }
   },
   "editais": [
@@ -219,7 +219,7 @@
       "fonte": "finep",
       "titulo": "BRICs - Chamada pública Cooperação Multilateral em Inovação",
       "url": "https://www.finep.gov.br/e/chamada-publica/222684/991625",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para projetos de cooperação internacional visando o desenvolvimento de produtos, processos ou serviços inovadores das empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Orçamento da chamada: R$ 12 milhões Público-alvo: Empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Em…",
+      "descricao": "BRICs - Chamada pública Cooperação Multilateral em Inovação Esta Seleção Pública objetiva conceder recursos de subvenção econômica para projetos de cooperação internacional visando o desenvolvimento de produtos, processos ou serviços inovadores das empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em Inovação dos BRICS, conforme listadas no Anexo 1 do edital. Orçamento da chamada: R$ 12 milhões Público-alvo: Empresas brasileiras aprovadas previamente na fase internacional da Chamada do Programa de Cooperação Multilateral em…",
       "inscricaoInicio": "2026-06-30T00:00:00.000Z",
       "inscricaoFim": "2026-08-14T23:59:59.000-03:00",
       "situacao": "encerrado",
@@ -482,7 +482,7 @@
       "fonte": "finep",
       "titulo": "COOPERAMAIS Tecnologia - ICT",
       "url": "https://www.finep.gov.br/e/chamada-publica/222684/1060260",
-      "descricao": "EDITAL DE SELEÇÃO PÚBLICA DE PROJETOS PARA O DESENVOLVIMENTO DE SOLUÇÕES TECNOLÓGICAS PARA A AGRICULTURA FAMILIAR, EM PARCERIA COM COOPERATIVAS DA AGRICULTURA FAMILIAR A chamada tem por objetivo selecionar projetos de P,D&I apresentados por ICTs públicas e privadas para desenvolvimento de soluções tecnológicas voltadas à agricultura familiar brasileira, obrigatoriamente em parceria com cooperativas da agricultura familiar. Orçamento total R$ 100 milhões em recursos não reembolsáveis do FNDCT/CT-Agro. Pelo menos 30% dos recursos deverão ser destinados às regiões Norte, Nordeste e Centro-Oeste…",
+      "descricao": "A chamada tem por objetivo selecionar projetos de P,D&I apresentados por ICTs públicas e privadas para desenvolvimento de soluções tecnológicas voltadas à agricultura familiar brasileira, obrigatoriamente em parceria com cooperativas da agricultura familiar. Orçamento total R$ 100 milhões em recursos não reembolsáveis do FNDCT/CT-Agro. Pelo menos 30% dos recursos deverão ser destinados às regiões Norte, Nordeste e Centro-Oeste, desde que existam projetos meritórios. Linhas Temáticas 1- Comercialização, acesso a mercados e logística cooperativa. 2 - Desenvolvimento de cadeias produtivas e…",
       "inscricaoInicio": "2026-09-22T00:00:00.000Z",
       "inscricaoFim": "2026-12-01T23:59:59.000-03:00",
       "situacao": "aberto",
@@ -495,7 +495,8 @@
       "ia": false,
       "coletadoEm": "2026-09-23T14:39:51.682Z",
       "publicoAlvo": [
-        "ICTs"
+        "ICTs",
+        "cooperativas"
       ]
     },
     {
@@ -571,7 +572,7 @@
       "fonte": "finep",
       "titulo": "Finep COOPERAMAIS Brasil Tecnologias – Empresas",
       "url": "https://www.finep.gov.br/e/chamada-publica/222684/1060720",
-      "descricao": "SELEÇÃO PÚBLICA MCTI/FINEP/FNDCT - Subvenção Econômica à Inovação em Fluxo Contínuo – Finep COOPERAMAIS Brasil Tecnologias – Empresas Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores, promovendo o desenvolvimento da agroindústria nacional visando a garantida da segurança alimentar e nutricional da população brasileira. Também visa promover parcerias para o desenvolvimento entre empresas e cooperativas cadastradas no CAF com, no mínimo, 70% de agricultores familiares associados. Orçamento da chamada: R$ 120…",
+      "descricao": "Finep COOPERAMAIS Brasil Tecnologias – Empresas SELEÇÃO PÚBLICA MCTI/FINEP/FNDCT - Subvenção Econômica à Inovação em Fluxo Contínuo – Finep COOPERAMAIS Brasil Tecnologias – Empresas Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores, promovendo o desenvolvimento da agroindústria nacional visando a garantida da segurança alimentar e nutricional da população brasileira. Também visa promover parcerias para o desenvolvimento entre empresas e cooperativas cadastradas no CAF com, no mínimo, 70% de agricultores familiares…",
       "inscricaoInicio": "2026-09-22T00:00:00.000Z",
       "inscricaoFim": "2027-04-30T23:59:59.000-03:00",
       "situacao": "aberto",
