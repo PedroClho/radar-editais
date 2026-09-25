@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-24T14:37:28.463Z",
+  "atualizadoEm": "2026-09-25T14:59:19.513Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-24T14:37:28.463Z"
+      "atualizadoEm": "2026-09-25T14:59:19.513Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-09-24T14:37:28.463Z"
+      "atualizadoEm": "2026-09-25T14:59:19.513Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-24T14:37:28.463Z"
+      "atualizadoEm": "2026-09-25T14:59:19.513Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-24T14:37:28.463Z"
+      "atualizadoEm": "2026-09-25T14:59:19.513Z"
     }
   },
   "editais": [
@@ -287,27 +287,6 @@
       ]
     },
     {
-      "id": "finep-38771efab004",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755376",
-      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca fomentar o desenvolvimento de tecnologias inovadoras em mobilidade, com impactos na sustentabilidade e no adensamento das cadeias produtivas brasileiras, nas seguintes temáticas: mobilidade aérea, metroferroviária, aquaviária e micromobilidade…",
-      "inscricaoInicio": "2026-03-06T00:00:00.000Z",
-      "inscricaoFim": "2026-09-25T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
-        "empresas"
-      ]
-    },
-    {
       "id": "finep-993d4cf93d47",
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
@@ -456,6 +435,27 @@
       "inscricaoFim": "2026-10-12T23:59:59.000-03:00"
     },
     {
+      "id": "finep-38771efab004",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Mobilidade Sustentável",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755376",
+      "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca fomentar o desenvolvimento de tecnologias inovadoras em mobilidade, com impactos na sustentabilidade e no adensamento das cadeias produtivas brasileiras, nas seguintes temáticas: mobilidade aérea, metroferroviária, aquaviária e micromobilidade…",
+      "inscricaoInicio": "2026-03-06T00:00:00.000Z",
+      "inscricaoFim": "2026-10-23T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z",
+      "publicoAlvo": [
+        "startups",
+        "cooperativas",
+        "empresas"
+      ]
+    },
+    {
       "id": "finep-a40b55d03e6c",
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Transformação Mineral",
@@ -599,7 +599,6 @@
         "tecnologia",
         "educacao",
         "energia",
-        "industria",
         "sustentabilidade"
       ],
       "ia": false,
