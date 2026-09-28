@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-27T14:59:33.766Z",
+  "atualizadoEm": "2026-09-28T17:56:59.986Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-27T14:59:33.766Z"
+      "atualizadoEm": "2026-09-28T17:56:59.986Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-09-27T14:59:33.766Z"
+      "atualizadoEm": "2026-09-28T17:56:59.986Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-27T14:59:33.766Z"
+      "atualizadoEm": "2026-09-28T17:56:59.986Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-09-27T14:59:33.766Z"
+      "atualizadoEm": "2026-09-28T17:56:59.986Z"
     }
   },
   "editais": [
@@ -287,26 +287,6 @@
       ]
     },
     {
-      "id": "finep-993d4cf93d47",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
-      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_tecnologiasdigitais_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no…",
-      "inscricaoInicio": "2026-03-12T00:00:00.000Z",
-      "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "tecnologia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "cooperativas",
-        "empresas"
-      ]
-    },
-    {
       "id": "finep-b932d0832085",
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 – Semicondutores",
@@ -433,6 +413,26 @@
       "ia": false,
       "coletadoEm": "2026-08-13T10:59:44.385Z",
       "inscricaoFim": "2026-10-12T23:59:59.000-03:00"
+    },
+    {
+      "id": "finep-993d4cf93d47",
+      "fonte": "finep",
+      "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755485",
+      "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_tecnologiasdigitais_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no…",
+      "inscricaoInicio": "2026-03-12T00:00:00.000Z",
+      "inscricaoFim": "2026-10-14T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "tecnologia"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-07-20T16:37:11.752Z",
+      "publicoAlvo": [
+        "startups",
+        "cooperativas",
+        "empresas"
+      ]
     },
     {
       "id": "finep-38771efab004",
