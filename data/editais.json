@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-28T17:56:59.986Z",
+  "atualizadoEm": "2026-09-29T16:19:42.570Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-28T17:56:59.986Z"
+      "atualizadoEm": "2026-09-29T16:19:42.570Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-09-28T17:56:59.986Z"
+      "atualizadoEm": "2026-09-29T16:19:42.570Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-28T17:56:59.986Z"
+      "atualizadoEm": "2026-09-29T16:19:42.570Z"
     },
     "capes": {
       "ok": true,
-      "quantidade": 1,
-      "atualizadoEm": "2026-09-28T17:56:59.986Z"
+      "quantidade": 2,
+      "atualizadoEm": "2026-09-29T16:19:42.570Z"
     }
   },
   "editais": [
@@ -660,6 +660,18 @@
       ],
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.986Z"
+    },
+    {
+      "id": "capes-e5bb00e2cec3",
+      "fonte": "capes",
+      "titulo": "Estudo de Ingressantes das Licenciaturas - Edital CAPES/INEP nº 26/2026",
+      "url": "https://www.gov.br/capes/pt-br/centrais-de-conteudo/editais/edital_2904194_sei_2903303_edital_conjunto_26_2026.pdf/@@display-file/file",
+      "situacao": "indefinido",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-09-29T16:19:43.701Z"
     },
     {
       "id": "finep-2f437fa6bca1",
