@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-09-30T16:15:00.252Z",
+  "atualizadoEm": "2026-10-01T16:52:28.045Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-09-30T16:15:00.252Z"
+      "atualizadoEm": "2026-10-01T16:52:28.045Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 5,
-      "atualizadoEm": "2026-09-30T16:15:00.252Z"
+      "quantidade": 3,
+      "atualizadoEm": "2026-10-01T16:52:28.045Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-09-30T16:15:00.252Z"
+      "atualizadoEm": "2026-10-01T16:52:28.045Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-09-30T16:15:00.252Z"
+      "atualizadoEm": "2026-10-01T16:52:28.045Z"
     }
   },
   "editais": [
@@ -294,7 +294,7 @@
       "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores, promovendo o desenvolvimento da agroindústria nacional visando a garantida da segurança alimentar e nutricional da população brasileira. Também visa promover parcerias para o desenvolvimento entre empresas e ICTs, no desenvolvimento de projetos em redes. Orçamento da chamada: R$ 300 milhões Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_agro2@finep.gov.br. Para apresentar sua proposta através da Plataforma de Apoio e…",
       "inscricaoInicio": "2026-02-06T00:00:00.000Z",
       "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "agro",
         "tecnologia",
@@ -307,36 +307,6 @@
         "empresas",
         "cooperativas"
       ]
-    },
-    {
-      "id": "cnpq-763b16405a87",
-      "fonte": "cnpq",
-      "titulo": "Chamada Pública CNPq/ERC (Conselho Europeu de Pesquisa) Nº 21/2026",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-21-2026/chamada-publica-cnpq-N-21-2026",
-      "inscricaoInicio": "2026-08-03T00:00:00.000-03:00",
-      "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-08-05T11:58:27.702Z",
-      "descricao": "A Chamada Pública CNPq/ERC Nº 21/2026, entre o Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq e o Conselho Europeu de Pesquisa - ERC tem por objetivo selecionar projetos de pesquisa que contem com a participação de pesquisadores(as) brasileiros(as) doutores(as) em colaborações científicas apoiadas pelo Conselho Europeu de Pesquisa (European Research Council – ERC), com vistas a contribuir significativamente para o desenvolvimento científico, tecnológico e da inovação no País. Os(As) proponentes deverão observar as condições específicas estabelecidas no Anexo I –…"
-    },
-    {
-      "id": "cnpq-1941baf2f023",
-      "fonte": "cnpq",
-      "titulo": "Chamada Pública MCTI/CNPq/MIR/MMulheres/MPI Nº 20/2026 Atlânticas - Programa Beatriz Nascimento de Mulheres na Ciência",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-20-2026/chamada-publica-cnpq-N-20-2026",
-      "inscricaoInicio": "2026-06-30T00:00:00.000-03:00",
-      "inscricaoFim": "2026-09-30T23:59:59.000-03:00",
-      "situacao": "aberto",
-      "areas": [
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.766Z",
-      "descricao": "Trata-se da segunda edição da Chamada, que tem por objetivo selecionar mulheres negras (pretas e pardas), mulheres quilombolas, mulheres indígenas e mulheres ciganas para a realização de parte de suas pesquisas de doutorado ou de projetos de pós-doutorado em instituições no exterior, mediante a concessão de bolsas nas modalidades Desenvolvimento Tecnológico e Inovação no Exterior Júnior (DEJ), Desenvolvimento Tecnológico e Inovação no Exterior Sênior (DES) e Pós-Doutorado no Exterior (PDE)"
     },
     {
       "id": "finep-75ed62c47d24",
@@ -358,6 +328,25 @@
         "empresas",
         "cooperativas"
       ]
+    },
+    {
+      "id": "fapeg-c9fda93efcc5",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
+      "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
+      "descricao": "Origem: Fapeg/CNPq/Capes",
+      "situacao": "aberto",
+      "areas": [
+        "saude",
+        "agro",
+        "tecnologia",
+        "educacao",
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": true,
+      "coletadoEm": "2026-08-05T11:58:28.418Z",
+      "inscricaoFim": "2026-10-02T23:59:59.000-03:00"
     },
     {
       "id": "cnpq-7284daf1c47e",
@@ -633,21 +622,6 @@
       ],
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.655Z"
-    },
-    {
-      "id": "fapeg-c9fda93efcc5",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
-      "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
-      "descricao": "Origem: Fapeg/CNPq/Capes",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "tecnologia",
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-08-05T11:58:28.418Z"
     },
     {
       "id": "capes-7730401430fb",
