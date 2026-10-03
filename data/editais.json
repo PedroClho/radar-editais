@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-02T16:05:17.506Z",
+  "atualizadoEm": "2026-10-03T14:33:32.002Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 28,
-      "atualizadoEm": "2026-10-02T16:05:17.506Z"
+      "atualizadoEm": "2026-10-03T14:33:32.002Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 3,
-      "atualizadoEm": "2026-10-02T16:05:17.506Z"
+      "atualizadoEm": "2026-10-03T14:33:32.002Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-10-02T16:05:17.506Z"
+      "atualizadoEm": "2026-10-03T14:33:32.002Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-10-02T16:05:17.506Z"
+      "atualizadoEm": "2026-10-03T14:33:32.002Z"
     }
   },
   "editais": [
@@ -316,7 +316,7 @@
       "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores dentro do escopo das linhas temáticas Tecnologias para Defesa Nacional e Sustentabilidade econômica para Base Industrial de Defesa (BID), promovendo a integração ICT-empresa. Orçamento da chamada: R$ 300 milhões Público-alvo: Empresas Prazo para envio das propostas alterado para 02/10/2026, 18h00 (horário de Brasília) Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_defesa@finep.gov.br. Para apresentar sua proposta através da Plataforma de Apoio…",
       "inscricaoInicio": "2026-02-06T00:00:00.000Z",
       "inscricaoFim": "2026-10-02T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "tecnologia",
         "industria"
@@ -335,7 +335,7 @@
       "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
       "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
       "descricao": "Origem: Fapeg/CNPq/Capes",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "saude",
         "agro",
