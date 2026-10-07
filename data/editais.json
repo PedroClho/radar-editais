@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-06T16:29:35.242Z",
+  "atualizadoEm": "2026-10-07T17:14:11.070Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 27,
-      "atualizadoEm": "2026-10-06T16:29:35.242Z"
+      "quantidade": 26,
+      "atualizadoEm": "2026-10-07T17:14:11.070Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 3,
-      "atualizadoEm": "2026-10-06T16:29:35.242Z"
+      "quantidade": 4,
+      "atualizadoEm": "2026-10-07T17:14:11.070Z"
     },
     "fapeg": {
       "ok": true,
-      "quantidade": 6,
-      "atualizadoEm": "2026-10-06T16:29:35.242Z"
+      "quantidade": 2,
+      "atualizadoEm": "2026-10-07T17:14:11.070Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 3,
-      "atualizadoEm": "2026-10-06T16:29:35.242Z"
+      "atualizadoEm": "2026-10-07T17:14:11.070Z"
     }
   },
   "editais": [
@@ -179,24 +179,6 @@
       "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
-      "id": "fapeg-a420f0b8d5ff",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública Complementar nº 12/2026 — EDITAL COMPLEMENTAR À CHAMADA ERC-CONFAP 2026",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-12-2026-edital-complementar-a-chamada-erc-confap-2026/",
-      "descricao": "Origem: Fapeg/Confap/ERC",
-      "situacao": "encerrado",
-      "areas": [
-        "saude",
-        "tecnologia",
-        "educacao",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z",
-      "inscricaoFim": "2026-08-10T23:59:59.000-03:00"
-    },
-    {
       "id": "finep-91cd26e24a0f",
       "fonte": "finep",
       "titulo": "FIP Conexões Startups – 2026",
@@ -306,25 +288,6 @@
         "empresas",
         "cooperativas"
       ]
-    },
-    {
-      "id": "fapeg-c9fda93efcc5",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 16/2026 — Programa de Apoio à Fixação de Doutores no Brasil - Seleção de Bolsistas Profix-CB",
-      "url": "https://goias.gov.br/fapeg/chamada-cnpq-capes-fapeg-no-16-2026-programa-de-apoio-a-fixacao-de-doutores-no-brasil-selecao-de-bolsistas-profix-cb/",
-      "descricao": "Origem: Fapeg/CNPq/Capes",
-      "situacao": "encerrado",
-      "areas": [
-        "saude",
-        "agro",
-        "tecnologia",
-        "educacao",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": true,
-      "coletadoEm": "2026-08-05T11:58:28.418Z",
-      "inscricaoFim": "2026-10-02T23:59:59.000-03:00"
     },
     {
       "id": "cnpq-7284daf1c47e",
@@ -498,6 +461,21 @@
       "descricao": "A edição de 2026 do Programa de Mestrado e Doutorado para Inovação (MAI/DAI), que estimula a realização de pesquisas de mestrado e doutorado em universidades em parceria com empresas, recebe propostas até o dia 11 de dezembro. A chamada é realizada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e conta com a parceria da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)."
     },
     {
+      "id": "cnpq-456389f075c0",
+      "fonte": "cnpq",
+      "titulo": "Chamada CNPq nº 33/2026 - Bolsas de Produtividade do CNPq",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-33-2026/chamada-publica-cnpq-N-33-2026",
+      "inscricaoInicio": "2026-10-07T00:00:00.000-03:00",
+      "inscricaoFim": "2027-01-07T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-10-07T17:14:11.906Z",
+      "descricao": "O CNPq torna pública a Chamada CNPq nº 33/2026, que tem por objeto conceder bolsas nas seguintes modalidades: Produtividade em Desenvolvimento Tecnológico e Extensão Inovadora (DT), Produtividade em Pesquisa (PQ) e Produtividade em Pesquisa Sênior (PQSr). São objetivos desta chamada:a) valorizar pesquisadores que possuam produção científica, tecnológica e de inovação de destaque em suas respectivas áreas do conhecimento;b) incentivar o aumento da produção científica, tecnológica e de inovação de qualidade;c) selecionar projetos de pesquisa que sejam propostos considerando o rigor e o método…"
+    },
+    {
       "id": "finep-ac072a2d71b3",
       "fonte": "finep",
       "titulo": "Programa Nacional de Incubadoras Tecnológicas de Cooperativas Populares (Proninc) / 2026",
@@ -570,36 +548,6 @@
       ],
       "ia": false,
       "coletadoEm": "2026-08-08T10:29:49.813Z"
-    },
-    {
-      "id": "fapeg-8b2eb5ae3a4a",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 08/2026 — Participação em Eventos no Exterior (2026-2027) – 2º CICLO",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-no-08-2026-2o-ciclo-programa-goias-pelo-mundo/",
-      "descricao": "Origem: Fapeg",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "tecnologia",
-        "educacao"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-09-04T13:59:42.312Z"
-    },
-    {
-      "id": "fapeg-5c04f8be716f",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 15/2026 — Edital Complementar à Chamada Mobility CONFAP Italy 2026",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-no-15-2026-edital-complementar-a-chamada-mobility-confap-italy-2026/",
-      "descricao": "Origem: Fapeg/Secti/Confap/Mobility Italy",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "educacao",
-        "energia"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.655Z"
     },
     {
       "id": "capes-7730401430fb",
@@ -676,19 +624,6 @@
       "situacao": "aberto",
       "areas": [
         "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z"
-    },
-    {
-      "id": "finep-00bf884ffa05",
-      "fonte": "finep",
-      "titulo": "Seleção de Gestor para o FIP Complexo da Saúde",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/752474",
-      "descricao": "Chamada Pública para a seleção de Gestor e Administrador para o Fundo de Investimento em Participações Complexo da Saúde, em parceria com BNDESPAR e Fundação Butantan. A Financiadora de Estudos e Projetos (“Finep”), empresa pública federal vinculada ao Ministério da Ciência, Tecnologia e Inovação – MCTI, com sede e foro em Brasília – Distrito Federal, e serviços na Cidade do Rio de Janeiro, na Praia do Flamengo nº 200, 1º andar - Parte, Flamengo, em parceria com BNDES PARTICIPAÇÕES S.A. (“BNDESPAR”) e com a Fundação Butantan (“Butantan”) vêm, por intermédio desta Chamada Pública, convidar…",
-      "situacao": "aberto",
-      "areas": [
-        "saude"
       ],
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.752Z"
