@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-09T16:48:16.395Z",
+  "atualizadoEm": "2026-10-10T15:41:28.457Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 26,
-      "atualizadoEm": "2026-10-09T16:48:16.395Z"
+      "atualizadoEm": "2026-10-10T15:41:28.457Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-09T16:48:16.395Z"
+      "atualizadoEm": "2026-10-10T15:41:28.457Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-10-09T16:48:16.395Z"
+      "atualizadoEm": "2026-10-10T15:41:28.457Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 3,
-      "atualizadoEm": "2026-10-09T16:48:16.395Z"
+      "atualizadoEm": "2026-10-10T15:41:28.457Z"
     }
   },
   "editais": [
@@ -296,7 +296,7 @@
       "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamada-publica-cnpq-N-29-2026",
       "inscricaoInicio": "2026-08-19T00:00:00.000-03:00",
       "inscricaoFim": "2026-10-09T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "tecnologia",
         "industria"
