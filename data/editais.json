@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-12T19:36:54.271Z",
+  "atualizadoEm": "2026-10-13T17:20:50.873Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 26,
-      "atualizadoEm": "2026-10-12T19:36:54.271Z"
+      "atualizadoEm": "2026-10-13T17:20:50.873Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 4,
-      "atualizadoEm": "2026-10-12T19:36:54.271Z"
+      "quantidade": 3,
+      "atualizadoEm": "2026-10-13T17:20:50.873Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-10-12T19:36:54.271Z"
+      "atualizadoEm": "2026-10-13T17:20:50.873Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 3,
-      "atualizadoEm": "2026-10-12T19:36:54.271Z"
+      "atualizadoEm": "2026-10-13T17:20:50.873Z"
     }
   },
   "editais": [
@@ -290,28 +290,12 @@
       ]
     },
     {
-      "id": "cnpq-7284daf1c47e",
-      "fonte": "cnpq",
-      "titulo": "Chamada Pública CNPq/SETEC/SETAD/MCTI/FNDCT Nº 29/2026 – RHAE IA – Recursos Humanos em Áreas Estratégicas – Pesquisador na Empresa – Inteligência Artificial",
-      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamada-publica-cnpq-N-29-2026",
-      "inscricaoInicio": "2026-08-19T00:00:00.000-03:00",
-      "inscricaoFim": "2026-10-09T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "tecnologia",
-        "industria"
-      ],
-      "ia": true,
-      "coletadoEm": "2026-08-20T10:26:58.183Z",
-      "descricao": "A Chamada RHAE IA visa apoiar projetos de Pesquisa, Desenvolvimento e Inovação (PD&I) que visem contribuir para o desenvolvimento tecnológico, a inovação e o empreendedorismo no Brasil, por meio da inserção de pesquisadores em empresas inovadoras e startups que desenvolvam soluções na temática de inteligência artificial (IA), alinhadas às missões do Programa Nova Indústria Brasil (NIB) e ao Plano Brasileiro de Inteligência Artificial (PBIA)."
-    },
-    {
       "id": "fapeg-03c6fa7e888b",
       "fonte": "fapeg",
       "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
       "url": "https://goias.gov.br/fapeg/chamada-publica-no-18-2026-senar-fapeg-programa-acelera-campo-2026/",
       "descricao": "Origem: Fapeg/ Senar GO",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "saude",
         "agro",
