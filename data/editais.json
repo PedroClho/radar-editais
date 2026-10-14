@@ -1,52 +1,28 @@
 {
-  "atualizadoEm": "2026-10-13T17:20:50.873Z",
+  "atualizadoEm": "2026-10-14T14:52:28.117Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 26,
-      "atualizadoEm": "2026-10-13T17:20:50.873Z"
+      "quantidade": 25,
+      "atualizadoEm": "2026-10-14T14:52:28.117Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 3,
-      "atualizadoEm": "2026-10-13T17:20:50.873Z"
+      "quantidade": 4,
+      "atualizadoEm": "2026-10-14T14:52:28.117Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-10-13T17:20:50.873Z"
+      "atualizadoEm": "2026-10-14T14:52:28.117Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 3,
-      "atualizadoEm": "2026-10-13T17:20:50.873Z"
+      "atualizadoEm": "2026-10-14T14:52:28.117Z"
     }
   },
   "editais": [
-    {
-      "id": "finep-f69c8a797050",
-      "fonte": "finep",
-      "titulo": "Finep Mais Inovação Brasil - Rodada 2 - Subvenção Econômica Regional",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/755080",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos, processos ou serviços inovadores que envolvam risco tecnológico em projetos realizados nas regiões Nordeste, Norte e Centro-Oeste, apoiando atividades que se encontrem entre os níveis de maturidade tecnológica (TRL) 3 a 9. Essas iniciativas devem estar obrigatoriamente estar alinhadas às seis missões estratégicas da política Nova Indústria Brasil, as quais buscam impulsionar a produtividade e a soberania nacional por meio de temas como bioeconomia, saúde, transformação digital, cadeias…",
-      "inscricaoInicio": "2026-02-06T00:00:00.000Z",
-      "inscricaoFim": "2026-04-09T23:59:59.000-03:00",
-      "situacao": "encerrado",
-      "areas": [
-        "saude",
-        "agro",
-        "tecnologia",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z",
-      "publicoAlvo": [
-        "startups",
-        "empresas",
-        "cooperativas"
-      ]
-    },
     {
       "id": "finep-316822cfc69e",
       "fonte": "finep",
@@ -406,6 +382,21 @@
       "ia": false,
       "coletadoEm": "2026-07-20T16:37:11.752Z",
       "fluxoContinuo": true
+    },
+    {
+      "id": "cnpq-cbe5cd013165",
+      "fonte": "cnpq",
+      "titulo": "Chamada CNPq Nº 34/2026 - Auxílio à Promoção de Eventos Científicos, Tecnológicos e/ou de Inovação - ARC",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-34-2026/chamada-publica-cnpq-N-34-2026",
+      "inscricaoInicio": "2026-10-14T00:00:00.000-03:00",
+      "inscricaoFim": "2026-12-04T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-10-14T14:52:29.220Z",
+      "descricao": "O CNPq torna pública a Chamada CNPq nº 34/2026, que tem por objeto apoiar a realização no Brasil de eventos de grande porte, de abrangência mundial, internacional ou nacional, relacionados a ciência, tecnologia e inovação, tais como encontros, congressos e outros similares que visem contribuir significativamente para o desenvolvimento científico e tecnológico e a inovação do País."
     },
     {
       "id": "finep-01a595645b7f",
