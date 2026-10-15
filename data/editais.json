@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-14T14:52:28.117Z",
+  "atualizadoEm": "2026-10-15T14:39:26.564Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 25,
-      "atualizadoEm": "2026-10-14T14:52:28.117Z"
+      "atualizadoEm": "2026-10-15T14:39:26.564Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-14T14:52:28.117Z"
+      "atualizadoEm": "2026-10-15T14:39:26.564Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-10-14T14:52:28.117Z"
+      "atualizadoEm": "2026-10-15T14:39:26.564Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 3,
-      "atualizadoEm": "2026-10-14T14:52:28.117Z"
+      "atualizadoEm": "2026-10-15T14:39:26.564Z"
     }
   },
   "editais": [
@@ -266,25 +266,6 @@
       ]
     },
     {
-      "id": "fapeg-03c6fa7e888b",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-no-18-2026-senar-fapeg-programa-acelera-campo-2026/",
-      "descricao": "Origem: Fapeg/ Senar GO",
-      "situacao": "encerrado",
-      "areas": [
-        "saude",
-        "agro",
-        "tecnologia",
-        "educacao",
-        "industria",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-08-13T10:59:44.385Z",
-      "inscricaoFim": "2026-10-12T23:59:59.000-03:00"
-    },
-    {
       "id": "finep-993d4cf93d47",
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais",
@@ -292,7 +273,7 @@
       "descricao": "Finep Mais Inovação Brasil - Rodada 2 – Tecnologias Digitais Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores que atendam as finalidades definidas neste regulamento e em seus anexos. Orçamento da chamada: R$ 300.000.000,00 Público-alvo: Empresas Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_tecnologiasdigitais_2@finep.gov.br Para apresentar sua proposta através da Plataforma de Apoio e Financiamento, verifique abaixo os materiais de orientação para cadastro e preenchimento do formulário no…",
       "inscricaoInicio": "2026-03-12T00:00:00.000Z",
       "inscricaoFim": "2026-10-14T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "tecnologia"
       ],
@@ -523,6 +504,19 @@
       ],
       "ia": false,
       "coletadoEm": "2026-08-08T10:29:49.813Z"
+    },
+    {
+      "id": "fapeg-03c6fa7e888b",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-no-18-2026-senar-fapeg-programa-acelera-campo-2026/",
+      "descricao": "Origem: Fapeg/ Senar GO",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-08-13T10:59:44.385Z"
     },
     {
       "id": "capes-7730401430fb",
