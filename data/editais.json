@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-20T14:39:06.848Z",
+  "atualizadoEm": "2026-10-21T14:50:47.956Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 25,
-      "atualizadoEm": "2026-10-20T14:39:06.848Z"
+      "quantidade": 26,
+      "atualizadoEm": "2026-10-21T14:50:47.956Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-20T14:39:06.848Z"
+      "atualizadoEm": "2026-10-21T14:50:47.956Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 2,
-      "atualizadoEm": "2026-10-20T14:39:06.848Z"
+      "atualizadoEm": "2026-10-21T14:50:47.956Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-20T14:39:06.848Z"
+      "atualizadoEm": "2026-10-21T14:50:47.956Z"
     }
   },
   "editais": [
@@ -305,6 +305,22 @@
         "cooperativas",
         "empresas"
       ]
+    },
+    {
+      "id": "finep-bd6556d00950",
+      "fonte": "finep",
+      "titulo": "Programa de Cooperação para Inovação da Rede EUREKA – Chamada bilateral para projetos nas áreas de mineração sustentável, bioeconomia ou cidades sustentáveis – Fase Nacional no site da Finep.",
+      "url": "https://www.finep.gov.br/e/chamada-publica/222684/1132029",
+      "descricao": "Sustainable mining, bioeconomy or sustainable cities (EUREKA) SELEÇÃO PÚBLICA MCTI/FINEP/FNDCT Subvenção Econômica à Inovação no Âmbito da Cooperação Internacional Programa de Cooperação para Inovação da Rede EUREKA – Chamada bilateral para projetos nas áreas de mineração sustentável, bioeconomia ou cidades sustentáveis – Fase Nacional no site da Finep. A Chamada Pública tem como objetivo promover pesquisa, desenvolvimento e inovação nas áreas de mineração sustentável, bioeconomia ou cidades sustentáveis nos consórcios que consistem em parcerias formadas por instituições brasileiras e suecas…",
+      "inscricaoInicio": "2026-10-21T00:00:00.000Z",
+      "inscricaoFim": "2026-11-23T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "industria",
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-10-21T14:50:48.617Z"
     },
     {
       "id": "finep-b932d0832085",
