@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-23T14:39:36.074Z",
+  "atualizadoEm": "2026-10-24T13:49:31.279Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 26,
-      "atualizadoEm": "2026-10-23T14:39:36.074Z"
+      "atualizadoEm": "2026-10-24T13:49:31.279Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-23T14:39:36.074Z"
+      "atualizadoEm": "2026-10-24T13:49:31.279Z"
     },
     "fapeg": {
       "ok": true,
-      "quantidade": 2,
-      "atualizadoEm": "2026-10-23T14:39:36.074Z"
+      "quantidade": 1,
+      "atualizadoEm": "2026-10-24T13:49:31.279Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-23T14:39:36.074Z"
+      "atualizadoEm": "2026-10-24T13:49:31.279Z"
     }
   },
   "editais": [
@@ -293,7 +293,7 @@
       "descricao": "Esta Seleção Pública tem por objetivo conceder recursos de subvenção econômica para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos inovadores, com risco tecnológico associado, executados por empresas, obrigatoriamente com a parceria de Instituições Científicas, Tecnológicas e de Inovação (ICTs). A iniciativa busca fomentar o desenvolvimento de tecnologias inovadoras em mobilidade, com impactos na sustentabilidade e no adensamento das cadeias produtivas brasileiras, nas seguintes temáticas: mobilidade aérea, metroferroviária, aquaviária e micromobilidade…",
       "inscricaoInicio": "2026-03-06T00:00:00.000Z",
       "inscricaoFim": "2026-10-23T23:59:59.000-03:00",
-      "situacao": "aberto",
+      "situacao": "encerrado",
       "areas": [
         "tecnologia",
         "sustentabilidade"
@@ -520,19 +520,6 @@
       ],
       "ia": false,
       "coletadoEm": "2026-08-08T10:29:49.813Z"
-    },
-    {
-      "id": "fapeg-03c6fa7e888b",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública nº 18/2026 — Programa Acelera Campo 2026",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-no-18-2026-senar-fapeg-programa-acelera-campo-2026/",
-      "descricao": "Origem: Fapeg/ Senar GO",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-08-13T10:59:44.385Z"
     },
     {
       "id": "capes-7730401430fb",
