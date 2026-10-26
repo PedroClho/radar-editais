@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-25T14:05:30.478Z",
+  "atualizadoEm": "2026-10-26T16:28:36.384Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 26,
-      "atualizadoEm": "2026-10-25T14:05:30.478Z"
+      "atualizadoEm": "2026-10-26T16:28:36.384Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 4,
-      "atualizadoEm": "2026-10-25T14:05:30.478Z"
+      "quantidade": 5,
+      "atualizadoEm": "2026-10-26T16:28:36.384Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-10-25T14:05:30.478Z"
+      "atualizadoEm": "2026-10-26T16:28:36.384Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-25T14:05:30.478Z"
+      "atualizadoEm": "2026-10-26T16:28:36.384Z"
     }
   },
   "editais": [
@@ -416,6 +416,23 @@
         "ICTs",
         "cooperativas"
       ]
+    },
+    {
+      "id": "cnpq-5987e18b2237",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública CNPq/Petrobras N° 31/2026 - Projeto InspirAÇÃO",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-31-2026/chamada-publica-cnpq-N-31-2026",
+      "inscricaoInicio": "2026-10-26T00:00:00.000-03:00",
+      "inscricaoFim": "2026-12-08T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "educacao",
+        "energia",
+        "industria"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-10-26T16:28:37.207Z",
+      "descricao": "O Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), em parceria institucional com o Centro de Pesquisas, Desenvolvimento e Inovação Leopoldo Américo Miguez de Mello (Cenpes) e com financiamento da Petrobras, convida Instituição Científica, Tecnológica e de Inovação (ICT) e/ou Instituição de Ensino Superior (IES) a apresentarem propostas para a implementação do Projeto InspirAÇÃO com o objetivo de ampliar a participação de jovens mulheres negras em setores estratégicos da indústria de energia para o desenvolvimento econômico."
     },
     {
       "id": "cnpq-7d5094d445fa",
