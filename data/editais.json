@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-10-27T15:42:49.713Z",
+  "atualizadoEm": "2026-10-28T16:25:37.767Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 25,
-      "atualizadoEm": "2026-10-27T15:42:49.713Z"
+      "atualizadoEm": "2026-10-28T16:25:37.767Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 5,
-      "atualizadoEm": "2026-10-27T15:42:49.713Z"
+      "atualizadoEm": "2026-10-28T16:25:37.767Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-10-27T15:42:49.713Z"
+      "atualizadoEm": "2026-10-28T16:25:37.767Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-10-27T15:42:49.713Z"
+      "atualizadoEm": "2026-10-28T16:25:37.767Z"
     }
   },
   "editais": [
@@ -249,7 +249,7 @@
       "fonte": "finep",
       "titulo": "Finep Mais Inovação Brasil – Rodada 2 - Base Industrial de Defesa",
       "url": "https://www.finep.gov.br/e/chamada-publica/222684/754961",
-      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores dentro do escopo das linhas temáticas Tecnologias para Defesa Nacional e Sustentabilidade econômica para Base Industrial de Defesa (BID), promovendo a integração ICT-empresa. Orçamento da chamada: R$ 300 milhões Público-alvo: Empresas Prazo para envio das propostas alterado para 02/10/2026, 18h00 (horário de Brasília) Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_defesa@finep.gov.br. Para apresentar sua proposta através da Plataforma de Apoio…",
+      "descricao": "Esta Seleção Pública objetiva conceder recursos de subvenção econômica para o desenvolvimento de produtos ou processos inovadores dentro do escopo das linhas temáticas Tecnologias para Defesa Nacional e Sustentabilidade econômica para Base Industrial de Defesa (BID), promovendo a integração ICT-empresa. Orçamento da chamada: R$ 600 milhões Público-alvo: Empresas Prazo para envio das propostas alterado para 02/10/2026, 18h00 (horário de Brasília) Em caso de dúvidas e orientações sobre a seleção pública: cp_mib_sbv_defesa@finep.gov.br. Para apresentar sua proposta através da Plataforma de Apoio…",
       "inscricaoInicio": "2026-02-06T00:00:00.000Z",
       "inscricaoFim": "2026-10-02T23:59:59.000-03:00",
       "situacao": "encerrado",
