@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-11-03T17:32:19.622Z",
+  "atualizadoEm": "2026-11-04T17:45:01.083Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 25,
-      "atualizadoEm": "2026-11-03T17:32:19.622Z"
+      "atualizadoEm": "2026-11-04T17:45:01.083Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 5,
-      "atualizadoEm": "2026-11-03T17:32:19.622Z"
+      "quantidade": 6,
+      "atualizadoEm": "2026-11-04T17:45:01.083Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-11-03T17:32:19.622Z"
+      "atualizadoEm": "2026-11-04T17:45:01.083Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-11-03T17:32:19.622Z"
+      "atualizadoEm": "2026-11-04T17:45:01.083Z"
     }
   },
   "editais": [
@@ -464,6 +464,21 @@
       "publicoAlvo": [
         "ICTs"
       ]
+    },
+    {
+      "id": "cnpq-facbbc020b1e",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública CNPq/MCTI N° 36/2026 - Apoio a cursos de curta duração em biodiversidade, no âmbito do Centro Franco-Brasileiro de Biodiversidade Amazônica (CFBBA)",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-36-2026/chamada-publica-cnpq-N-36-2026",
+      "inscricaoInicio": "2026-11-03T00:00:00.000-03:00",
+      "inscricaoFim": "2027-02-12T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "sustentabilidade"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-11-04T17:45:01.940Z",
+      "descricao": "A presente Chamada Pública tem por objetivo apoiar a realização de cursos de curta duração na área de biodiversidade, a serem promovidos no âmbito do Centro Franco-Brasileiro de Biodiversidade Amazônica (CFBBA). A iniciativa visa fortalecer as capacidades científica e tecnológica do Brasil e da França, por meio do intercâmbio e da transferência de conhecimentos, do desenvolvimento de projetos conjuntos de pesquisa e da formação e capacitação de recursos humanos em temas de interesse comum aos dois países, considerando suas dimensões ambiental, econômica e social."
     },
     {
       "id": "cnpq-4736ed7da0ed",
