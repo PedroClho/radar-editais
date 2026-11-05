@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-11-04T17:45:01.083Z",
+  "atualizadoEm": "2026-11-05T17:51:04.965Z",
   "fontes": {
     "finep": {
       "ok": true,
-      "quantidade": 25,
-      "atualizadoEm": "2026-11-04T17:45:01.083Z"
+      "quantidade": 24,
+      "atualizadoEm": "2026-11-05T17:51:04.965Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 6,
-      "atualizadoEm": "2026-11-04T17:45:01.083Z"
+      "atualizadoEm": "2026-11-05T17:51:04.965Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-11-04T17:45:01.083Z"
+      "atualizadoEm": "2026-11-05T17:51:04.965Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-11-04T17:45:01.083Z"
+      "atualizadoEm": "2026-11-05T17:51:04.965Z"
     }
   },
   "editais": [
@@ -595,20 +595,6 @@
       "publicoAlvo": [
         "fundos de investimento"
       ]
-    },
-    {
-      "id": "finep-232da74fdc31",
-      "fonte": "finep",
-      "titulo": "FIP Transição Energética e Descarbonização",
-      "url": "https://www.finep.gov.br/e/chamada-publica/222684/752871",
-      "descricao": "Seleção de Gestor para o Fundo de Investimento em Participações em Empresas de Base Tecnológica nos Setores de Transição Energética e Descarbonização (FIP Transição Energética e Descarbonização) Chamada Pública para a seleção de Gestor e Administrador para o Fundo de Investimento em Participações Transição Energética e Descarbonização, em parceria com a Petrobras e BNDESPAR. A Financiadora de Estudos e Projetos (“Finep”), empresa pública federal vinculada ao Ministério da Ciência, Tecnologia e Inovação – MCTI, com sede e foro em Brasília – Distrito Federal, e serviços na Cidade do Rio de…",
-      "situacao": "aberto",
-      "areas": [
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-07-20T16:37:11.752Z"
     },
     {
       "id": "finep-127d235d1a16",
