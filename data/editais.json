@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-11-10T17:29:41.116Z",
+  "atualizadoEm": "2026-11-11T17:42:07.802Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 24,
-      "atualizadoEm": "2026-11-10T17:29:41.116Z"
+      "atualizadoEm": "2026-11-11T17:42:07.802Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 6,
-      "atualizadoEm": "2026-11-10T17:29:41.116Z"
+      "quantidade": 7,
+      "atualizadoEm": "2026-11-11T17:42:07.802Z"
     },
     "fapeg": {
       "ok": true,
-      "quantidade": 1,
-      "atualizadoEm": "2026-11-10T17:29:41.116Z"
+      "quantidade": 2,
+      "atualizadoEm": "2026-11-11T17:42:07.802Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-11-10T17:29:41.116Z"
+      "atualizadoEm": "2026-11-11T17:42:07.802Z"
     }
   },
   "editais": [
@@ -481,6 +481,21 @@
       "descricao": "A presente Chamada Pública tem por objetivo apoiar a realização de cursos de curta duração na área de biodiversidade, a serem promovidos no âmbito do Centro Franco-Brasileiro de Biodiversidade Amazônica (CFBBA). A iniciativa visa fortalecer as capacidades científica e tecnológica do Brasil e da França, por meio do intercâmbio e da transferência de conhecimentos, do desenvolvimento de projetos conjuntos de pesquisa e da formação e capacitação de recursos humanos em temas de interesse comum aos dois países, considerando suas dimensões ambiental, econômica e social."
     },
     {
+      "id": "cnpq-91bb0d887c8d",
+      "fonte": "cnpq",
+      "titulo": "Chamada Pública MCTI/CNPq/CISB/SAAB AB Nº 37/2026 - Cooperação Brasil-Suécia",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-37-2026/chamada-publica-cnpq-N-37-2026",
+      "inscricaoInicio": "2026-11-11T00:00:00.000-03:00",
+      "inscricaoFim": "2027-03-12T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-11-11T17:42:08.837Z",
+      "descricao": "A presente chamada objetiva selecionar candidatos para desenvolver parte de suas pesquisas doutorais ou projeto de pós-doutorado na Suécia em áreas definidas consensualmente entre o CNPq, o CISB e a SAAB AB."
+    },
+    {
       "id": "cnpq-4736ed7da0ed",
       "fonte": "cnpq",
       "titulo": "Chamada Pública MCTI/CNPq/ANR N° 32/2026",
@@ -531,6 +546,18 @@
       ],
       "ia": false,
       "coletadoEm": "2026-08-08T10:29:49.813Z"
+    },
+    {
+      "id": "fapeg-98e5c719505b",
+      "fonte": "fapeg",
+      "titulo": "CHAMADA PÚBLICA FAPEG/SECTI nº 19/2026 — SELEÇÃO DE BOLSISTAS PARA ATUAÇÃO EM AMBIENTES DE INOVAÇÃO DO ESTADO DE GOIÁS - APOIO A HUBS DE INOVAÇÃO",
+      "url": "https://goias.gov.br/fapeg/wp-content/uploads/sites/5/2026/11/Edital_19.2026_SELECAO_DE_BOLSISTAS_PARA_ATUACAO_EM_AMBIENTES_DE_INOVACAO_DO_ESTADO_DE_GOIAS_2.pdf",
+      "situacao": "aberto",
+      "areas": [
+        "geral"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-11-11T17:42:09.082Z"
     },
     {
       "id": "capes-7730401430fb",
