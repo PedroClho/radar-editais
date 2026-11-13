@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-11-12T17:55:27.667Z",
+  "atualizadoEm": "2026-11-13T17:30:03.540Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 24,
-      "atualizadoEm": "2026-11-12T17:55:27.667Z"
+      "atualizadoEm": "2026-11-13T17:30:03.540Z"
     },
     "cnpq": {
       "ok": true,
       "quantidade": 7,
-      "atualizadoEm": "2026-11-12T17:55:27.667Z"
+      "atualizadoEm": "2026-11-13T17:30:03.540Z"
     },
     "fapeg": {
       "ok": true,
-      "quantidade": 2,
-      "atualizadoEm": "2026-11-12T17:55:27.667Z"
+      "quantidade": 1,
+      "atualizadoEm": "2026-11-13T17:30:03.540Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-11-12T17:55:27.667Z"
+      "atualizadoEm": "2026-11-13T17:30:03.540Z"
     }
   },
   "editais": [
@@ -429,6 +429,22 @@
       "descricao": "A edição de 2026 do Programa de Mestrado e Doutorado para Inovação (MAI/DAI), que estimula a realização de pesquisas de mestrado e doutorado em universidades em parceria com empresas, recebe propostas até o dia 11 de dezembro. A chamada é realizada pelo Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e conta com a parceria da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)."
     },
     {
+      "id": "fapeg-0b49483c421a",
+      "fonte": "fapeg",
+      "titulo": "Chamada Pública Fapeg/SECTI nº 19/2026 — Seleção de Bolsistas para Atuação em Ambientes de Inovação do Estado de Goiás - Apoio a Hubs de Inovação",
+      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-secti-no-19-2026-selecao-de-bolsistas-para-atuacao-em-ambientes-de-inovacao-do-estado-de-goias-apoio-a-hubs-de-inovacao/",
+      "situacao": "aberto",
+      "areas": [
+        "agro",
+        "tecnologia",
+        "educacao",
+        "industria"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-11-13T17:30:05.285Z",
+      "inscricaoFim": "2026-12-28T23:59:59.000-03:00"
+    },
+    {
       "id": "cnpq-456389f075c0",
       "fonte": "cnpq",
       "titulo": "Chamada CNPq nº 33/2026 - Bolsas de Produtividade do CNPq",
@@ -529,35 +545,6 @@
         "empresas"
       ],
       "fluxoContinuo": true
-    },
-    {
-      "id": "fapeg-d337756ea1d0",
-      "fonte": "fapeg",
-      "titulo": "Chamada Pública Complementar nº 17/2026 — Edital Complementar à Chamada CONFAP-WBI (Wallonie Bruxelles International)",
-      "url": "https://goias.gov.br/fapeg/chamada-publica-fapeg-no-17-2026-edital-complementar-a-chamada-confap-wbi-wallonie-bruxelles-international/",
-      "situacao": "aberto",
-      "areas": [
-        "saude",
-        "agro",
-        "tecnologia",
-        "educacao",
-        "energia",
-        "sustentabilidade"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-08-08T10:29:49.813Z"
-    },
-    {
-      "id": "fapeg-98e5c719505b",
-      "fonte": "fapeg",
-      "titulo": "CHAMADA PÚBLICA FAPEG/SECTI nº 19/2026 — SELEÇÃO DE BOLSISTAS PARA ATUAÇÃO EM AMBIENTES DE INOVAÇÃO DO ESTADO DE GOIÁS - APOIO A HUBS DE INOVAÇÃO",
-      "url": "https://goias.gov.br/fapeg/wp-content/uploads/sites/5/2026/11/Edital_19.2026_SELECAO_DE_BOLSISTAS_PARA_ATUACAO_EM_AMBIENTES_DE_INOVACAO_DO_ESTADO_DE_GOIAS_2.pdf",
-      "situacao": "aberto",
-      "areas": [
-        "geral"
-      ],
-      "ia": false,
-      "coletadoEm": "2026-11-11T17:42:09.082Z"
     },
     {
       "id": "capes-7730401430fb",
