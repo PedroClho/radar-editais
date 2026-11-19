@@ -1,25 +1,25 @@
 {
-  "atualizadoEm": "2026-11-18T18:38:56.901Z",
+  "atualizadoEm": "2026-11-19T18:51:46.172Z",
   "fontes": {
     "finep": {
       "ok": true,
       "quantidade": 24,
-      "atualizadoEm": "2026-11-18T18:38:56.901Z"
+      "atualizadoEm": "2026-11-19T18:51:46.172Z"
     },
     "cnpq": {
       "ok": true,
-      "quantidade": 7,
-      "atualizadoEm": "2026-11-18T18:38:56.901Z"
+      "quantidade": 8,
+      "atualizadoEm": "2026-11-19T18:51:46.172Z"
     },
     "fapeg": {
       "ok": true,
       "quantidade": 1,
-      "atualizadoEm": "2026-11-18T18:38:56.901Z"
+      "atualizadoEm": "2026-11-19T18:51:46.172Z"
     },
     "capes": {
       "ok": true,
       "quantidade": 4,
-      "atualizadoEm": "2026-11-18T18:38:56.901Z"
+      "atualizadoEm": "2026-11-19T18:51:46.172Z"
     }
   },
   "editais": [
@@ -495,6 +495,21 @@
       "ia": false,
       "coletadoEm": "2026-11-04T17:45:01.940Z",
       "descricao": "A presente Chamada Pública tem por objetivo apoiar a realização de cursos de curta duração na área de biodiversidade, a serem promovidos no âmbito do Centro Franco-Brasileiro de Biodiversidade Amazônica (CFBBA). A iniciativa visa fortalecer as capacidades científica e tecnológica do Brasil e da França, por meio do intercâmbio e da transferência de conhecimentos, do desenvolvimento de projetos conjuntos de pesquisa e da formação e capacitação de recursos humanos em temas de interesse comum aos dois países, considerando suas dimensões ambiental, econômica e social."
+    },
+    {
+      "id": "cnpq-1d5c73fed387",
+      "fonte": "cnpq",
+      "titulo": "Chamada CNPq/MIR Nº 23/2026  - Programa Lélia Gonzalez de fomento a pesquisas sobre desigualdades étnico-raciais na ciência, na educação e na sociedade brasileiras",
+      "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-23-2026/chamada-publica-cnpq-N-23-2026",
+      "inscricaoInicio": "2026-11-19T00:00:00.000-03:00",
+      "inscricaoFim": "2027-03-01T23:59:59.000-03:00",
+      "situacao": "aberto",
+      "areas": [
+        "educacao"
+      ],
+      "ia": false,
+      "coletadoEm": "2026-11-19T18:51:47.151Z",
+      "descricao": "O CNPq torna pública a Chamada CNPq/MIR Nº 23/2026 - Programa Lélia Gonzalez de fomento a pesquisas sobre desigualdades étnico-raciais na ciência, na educação e na sociedade brasileiras, que tem por objeto fomentar a produção científica a respeito dos processos de formação e reprodução das desigualdades étnico-raciais e de suas implicações para a ciência, a educação e a sociedade brasileiras."
     },
     {
       "id": "cnpq-91bb0d887c8d",
